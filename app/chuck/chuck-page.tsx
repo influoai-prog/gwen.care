@@ -75,23 +75,25 @@ export default function ChuckPage() {
       <header className="chuck-nav">
         <a className="chuck-logo" href="#chuck-top" aria-label="Gwen Chuck home"><span>✦</span> gwen</a>
         <div className="chuck-nav-links">
-          <a href="#system">The system</a>
-          <a href="#vsl">Watch</a>
           <button type="button" onClick={openBooking}>Book a call <span>↗</span></button>
         </div>
       </header>
 
       <section className="chuck-hero" id="vsl" aria-labelledby="chuck-title">
-        <h1 id="chuck-title">Your audience is growing.<br /><em>Now build the business.</em></h1>
-        <p className="chuck-subhead">See how we turn scattered creator work into one clear engine for content, audience growth and revenue.</p>
+        <h1 id="chuck-title">You built the audience.<br /><em>Let’s build what comes next.</em></h1>
+        <p className="chuck-subhead">Gwen turns your momentum into a creator business—with the content, systems and team to keep it moving.</p>
         <div className={`chuck-video-frame${playing ? " is-playing" : ""}`}>
-          <div className="chuck-video-top"><span>GWEN / THE CREATOR GROWTH SYSTEM</span><span>03:12</span></div>
+          <div className="chuck-video-top"><span>GWEN / THE CREATOR GROWTH SYSTEM</span><span>WATCH THE BREAKDOWN</span></div>
           <video ref={videoRef} controls={playing} playsInline preload="metadata" onPause={() => setPlaying(false)} onPlay={() => setPlaying(true)}>
             <source src="/chuck-vsl.mp4" type="video/mp4" />
           </video>
           {!playing && <button className="chuck-play" type="button" onClick={playVideo} aria-label="Play the creator growth video"><span>▶</span><b>Play the film</b></button>}
         </div>
-        <div className="chuck-video-caption"><span>Built for creators, not corporations.</span><button type="button" onClick={openBooking}>Book your growth call <b>↗</b></button></div>
+        <div className="chuck-video-caption"><span>Built for creators, not corporations.</span><span>Content · systems · momentum</span></div>
+        <div className="chuck-booking-strip">
+          <div><span>READY WHEN YOU ARE</span><strong>See if Gwen fits your next chapter.</strong><small>No pitch deck. Just a useful conversation.</small></div>
+          <button type="button" onClick={openBooking}>Book a 20-min growth call <b>↗</b></button>
+        </div>
       </section>
 
       <section className="chuck-friction" aria-labelledby="friction-title">
