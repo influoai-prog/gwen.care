@@ -81,27 +81,9 @@ export default function ChuckPage() {
         </div>
       </header>
 
-      <section className="chuck-hero">
-        <div className="chuck-kicker"><span>For creators ready for the next level</span><i>Limited client roster</i></div>
-        <h1>Your audience is growing.<br /><em>Now build the business.</em></h1>
-        <p>We install the content, growth and operating system behind serious creators—so your next level doesn’t depend on doing everything yourself.</p>
-        <div className="chuck-actions">
-          <button className="chuck-button chuck-button-dark" type="button" onClick={openBooking}>Book your growth call <span>↗</span></button>
-          <a href="#vsl">Watch the breakdown <span>↓</span></a>
-        </div>
-        <div className="chuck-proof-row">
-          <div><strong>01</strong><span>Clear positioning</span></div>
-          <div><strong>02</strong><span>Consistent content</span></div>
-          <div><strong>03</strong><span>A team that executes</span></div>
-        </div>
-      </section>
-
-      <section className="chuck-vsl" id="vsl" aria-labelledby="vsl-title">
-        <div className="chuck-section-tag"><span>01</span> See the system</div>
-        <div className="chuck-vsl-heading">
-          <h2 id="vsl-title">More views aren’t the goal.<br /><em>Leverage is.</em></h2>
-          <p>See how we turn scattered creator work into one clear engine for content, audience growth and revenue.</p>
-        </div>
+      <section className="chuck-hero" id="vsl" aria-labelledby="chuck-title">
+        <h1 id="chuck-title">Your audience is growing.<br /><em>Now build the business.</em></h1>
+        <p className="chuck-subhead">See how we turn scattered creator work into one clear engine for content, audience growth and revenue.</p>
         <div className={`chuck-video-frame${playing ? " is-playing" : ""}`}>
           <div className="chuck-video-top"><span>GWEN / THE CREATOR GROWTH SYSTEM</span><span>03:12</span></div>
           <video ref={videoRef} controls={playing} playsInline preload="metadata" onPause={() => setPlaying(false)} onPlay={() => setPlaying(true)}>
@@ -109,11 +91,11 @@ export default function ChuckPage() {
           </video>
           {!playing && <button className="chuck-play" type="button" onClick={playVideo} aria-label="Play the creator growth video"><span>▶</span><b>Play the film</b></button>}
         </div>
-        <div className="chuck-video-caption"><span>Built for creators, not corporations.</span><span>Strategy → systems → scale</span></div>
+        <div className="chuck-video-caption"><span>Built for creators, not corporations.</span><button type="button" onClick={openBooking}>Book your growth call <b>↗</b></button></div>
       </section>
 
       <section className="chuck-friction" aria-labelledby="friction-title">
-        <div className="chuck-section-tag chuck-section-tag-light"><span>02</span> What’s really stuck</div>
+        <div className="chuck-section-tag chuck-section-tag-light"><span>01</span> What’s really stuck</div>
         <div className="chuck-friction-grid">
           <h2 id="friction-title">You don’t need<br />more advice.<br /><em>You need capacity.</em></h2>
           <div className="chuck-friction-list">
@@ -125,7 +107,7 @@ export default function ChuckPage() {
       </section>
 
       <section className="chuck-system" id="system" aria-labelledby="system-title">
-        <div className="chuck-section-tag"><span>03</span> The Gwen operating system</div>
+        <div className="chuck-section-tag"><span>02</span> The Gwen operating system</div>
         <div className="chuck-system-head">
           <h2 id="system-title">One team.<br /><em>Three growth levers.</em></h2>
           <p>We don’t hand you another strategy deck. We get inside the work and help move it every week.</p>
@@ -139,7 +121,7 @@ export default function ChuckPage() {
 
       <section className="chuck-process" aria-labelledby="process-title">
         <div className="chuck-process-copy">
-          <div className="chuck-section-tag"><span>04</span> How it starts</div>
+          <div className="chuck-section-tag"><span>03</span> How it starts</div>
           <h2 id="process-title">Four weeks to<br /><em>a better rhythm.</em></h2>
           <p>Fast enough to feel movement. Thoughtful enough to build the right thing.</p>
           <button className="chuck-button chuck-button-dark" type="button" onClick={openBooking}>Start with a call <span>↗</span></button>
