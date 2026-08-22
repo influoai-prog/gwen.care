@@ -205,26 +205,19 @@
 .nav-shell:not(.nav-shell--loading) .brand__wordmark strong {
   position: relative;
   z-index: 1;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 27px;
-  font-style: italic;
-  font-weight: 700;
+  font-family: "Snell Roundhand", "Apple Chancery", "Segoe Script", "Brush Script MT", cursive;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
   line-height: 32px;
-  letter-spacing: -0.075em;
+  letter-spacing: -0.045em;
   text-transform: lowercase;
+  color: #f78290;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75), 0 4px 12px rgba(214, 59, 88, 0.14);
 }
 
 .nav-shell:not(.nav-shell--loading) .brand__wordmark::after {
-  position: absolute;
-  z-index: 0;
-  right: 0;
-  bottom: 1px;
-  left: 1px;
-  height: 6px;
-  border-radius: 999px;
-  content: "";
-  background: linear-gradient(90deg, rgba(255, 183, 189, 0.7), rgba(247, 130, 144, 0.95));
-  transform: rotate(-2deg);
+  display: none;
 }
 
 .nav-shell--loading .nav-brand {
@@ -243,6 +236,10 @@
   flex-basis: 180px;
   transform: translate(0, 0);
   transition: none;
+}
+
+.nav-shell--loading .brand__mark {
+  display: none !important;
 }
 
 .nav-shell--loading .brand__mark-loader {
@@ -264,7 +261,7 @@
 
 .loading-wordmark {
   position: fixed;
-  z-index: 199;
+  z-index: 201;
   top: 40px;
   left: calc(50% - 267px);
   display: flex;
@@ -284,10 +281,10 @@
 }
 
 .loading-wordmark--active {
-  top: calc(50% + 110px);
+  top: 50%;
   left: 50%;
   opacity: 1;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   transition:
     top 940ms cubic-bezier(0.76, 0, 0.24, 1),
     left 940ms cubic-bezier(0.76, 0, 0.24, 1),
@@ -296,12 +293,14 @@
 }
 
 .loading-wordmark strong {
-  font-size: var(--type-wordmark-font-size);
-  font-weight: 652;
-  line-height: 28px;
+  font-family: "Snell Roundhand", "Apple Chancery", "Segoe Script", "Brush Script MT", cursive;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1;
   letter-spacing: -0.045em;
-  text-transform: capitalize;
-  color: #020407;
+  text-transform: lowercase;
+  color: #f78290;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8), 0 6px 18px rgba(214, 59, 88, 0.16);
 }
 
 .loading-wordmark span {
