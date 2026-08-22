@@ -681,14 +681,41 @@
 }
 
 /* Creator-offer CTA */
+.process-section {
+  border-top: 1px solid #ead1d5;
+  background: #f7f2ef;
+}
+
+.process-card {
+  border: 1px solid rgba(1, 2, 5, 0.08);
+  box-shadow: 0 10px 0 rgba(1, 2, 5, 0.035);
+}
+
+.process-card--one,
+.process-card--four {
+  --card-bg: #f3d8dd;
+}
+
+.process-card--two,
+.process-card--five {
+  --card-bg: #dceff6;
+}
+
+.process-card--three,
+.process-card--six {
+  --card-bg: #fff8e9;
+}
+
+.process-card__number {
+  color: #9f3546;
+}
+
 .process-cta {
   overflow: hidden;
   border: 1px solid rgba(183, 70, 86, 0.14);
   border-radius: 32px;
-  background:
-    radial-gradient(circle at 88% 18%, rgba(159, 216, 237, 0.56), transparent 30%),
-    linear-gradient(135deg, #f9e9ec 0%, #eef7fb 100%);
-  box-shadow: 0 26px 68px rgba(66, 43, 47, 0.08);
+  background: #f1d7dc;
+  box-shadow: 10px 12px 0 #c9e6f1;
 }
 
 .process-cta h3 {
