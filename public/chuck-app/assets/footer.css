@@ -289,7 +289,7 @@
   background: url("/chuck-app/gwen-g-mark.png") center / contain no-repeat;
   box-shadow: none;
   filter: none;
-  transform: rotate(-7deg);
+  transform: none;
 }
 
 .site-footer__wordmark {
