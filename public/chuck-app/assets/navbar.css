@@ -745,7 +745,7 @@
 .nav-shell:not(.nav-shell--loading) {
   width: min(520px, calc(100vw - 48px));
   justify-content: space-between;
-  padding: 0 12px 0 14px;
+  padding: 0 12px 0 26px;
 }
 
 .nav-shell:not(.nav-shell--loading) .nav-brand {
