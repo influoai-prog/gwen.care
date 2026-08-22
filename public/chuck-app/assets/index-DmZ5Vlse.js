@@ -23103,7 +23103,7 @@ function initializeCalEmbed(answers) {
 		const notes = [
 			`Creator / channel: ${answers.creatorName}`,
 			`Primary platform: ${answers.primaryPlatform}`,
-			`Profile links: ${answers.profileLinks}`,
+			`Profiles / handles: ${answers.profileLinks}`,
 			`Audience size: ${answers.audienceSize}`,
 			`Team setup: ${answers.teamSetup}`,
 			`Primary goal: ${answers.priority}`,
@@ -23262,18 +23262,18 @@ function BookingProvider({ children }) {
 										})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Primary platform" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
 											name: "primaryPlatform",
 											onChange: updateAnswer,
-											placeholder: "e.g. YouTube + Instagram",
+											placeholder: "e.g. OnlyFans + Instagram",
 											required: true,
 											type: "text",
 											value: answers.primaryPlatform
 										})] })]
 									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Profile links" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Profile links or handles" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
 										name: "profileLinks",
 										onChange: updateAnswer,
-										placeholder: "Paste your main channel or social profile",
+										placeholder: "@handle or https://your-profile-link.com",
 										required: true,
-										type: "url",
+										type: "text",
 										value: answers.profileLinks
 									})] }),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Total audience" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("select", {
@@ -23288,28 +23288,28 @@ function BookingProvider({ children }) {
 												children: "Select a range"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
+												value: "Just started",
+												children: "Just started"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
 												value: "Under 10k",
 												children: "Under 10k"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-												value: "10k–50k",
-												children: "10k–50k"
+												value: "10k-50k",
+												children: "10k-50k"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-												value: "50k–250k",
-												children: "50k–250k"
+												value: "50k-250k",
+												children: "50k-250k"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-												value: "250k–1m",
-												children: "250k–1m"
+												value: "250k-1m",
+												children: "250k-1m"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
 												value: "1m+",
 												children: "1m+"
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-												value: "Pre-launch",
-												children: "Pre-launch"
 											})
 										]
 									})] }),
@@ -23367,7 +23367,7 @@ function BookingProvider({ children }) {
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "What is holding your content back?" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("textarea", {
 										name: "challenge",
 										onChange: updateAnswer,
-										placeholder: "Tell us where you are stuck—ideas, production, consistency, growth, deals, or the work behind the scenes.",
+										placeholder: "Tell us what is stuck: content, promotion, subscriber growth, retention, DMs, or the work behind the scenes.",
 										required: true,
 										rows: "3",
 										value: answers.challenge
@@ -23384,26 +23384,26 @@ function BookingProvider({ children }) {
 													value: "",
 													disabled: true,
 													children: "Select one"
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-														value: "Build a clear content strategy",
-														children: "Content strategy"
-												}),
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
+												value: "Build a clear creator brand",
+												children: "Creator positioning"
+											}),
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
 														value: "Create content consistently",
 														children: "Consistent production"
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-														value: "Grow an engaged audience",
-														children: "Audience growth"
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-														value: "Win better brand partnerships",
-														children: "Brand partnerships"
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-														value: "Monetize beyond brand deals",
-														children: "Monetization"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
+												value: "Grow social reach",
+												children: "Audience growth"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
+												value: "Grow and retain subscribers",
+												children: "Subscriber growth"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
+												value: "Increase creator revenue",
+												children: "Monetization"
 												})
 											]
 										})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Timing" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("select", {
@@ -30379,31 +30379,31 @@ var faq_section_default = "/chuck-app/assets/faq-section.css";
 var soapFaqs = [
 	{
 		question: "What does gwen actually do?",
-		answer: "We work alongside creators on content strategy, production, audience growth, partnerships, and the systems behind the scenes. The exact mix depends on what is slowing you down and where the strongest opportunity is."
+		answer: "We help OnlyFans creators build a stronger business around their content. That can include positioning, content planning, social growth, subscriber retention, messaging, and the day-to-day systems that keep everything moving."
 	},
 	{
 		question: "Who is a good fit for gwen?",
-		answer: "Creators with a clear point of view, an audience they care about, and the ambition to build consistently. You do not need millions of followers, but you should be ready to collaborate, share performance data, and put a real plan into action."
+		answer: "Adult creators who want to take OnlyFans seriously and build something consistent. You can be established or just getting started. What matters is that you are 18 or older, willing to collaborate, and ready to follow through on a clear plan."
 	},
 	{
 		question: "What happens after I apply?",
-		answer: "We review your profiles, audience stage, goals, and what you want help with. If there looks to be a fit, you can choose a call time to talk through the opportunity. Applying is not a promise of acceptance, representation, or a partnership."
+		answer: "We review your handles, audience stage, goals, and what you want help with. If it looks like a fit, you can choose a call time and talk it through with us. Applying does not guarantee acceptance or representation."
 	},
 	{
 		question: "Will the content still sound and feel like me?",
-		answer: "Yes. Your voice, audience relationship, and creative judgment stay central. We add research, structure, production support, and honest feedback without turning you into a generic brand."
+		answer: "Yes. Your personality, boundaries, and relationship with your audience come first. We help with the plan and execution, but you keep a say in what goes out and how you are presented."
 	},
 	{
 		question: "Which platforms and formats do you support?",
-		answer: "We can plan around YouTube, Shorts, TikTok, Instagram, podcasts, newsletters, and multi-platform creator businesses. We prioritize the channels and formats your audience already responds to instead of forcing every platform into the plan."
+		answer: "OnlyFans is the main focus. We can also build a promotion plan around Instagram, TikTok, X, Reddit, and other channels that make sense for your audience and stay within each platform's rules."
 	},
 	{
 		question: "Do you guarantee followers, views, or income?",
-		answer: "No. Platforms, algorithms, audience behavior, and brand budgets are outside anyone’s control. We commit to strong strategy, disciplined execution, clear reporting, and improving decisions from real performance data—not manufactured promises."
+		answer: "No. Nobody controls algorithms, reach, subscriber behavior, or platform decisions. We focus on a clear strategy, consistent execution, useful reporting, and better decisions based on real performance."
 	},
 	{
-		question: "How do brand partnerships and sponsored content work?",
-		answer: "You keep final approval over the brands and claims attached to your name. Any paid, gifted, affiliate, or other material relationship must be disclosed clearly in the content and follow the rules of the platform and the markets where your audience is based."
+		question: "Do I keep control of my account and content?",
+		answer: "Yes. Your ownership, access, approvals, and boundaries are set out clearly before we work together. We will never ask for passwords through the public application form, and we do not expect you to submit explicit content when you apply."
 	}
 ];
 function FAQ({ items, className, ...props }) {
@@ -30788,13 +30788,13 @@ var sections$1 = [
 	{
 		id: "who-we-are",
 		heading: "Who we are",
-		body: ["gwen supports creators with content strategy, production, audience growth, partnerships, and the work behind the scenes. This policy explains how we handle personal information when you visit this website, submit a creator application, book a call, or work with us.", "For the information collected directly through this website and application flow, gwen is the organisation responsible for deciding how and why that information is used."]
+		body: ["gwen is an agency for adult creators, with a focus on OnlyFans growth, content planning, promotion, subscriber retention, and account operations. This policy explains how we handle personal information when you visit this website, submit a creator application, book a call, or work with us.", "For the information collected directly through this website and application flow, gwen is the organisation responsible for deciding how and why that information is used."]
 	},
 	{
 		id: "information-we-collect",
 		heading: "Information we collect",
 		body: ["We collect information you choose to provide and limited technical information generated when you use the site, including:", { list: [
-			"Application information, such as your creator or channel name, primary platforms, profile links, audience range, team setup, goals, timing, challenges, and the outcome you want to achieve.",
+			"Application information, such as your creator name, primary platforms, public profile links or handles, audience range, team setup, goals, timing, challenges, and the outcome you want to achieve.",
 			"Booking and contact information, such as your name, email address, time zone, meeting details, and answers passed into the booking flow.",
 			"Communications and service information you send us by email, during calls, or while we work together.",
 			"Technical and usage information, such as IP address, browser and device details, referring page, pages viewed, timestamps, and interactions measured through cookies or similar technologies."
@@ -30845,7 +30845,7 @@ var sections$1 = [
 	{
 		id: "children",
 		heading: "Age requirements",
-		body: ["The creator application is intended for people aged 18 or older. We do not knowingly collect applications from children. If you believe a child has submitted personal information, contact us so we can review and delete it where appropriate."]
+		body: ["The creator application is only for people aged 18 or older. Do not use the application to send explicit content, identity documents, or content featuring another person. We do not knowingly collect applications from children. If you believe a child has submitted personal information, contact us so we can review and delete it where appropriate."]
 	},
 	{
 		id: "changes-and-contact",
@@ -30881,12 +30881,12 @@ var sections = [
 	{
 		id: "eligibility",
 		heading: "Eligibility",
-		body: ["You must be at least 18 years old and able to enter into a binding agreement to submit an application. If you apply for a creator, channel, or company that is not solely yours, you confirm that you are authorised to share the information and act on its behalf."]
+		body: ["You must be at least 18 years old and able to enter into a binding agreement to submit an application. The application is intended for adult creators and their authorised representatives. If you apply for someone else, you confirm that you are authorised to share the information and act on their behalf."]
 	},
 	{
 		id: "creator-application",
 		heading: "Creator applications",
-		body: ["Submitting an application does not guarantee a reply, call, offer, partnership, representation, or any particular service. We may accept, decline, pause, or close an application at our discretion.", "You agree that the information and links you submit are accurate, current, and safe for us to review. Do not include passwords, private access tokens, sensitive personal information, or material you are not allowed to share."]
+		body: ["Submitting an application does not guarantee a reply, call, offer, partnership, representation, or any particular service. We may accept, decline, pause, or close an application at our discretion.", "You agree that the information, handles, and links you submit are accurate, current, and safe for us to review. Do not include passwords, private access tokens, identity documents, explicit content, sensitive personal information, or material you are not allowed to share."]
 	},
 	{
 		id: "services-and-engagement",
@@ -30898,6 +30898,7 @@ var sections = [
 		heading: "Creator responsibilities",
 		body: ["You remain responsible for your accounts, content, statements, audience relationship, and compliance with laws and platform rules unless a written agreement expressly says otherwise.", { list: [
 			"Only submit or publish material you own, license, or have permission to use, including music, footage, images, trademarks, and appearances by other people.",
+			"Make sure every person shown in adult content is at least 18 and that you hold any consent, release, identity, and age-verification records required by law and the platform.",
 			"Review and approve content, claims, links, promotions, and brand partnerships before publication.",
 			"Clearly disclose paid, gifted, affiliate, employment, family, or other material brand relationships wherever required by law or platform rules.",
 			"Keep account credentials secure and provide access only through methods agreed in writing."
@@ -30906,7 +30907,7 @@ var sections = [
 	{
 		id: "results-and-platforms",
 		heading: "Results and third-party platforms",
-		body: ["We do not guarantee followers, views, reach, engagement, revenue, sponsorships, platform access, verification, or algorithmic performance. Creator results depend on many factors outside our control, including your decisions, consistency, audience behavior, platform changes, advertiser demand, and market conditions.", "YouTube, Instagram, TikTok, Meta, Cal.com, and other third-party services operate under their own terms and policies. We are not responsible for their availability, decisions, outages, suspensions, data practices, or changes."]
+		body: ["We do not guarantee followers, views, reach, subscribers, revenue, platform access, verification, or algorithmic performance. Results depend on many factors outside our control, including your decisions, consistency, audience behavior, platform changes, and market conditions.", "OnlyFans, Instagram, TikTok, X, Reddit, Meta, Cal.com, and other third-party services operate under their own terms and policies. We are not responsible for their availability, decisions, outages, suspensions, data practices, or changes."]
 	},
 	{
 		id: "intellectual-property",
