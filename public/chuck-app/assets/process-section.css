@@ -679,3 +679,57 @@
     top: -4px;
   }
 }
+
+/* Creator-offer CTA */
+.process-section {
+  border-top: 0;
+  background: #fff;
+}
+
+.process-card {
+  border: 1px solid rgba(1, 2, 5, 0.08);
+  box-shadow: none;
+}
+
+.process-card--one,
+.process-card--four {
+  --card-bg: #f3d8dd;
+}
+
+.process-card--two,
+.process-card--five {
+  --card-bg: #dceff6;
+}
+
+.process-card--three,
+.process-card--six {
+  --card-bg: #fff8e9;
+}
+
+.process-card__number {
+  color: #9f3546;
+}
+
+.process-cta {
+  overflow: hidden;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.process-cta h3 {
+  max-width: 620px;
+  color: #010205;
+  font-weight: 600;
+}
+
+.process-cta__button {
+  border-radius: 999px;
+}
+
+@media (max-width: 620px) {
+  .process-cta {
+    border-radius: 0;
+  }
+}

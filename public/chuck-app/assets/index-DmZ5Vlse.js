@@ -28705,9 +28705,9 @@ var industries_section_default = "/chuck-app/assets/industries-section.css";
 })();
 var industries = [
 	{
-		title: "Costs & Margins",
-		titleLines: ["Costs &", "Margins"],
-		description: "Find hidden costs cutting into profit.",
+		title: "Positioning & Offer",
+		titleLines: ["Positioning &", "Offer"],
+		description: "Package your brand, pricing and profile to give fans a reason to subscribe.",
 		image: null,
 		svg: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", {
 			width: "257",
@@ -28793,9 +28793,9 @@ var industries = [
 		isSvg: true
 	},
 	{
-		title: "Systems & Workflow",
-		titleLines: ["Systems &", "Workflow"],
-		description: "Fix slow processes and automate draining work.",
+		title: "Content & Traffic",
+		titleLines: ["Content &", "Traffic"],
+		description: "Build the content engine that turns social attention into qualified profile visits.",
 		image: null,
 		svg: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", {
 			width: "253",
@@ -28841,9 +28841,9 @@ var industries = [
 		isSvg: true
 	},
 	{
-		title: "Growth & Capacity",
-		titleLines: ["Growth &", "Capacity"],
-		description: "Turn saved time and cash into margin and growth.",
+		title: "Conversion & Retention",
+		titleLines: ["Conversion &", "Retention"],
+		description: "Convert more visitors, raise subscriber value and keep revenue recurring.",
 		image: null,
 		svg: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", {
 			width: "211",
@@ -29216,7 +29216,7 @@ function IndustriesSection() {
 						className: "industries-header__copy",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 							id: "industries-title",
-							"aria-label": "Value Creation Process",
+							"aria-label": "Your 60-Day Creator Wealth System",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 								className: "industries-title__clip",
 								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.span, {
@@ -29231,7 +29231,7 @@ function IndustriesSection() {
 											}
 										}
 									},
-									children: "Value Creation Process"
+									children: "Your 60-Day Creator Wealth System"
 								})
 							})
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.p, {
@@ -29249,7 +29249,7 @@ function IndustriesSection() {
 									}
 								}
 							},
-							children: "We find where time and money are being lost, then build the systems that win both back."
+							children: "We turn your content and attention into an OnlyFans subscriber machine built for recurring revenue."
 						})]
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
 						className: "industries-header__action-wrap",
@@ -29499,27 +29499,27 @@ var easeOut$1 = [
 var timelineSteps = [
 	{
 		number: "01",
-		detail: "Spend uncovered"
+		detail: "Brand positioned"
 	},
 	{
 		number: "02",
-		detail: "Hours reclaimed"
+		detail: "Offer sharpened"
 	},
 	{
 		number: "03",
-		detail: "Cash retained"
+		detail: "Content systemized"
 	},
 	{
 		number: "04",
-		detail: "Capacity created"
+		detail: "Traffic activated"
 	},
 	{
 		number: "05",
-		detail: "Growth accelerated"
+		detail: "Fans converted"
 	},
 	{
 		number: "06",
-		detail: "Systems simplified"
+		detail: "Revenue retained"
 	}
 ];
 var titleVariants = {
@@ -29662,7 +29662,7 @@ function FixSection() {
 					className: "fix-intro__heading",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", {
 						id: "fix-title",
-						"aria-label": "Build More With What You Have",
+						"aria-label": "Build Your Subscriber Machine",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 							className: "fix-intro__clip",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.span, {
@@ -29673,7 +29673,7 @@ function FixSection() {
 									delay: .08,
 									ease: easeOut$1
 								},
-								children: "Build More"
+								children: "Build Your"
 							})
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 							className: "fix-intro__clip",
@@ -29685,7 +29685,7 @@ function FixSection() {
 									delay: .2,
 									ease: easeOut$1
 								},
-								children: "With What You Have"
+								children: "Subscriber Machine"
 							})
 						})]
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.p, {
@@ -29705,12 +29705,7 @@ function FixSection() {
 							delay: .26,
 							ease: easeOut$1
 						},
-						children: [
-							"We find the operational drag keeping your business from performing at its best.",
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
-							" ",
-							"Then free up the cash, time, and capacity you need to move faster."
-						]
+						children: "We install the brand, content, traffic, conversion and retention systems that turn attention into predictable monthly revenue."
 					})]
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
 					className: "fix-intro__timeline",
@@ -29775,9 +29770,9 @@ function FixSection() {
 						className: "fix-visual__title",
 						variants: reduceMotion ? void 0 : titleVariants,
 						children: [
-							"Turn Waste",
+							"Turn Attention",
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
-							"Into Growth"
+							"Into Revenue"
 						]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.div, {
@@ -29793,7 +29788,7 @@ function FixSection() {
 				]
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "fix-copy",
-				children: "Cleaner operations and less dependence on people holding everything together. We build the infrastructure your business needs to scale without adding more complexity."
+			children: "We connect your content, traffic, DMs, pricing, and retention into one revenue machine that converts more fans, lifts spend, and compounds monthly income."
 			})]
 		})]
 	});
@@ -29818,49 +29813,49 @@ var easeOut = [
 var steps = [
 	{
 		number: "01",
-		label: "Discover",
-		title: "Trace friction",
-		description: "Find what’s slowing work down, wasting time, or draining value.",
+		label: "Audit",
+		title: "Find the leaks",
+		description: "See where content, traffic, pricing, and DMs lose subscribers or leave money unclaimed.",
 		direction: "right",
 		className: "process-card--one"
 	},
 	{
 		number: "02",
-		label: "Prioritize",
-		title: "Find the wins",
-		description: "Rank each fix by impact, effort, urgency, and potential upside.",
+		label: "Identify",
+		title: "Find what converts",
+		description: "Pinpoint the content, traffic sources, and offers already driving the highest fan spend.",
 		direction: "right",
 		className: "process-card--two"
 	},
 	{
 		number: "03",
 		label: "Plan",
-		title: "Map the plan",
-		description: "Turn the findings into a clear rollout plan with priorities and timing.",
+		title: "Map growth plan",
+		description: "Turn the data into a focused weekly plan with clear subscriber and revenue targets.",
 		direction: "down",
 		className: "process-card--three"
 	},
 	{
 		number: "04",
 		label: "Build",
-		title: "Build the systems",
-		description: "Create the systems, workflows, and automations needed to run better.",
+		title: "Install the machine",
+		description: "Build the content, DM sales, upsell, and retention systems that grow revenue every day.",
 		direction: "left",
 		className: "process-card--four"
 	},
 	{
 		number: "05",
 		label: "Launch",
-		title: "Put it live",
-		description: "Launch fast, test it in the real business, and refine what matters.",
+		title: "Scale what works",
+		description: "Launch fast, track fan behavior, and put more traffic behind the highest-converting moves.",
 		direction: "left",
 		className: "process-card--five"
 	},
 	{
 		number: "06",
-		label: "Improve",
-		title: "Compound gains",
-		description: "Track the impact, improve what works, and expand it across the business.",
+		label: "Compound",
+		title: "Keep fans spending",
+		description: "Retain subscribers, reactivate expired fans, and compound recurring revenue month after month.",
 		direction: "down",
 		className: "process-card--six"
 	}
@@ -30073,7 +30068,7 @@ function ProcessSection() {
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.span, {
 								className: "process-card__title-line",
 								variants: titleLine,
-								children: "Let's find what your business is leaving on the table."
+								children: "Ready to build your creator wealth machine?"
 							})
 						}) })
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
@@ -30084,7 +30079,7 @@ function ProcessSection() {
 							onClick: openBooking,
 							variant: "outline",
 							className: "process-cta__button",
-							children: ["See our plans", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowIcon, {
+							children: ["Apply now", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowIcon, {
 								direction: "right",
 								size: 20,
 								"aria-hidden": "true"
