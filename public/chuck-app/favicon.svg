@@ -1,18 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <defs>
     <radialGradient id="surface" cx="0" cy="0" r="1" gradientTransform="translate(19 12) rotate(48) scale(65)" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#17384a"/>
-      <stop offset=".48" stop-color="#0b202c"/>
-      <stop offset="1" stop-color="#061017"/>
+      <stop stop-color="#ffe4e6"/>
+      <stop offset=".48" stop-color="#ffb4ba"/>
+      <stop offset="1" stop-color="#f47f8d"/>
     </radialGradient>
     <linearGradient id="ribbon" x1="15" y1="17" x2="49" y2="48" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#e8f8ff"/>
-      <stop offset=".38" stop-color="#9bd4f7"/>
-      <stop offset=".72" stop-color="#5caee0"/>
-      <stop offset="1" stop-color="#bce6ff"/>
+      <stop stop-color="#64152f"/>
+      <stop offset=".38" stop-color="#8f2040"/>
+      <stop offset=".72" stop-color="#b72d4d"/>
+      <stop offset="1" stop-color="#70142f"/>
     </linearGradient>
   </defs>
   <rect x="2" y="2" width="60" height="60" rx="19" fill="url(#surface)"/>
   <path d="M46.5 21.5C42.9 15.8 36 13 29.4 14.4 19.1 16.6 13 26.7 15.7 36.7 18.4 46.8 29 52.5 38.7 48.7c6.8-2.7 11-9.5 10.7-16.7H35.8" fill="none" stroke="url(#ribbon)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="46.5" cy="21.5" r="4.7" fill="#e9fe71"/>
+  <path d="M48.1 27.4 46.5 26c-1.2-1-5.3-4.1-5.3-7.3 0-2.3 1.7-4 4-4 1.2 0 2.3.6 2.9 1.5.7-.9 1.8-1.5 3-1.5 2.2 0 3.9 1.7 3.9 4 0 3.2-4.1 6.3-5.3 7.3l-1.6 1.4Z" fill="#e73558"/>
 </svg>

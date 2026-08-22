@@ -77,7 +77,7 @@
   height: 46px;
   flex: 0 0 46px;
   background: url("/chuck-app/gwen-mark.svg") center / contain no-repeat;
-  filter: drop-shadow(0 7px 16px rgba(100, 178, 227, 0.18));
+  filter: drop-shadow(0 7px 16px rgba(231, 53, 88, 0.22));
 }
 
 .site-footer__wordmark {
