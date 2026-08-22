@@ -1037,7 +1037,7 @@
   padding: 0;
   align-items: center;
   overflow: visible;
-  transform: translateY(2px);
+  transform: translateY(0);
 }
 
 .nav-shell:not(.nav-shell--loading) .brand__wordmark strong {
