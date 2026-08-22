@@ -759,7 +759,7 @@
   flex: 0 0 68px;
   align-items: center;
   justify-content: center;
-  transform: translateY(0);
+  transform: translateY(-8px);
   transition: transform 760ms cubic-bezier(0.22, 1, 0.36, 1);
   animation: gwen-brand-dock 940ms cubic-bezier(0.76, 0, 0.24, 1) both;
 }
@@ -769,7 +769,7 @@
   width: 68px;
   height: 21px;
   flex: 0 0 68px;
-  background: url('/chuck-app/gwen-wordmark-header-optimized.png') center / contain no-repeat;
+  background: none;
   content: '';
   transform: translateY(1.5px) scale(1);
   transition:
@@ -1009,5 +1009,65 @@
   .nav-shell:not(.nav-shell--loading) .nav-brand,
   .nav-shell:not(.nav-shell--loading)::before {
     animation: none;
+  }
+}
+
+/* Kalnia text wordmark for the header only. */
+.nav-shell:not(.nav-shell--loading) {
+  width: min(550px, calc(100vw - 48px));
+}
+
+.nav-shell:not(.nav-shell--loading) .nav-brand::before {
+  display: none;
+}
+
+.nav-shell:not(.nav-shell--loading) .nav-brand {
+  display: flex;
+  width: auto;
+  height: 60px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nav-shell:not(.nav-shell--loading) .nav-brand .brand__wordmark {
+  display: flex !important;
+  width: auto;
+  height: auto;
+  padding: 0;
+  align-items: center;
+  overflow: visible;
+  transform: translateY(0);
+}
+
+.nav-shell:not(.nav-shell--loading) .brand__wordmark strong {
+  font-family: "Kalnia", Georgia, serif;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.06em;
+  text-transform: lowercase;
+  color: #b74656;
+  text-shadow: none;
+}
+
+.nav-shell:not(.nav-shell--loading) .brand__wordmark span {
+  display: none !important;
+}
+
+@media (max-width: 809.98px) {
+  .nav-shell:not(.nav-shell--loading) {
+    width: calc(100vw - 48px);
+  }
+
+  .nav-shell:not(.nav-shell--loading) .nav-brand {
+    width: auto;
+    height: 52px;
+    flex-basis: auto;
+  }
+
+  .nav-shell:not(.nav-shell--loading) .brand__wordmark strong {
+    font-size: 26px;
   }
 }
