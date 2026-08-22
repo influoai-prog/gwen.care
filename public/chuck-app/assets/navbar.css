@@ -759,7 +759,7 @@
   flex: 0 0 68px;
   align-items: center;
   justify-content: center;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
   transition: transform 760ms cubic-bezier(0.22, 1, 0.36, 1);
   animation: gwen-brand-dock 940ms cubic-bezier(0.76, 0, 0.24, 1) both;
 }
@@ -1042,7 +1042,7 @@
 
 .nav-shell:not(.nav-shell--loading) .brand__wordmark strong {
   font-family: "Kalnia", Georgia, serif;
-  font-size: 29px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 500;
   line-height: 1;
@@ -1068,6 +1068,6 @@
   }
 
   .nav-shell:not(.nav-shell--loading) .brand__wordmark strong {
-    font-size: 28px;
+    font-size: 27px;
   }
 }
