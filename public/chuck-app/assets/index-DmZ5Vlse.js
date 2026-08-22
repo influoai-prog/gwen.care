@@ -23521,8 +23521,8 @@ var links = [
 		href: "#agency"
 	},
 	{
-		label: "Process",
-		href: "#process"
+		label: "Results",
+		href: "#testimonials"
 	},
 	{
 		label: "FAQ",
@@ -23622,7 +23622,7 @@ function Navbar({ isLoading = false }) {
 						setIsOpen(false);
 						openBooking(event);
 					},
-					children: "Book a call"
+					children: "Apply now"
 				})]
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 				className: "nav-toggle",
@@ -23726,7 +23726,7 @@ var footerLinks = [[
 		href: "#contact"
 	},
 	{
-		label: "Book a call",
+		label: "Apply now",
 		href: "#contact"
 	}
 ]];
@@ -23776,8 +23776,8 @@ function Footer() {
 					children: footerLinks.map((column, index) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 						className: "site-footer__link-column",
 						children: column.map((link) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-							href: link.label === "Book a call" ? bookingUrl : link.href,
-							onClick: (event) => link.label === "Book a call" ? openBooking(event) : handleHomeNavigation(event, link.href),
+							href: link.label === "Apply now" ? bookingUrl : link.href,
+							onClick: (event) => link.label === "Apply now" ? openBooking(event) : handleHomeNavigation(event, link.href),
 							children: link.label
 						}, link.label))
 					}, index))
@@ -28632,7 +28632,7 @@ function Showcase() {
 					href: bookingUrl,
 					onClick: openBooking,
 					whileHover: { scale: 1.01 },
-					children: "Book a call"
+					children: "Apply now"
 				})
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
 				variants: {
@@ -29263,7 +29263,7 @@ function IndustriesSection() {
 							className: "industries-header__action",
 							href: bookingUrl,
 							onClick: openBooking,
-							children: ["Book a call", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowIcon, {
+							children: ["Apply now", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowIcon, {
 								direction: "right",
 								size: 20,
 								"aria-hidden": "true"
