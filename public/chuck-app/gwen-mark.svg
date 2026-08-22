@@ -1,20 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Gwen operations mark">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Gwen monogram">
   <defs>
-    <linearGradient id="surface" x1="10" y1="8" x2="54" y2="58" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#10232d"/>
-      <stop offset="1" stop-color="#071017"/>
+    <radialGradient id="surface" cx="0" cy="0" r="1" gradientTransform="translate(19 12) rotate(48) scale(65)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17384a"/>
+      <stop offset=".48" stop-color="#0b202c"/>
+      <stop offset="1" stop-color="#061017"/>
+    </radialGradient>
+    <linearGradient id="ribbon" x1="15" y1="17" x2="49" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e8f8ff"/>
+      <stop offset=".38" stop-color="#9bd4f7"/>
+      <stop offset=".72" stop-color="#5caee0"/>
+      <stop offset="1" stop-color="#bce6ff"/>
     </linearGradient>
-    <linearGradient id="route" x1="15" y1="46" x2="50" y2="18" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#dff3fd"/>
-      <stop offset="0.55" stop-color="#64b2e3"/>
-      <stop offset="1" stop-color="#9bd4f7"/>
-    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.2"/>
+    </filter>
   </defs>
-  <rect x="2" y="2" width="60" height="60" rx="18" fill="url(#surface)"/>
-  <rect x="2.5" y="2.5" width="59" height="59" rx="17.5" fill="none" stroke="#fff" stroke-opacity=".12"/>
-  <path d="M15 45h8.5c6.1 0 8.5-3.5 8.5-10.5v-4c0-7.4 3-11.5 10-11.5h7" fill="none" stroke="url(#route)" stroke-width="5" stroke-linecap="round"/>
-  <circle cx="15" cy="45" r="4.5" fill="#dff3fd"/>
-  <circle cx="32" cy="33" r="4.5" fill="#64b2e3"/>
-  <circle cx="49" cy="19" r="6.5" fill="#e9fe71"/>
-  <circle cx="47" cy="17" r="1.7" fill="#fff" fill-opacity=".72"/>
+  <rect x="2" y="2" width="60" height="60" rx="19" fill="url(#surface)"/>
+  <rect x="2.5" y="2.5" width="59" height="59" rx="18.5" fill="none" stroke="#fff" stroke-opacity=".13"/>
+  <path d="M46.5 21.5C42.9 15.8 36 13 29.4 14.4 19.1 16.6 13 26.7 15.7 36.7 18.4 46.8 29 52.5 38.7 48.7c6.8-2.7 11-9.5 10.7-16.7H35.8" fill="none" stroke="#5caee0" stroke-opacity=".32" stroke-width="9" stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M46.5 21.5C42.9 15.8 36 13 29.4 14.4 19.1 16.6 13 26.7 15.7 36.7 18.4 46.8 29 52.5 38.7 48.7c6.8-2.7 11-9.5 10.7-16.7H35.8" fill="none" stroke="url(#ribbon)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="46.5" cy="21.5" r="4.7" fill="#e9fe71"/>
+  <circle cx="45.2" cy="20.1" r="1.35" fill="#fff" fill-opacity=".9"/>
 </svg>
