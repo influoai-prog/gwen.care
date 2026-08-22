@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "gwen — Creator growth, handled",
+  title: "Gwen — Creator growth, handled",
   description: "A hands-on creator team for content, growth and everything behind the scenes.",
 };
 
@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main id="top">
       <header className="nav-wrap">
-        <a className="brand" href="#top" aria-label="gwen home">
+        <a className="brand" href="#top" aria-label="Gwen home">
           <span className="brand-spark" aria-hidden="true">✦</span>
           gwen
         </a>
@@ -26,9 +26,9 @@ export default function Home() {
         <p className="hero-copy">Content, growth and the work behind the scenes—done with you, every week.</p>
         <div className="hero-actions">
           <a className="button button-dark" href="#apply">See if we’re a fit <span>↗</span></a>
-          <a className="text-link" href="#how">See how gwen works <span>↓</span></a>
+          <a className="text-link" href="#how">See how Gwen works <span>↓</span></a>
         </div>
-        <div className="hero-stage" aria-label="gwen creator growth snapshot">
+        <div className="hero-stage" aria-label="Gwen creator growth snapshot">
           <div className="stage-card stage-card-left"><span>Content day</span><strong>Ideas to posts</strong><i>01</i></div>
           <div className="stage-orbit"><span className="orbit-core">g</span></div>
           <div className="stage-card stage-card-right"><span>Momentum</span><strong>Built weekly</strong><i>02</i></div>
@@ -51,7 +51,7 @@ export default function Home() {
       </section>
 
       <section className="services section-pad" id="services" aria-labelledby="services-title">
-        <div className="section-label section-label-light"><span>02</span> What gwen does</div>
+        <div className="section-label section-label-light"><span>02</span> What Gwen does</div>
         <div className="services-heading">
           <h2 id="services-title">You show up.<br /><em>We make it move.</em></h2>
           <p>A real team around your talent. Here’s what stops being your problem.</p>
@@ -77,7 +77,7 @@ export default function Home() {
       </section>
 
       <section className="method section-pad" aria-labelledby="method-title">
-        <div className="section-label"><span>03</span> The gwen rhythm</div>
+        <div className="section-label"><span>03</span> The Gwen rhythm</div>
         <div className="method-grid">
           <div className="method-copy">
             <h2 id="method-title">No mystery.<br /><em>Just momentum.</em></h2>
@@ -109,9 +109,9 @@ export default function Home() {
         <div className="faq-grid">
           <h2 id="faq-title">Before we<br /><em>get going.</em></h2>
           <div className="faq-list">
-            <details open><summary>What does gwen actually do?<span>+</span></summary><p>We help creators make stronger content, grow with direction and keep the work behind the scenes under control.</p></details>
+            <details open><summary>What does Gwen actually do?<span>+</span></summary><p>We help creators make stronger content, grow with direction and keep the work behind the scenes under control.</p></details>
             <details><summary>Do I need a huge audience?<span>+</span></summary><p>No. We care more about your potential, consistency and fit than a single follower number.</p></details>
-            <details><summary>Will the content still feel like me?<span>+</span></summary><p>Always. gwen adds structure and creative support without flattening the personality people follow you for.</p></details>
+            <details><summary>Will the content still feel like me?<span>+</span></summary><p>Always. Gwen adds structure and creative support without flattening the personality people follow you for.</p></details>
             <details><summary>How do we start?<span>+</span></summary><p>Send a short application. If there’s a fit, we’ll talk through your goals and what working together could look like.</p></details>
           </div>
         </div>
@@ -122,13 +122,13 @@ export default function Home() {
         <p className="eyebrow"><span /> By application</p>
         <h2 id="apply-title">Ready for a team<br />that <em>gets it?</em></h2>
         <p>Tell us where you are and where you want to go. We’ll take it from there.</p>
-        <a className="button button-dark" href="mailto:hello@gwen.care?subject=Creator%20application">Apply to gwen <span>↗</span></a>
+        <a className="button button-dark" href="mailto:hello@gwen.care?subject=Creator%20application">Apply to Gwen <span>↗</span></a>
       </section>
 
       <footer>
         <div className="footer-top"><a className="footer-brand" href="#top">gwen<span>✦</span></a><p>Creator growth, properly handled.</p></div>
         <div className="footer-links"><a href="#services">What we do</a><a href="#how">How it works</a><a href="#faq-title">FAQ</a><a href="mailto:hello@gwen.care">Contact</a></div>
-        <div className="footer-bottom"><span>© 2026 gwen</span><span>Made for momentum.</span></div>
+        <div className="footer-bottom"><span>© 2026 Gwen</span><span>Made for momentum.</span></div>
       </footer>
     </main>
   );

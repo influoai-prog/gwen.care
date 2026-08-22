@@ -9,21 +9,21 @@ export async function generateMetadata(): Promise<Metadata> {
   const image = `${protocol}://${host}/og.png`;
 
   return {
-    title: "gwen — Creator growth, handled",
+    title: "Gwen — Creator growth, handled",
     description: "A hands-on creator team for content, growth and everything behind the scenes.",
     icons: {
-      icon: [{ url: "/chuck-app/gwen-g-lowercase-mark.png", type: "image/png", sizes: "256x256" }],
-      shortcut: "/chuck-app/gwen-g-lowercase-mark.png",
-      apple: [{ url: "/chuck-app/gwen-g-lowercase-mark.png", sizes: "256x256", type: "image/png" }],
+      icon: [{ url: "/chuck-app/gwen-g-mark-rounded.png", type: "image/png", sizes: "256x256" }],
+      shortcut: "/chuck-app/gwen-g-mark-rounded.png",
+      apple: [{ url: "/chuck-app/gwen-g-mark-rounded.png", sizes: "256x256", type: "image/png" }],
     },
     openGraph: {
-      title: "gwen — Creator growth, handled",
+      title: "Gwen — Creator growth, handled",
       description: "Content, growth and the work behind the scenes—done with you, every week.",
-      images: [{ url: image, width: 1734, height: 907, alt: "gwen — Creator growth, properly handled." }],
+      images: [{ url: image, width: 1734, height: 907, alt: "Gwen — Creator growth, properly handled." }],
     },
     twitter: {
       card: "summary_large_image",
-      title: "gwen — Creator growth, handled",
+      title: "Gwen — Creator growth, handled",
       description: "Content, growth and the work behind the scenes—done with you, every week.",
       images: [image],
     },
