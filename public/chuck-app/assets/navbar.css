@@ -627,6 +627,47 @@
   }
 }
 
+/* Temporary logo-free navigation while the Gwen identity is revisited. */
+.nav-shell:not(.nav-shell--loading) {
+  width: min(420px, calc(100vw - 48px));
+  justify-content: flex-end;
+  padding-left: 12px;
+}
+
+.nav-shell:not(.nav-shell--loading) .nav-brand {
+  display: none;
+}
+
+.nav-shell:not(.nav-shell--loading) .nav-trailing {
+  width: auto;
+  flex: 0 0 auto;
+}
+
+.nav-shell--loading,
+.loading-wordmark {
+  visibility: hidden;
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
+@media (max-width: 809.98px) {
+  .nav-shell:not(.nav-shell--loading):not(.nav-shell--open) {
+    right: 24px;
+    left: auto;
+    width: 52px;
+    justify-content: center;
+    padding: 0 4px;
+    translate: 0 0;
+  }
+
+  .nav-shell.nav-shell--open {
+    right: auto;
+    left: 50%;
+    width: calc(100vw - 48px);
+    translate: -50% 0;
+  }
+}
+
 @media (max-width: 479px) {
 
   .nav-shell {
