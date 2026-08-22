@@ -339,14 +339,3 @@
   line-height: 20px;
   letter-spacing: normal;
 }
-
-/* Match the footer wordmark to the text-based header identity. */
-.site-footer__brand .site-footer__wordmark strong {
-  font-family: "Kalnia", Georgia, serif;
-  font-style: normal;
-  font-weight: 500;
-  letter-spacing: -0.06em;
-  text-transform: lowercase;
-  color: #b74656;
-  text-shadow: none;
-}

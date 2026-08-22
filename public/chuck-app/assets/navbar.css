@@ -1012,7 +1012,11 @@
   }
 }
 
-/* Kalnia text wordmark. The square G remains an icon in the loader only. */
+/* Kalnia text wordmark for the header only. */
+.nav-shell:not(.nav-shell--loading) {
+  width: min(550px, calc(100vw - 48px));
+}
+
 .nav-shell:not(.nav-shell--loading) .nav-brand::before {
   display: none;
 }
@@ -1031,14 +1035,14 @@
   width: auto;
   height: auto;
   padding: 0;
+  align-items: center;
   overflow: visible;
-  transform: translateY(1px);
+  transform: translateY(2px);
 }
 
-.nav-shell:not(.nav-shell--loading) .brand__wordmark strong,
-.loading-wordmark strong,
-.nav-shell.nav-shell--loading .brand__wordmark strong {
+.nav-shell:not(.nav-shell--loading) .brand__wordmark strong {
   font-family: "Kalnia", Georgia, serif;
+  font-size: 30px;
   font-style: normal;
   font-weight: 500;
   line-height: 1;
@@ -1048,23 +1052,15 @@
   text-shadow: none;
 }
 
-.nav-shell:not(.nav-shell--loading) .brand__wordmark strong {
-  font-size: 34px;
-}
-
 .nav-shell:not(.nav-shell--loading) .brand__wordmark span {
   display: none !important;
 }
 
-.nav-shell.nav-shell--loading .brand__wordmark strong {
-  font-size: 25px;
-}
-
-.nav-shell.nav-shell--loading .brand__wordmark strong::after {
-  content: none;
-}
-
 @media (max-width: 809.98px) {
+  .nav-shell:not(.nav-shell--loading) {
+    width: calc(100vw - 48px);
+  }
+
   .nav-shell:not(.nav-shell--loading) .nav-brand {
     width: auto;
     height: 52px;
@@ -1072,10 +1068,6 @@
   }
 
   .nav-shell:not(.nav-shell--loading) .brand__wordmark strong {
-    font-size: 32px;
-  }
-
-  .nav-shell.nav-shell--loading .brand__wordmark strong {
-    font-size: 23px;
+    font-size: 29px;
   }
 }
