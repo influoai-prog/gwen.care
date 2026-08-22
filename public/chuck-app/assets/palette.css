@@ -1,0 +1,244 @@
+/*
+ * Gwen strawberry-cake palette.
+ * The compiled app injects its source stylesheets at runtime, so the theme
+ * layer owns only color and uses important declarations to remain final.
+ */
+:root {
+  --ink: #4a1119 !important;
+  --muted: rgba(74, 17, 25, 0.62) !important;
+  --surface: #fff7ec !important;
+  --pink: #e98291 !important;
+  --gwen-powder: #a9dbea;
+  --gwen-powder-light: #dff3f7;
+  --gwen-strawberry: #dc3039;
+  --gwen-red: #bb1d2c;
+  --gwen-blush: #e98291;
+  --gwen-blush-light: #f7c8ce;
+  --gwen-cream: #fff7ec;
+  --gwen-cream-deep: #f8eadc;
+  --gwen-cherry: #651520;
+}
+
+html,
+body,
+#root,
+html.is-white-screen,
+html.is-white-screen body {
+  background: var(--gwen-cream) !important;
+}
+
+.boot-white,
+.page,
+.proof-section,
+.fix-intro,
+.process-section,
+.faq-item,
+.legal-section,
+.portrait-guard {
+  background: var(--gwen-cream) !important;
+}
+
+.site-shell,
+.site-footer-shell,
+.site-footer-shell::before,
+.site-footer {
+  background: var(--gwen-cherry) !important;
+}
+
+.page {
+  box-shadow: 0 28px 72px rgba(101, 21, 32, 0.08) !important;
+}
+
+/* Navigation and calls to action */
+.nav-shell::before {
+  border-color: rgba(255, 255, 255, 0.62) !important;
+  background: rgba(255, 247, 236, 0.8) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.82),
+    0 12px 34px rgba(101, 21, 32, 0.09) !important;
+}
+
+.nav-links a {
+  color: var(--gwen-cherry) !important;
+}
+
+.nav-cta,
+.nav-shell--cta .nav-cta,
+.button--primary {
+  color: #fff !important;
+  background: var(--gwen-red) !important;
+}
+
+.nav-cta:hover,
+.nav-shell--cta .nav-cta:hover,
+.button--primary:hover {
+  color: #fff !important;
+  background: var(--gwen-cherry) !important;
+}
+
+.button--outline {
+  border-color: rgba(101, 21, 32, 0.18) !important;
+  color: var(--gwen-cherry) !important;
+  background: rgba(255, 247, 236, 0.9) !important;
+}
+
+.button--outline:hover {
+  border-color: rgba(101, 21, 32, 0.34) !important;
+  background: #fff0e6 !important;
+}
+
+.button:focus-visible,
+.faq-question:focus-visible,
+.testimonial-controls button:focus-visible,
+.legal-section__link:focus-visible {
+  outline-color: var(--gwen-strawberry) !important;
+}
+
+/* Film and service flow */
+.showcase-actions,
+.industries-section,
+.testimonial-section {
+  background: var(--gwen-powder) !important;
+}
+
+.showcase-frame {
+  background: var(--gwen-cream-deep) !important;
+}
+
+.showcase__hue-layer {
+  background: var(--gwen-blush) !important;
+  opacity: 0.24 !important;
+}
+
+.fix-section,
+.fix-visual {
+  background: var(--gwen-powder-light) !important;
+}
+
+.fix-intro__line--accent {
+  color: var(--gwen-strawberry) !important;
+}
+
+.fix-intro__track::before {
+  background: var(--gwen-cherry) !important;
+}
+
+.fix-intro__step-number {
+  border-color: var(--gwen-cream) !important;
+  background: var(--gwen-cherry) !important;
+}
+
+.fix-intro__step:nth-child(2) .fix-intro__step-number,
+.fix-intro__step:nth-child(5) .fix-intro__step-number {
+  background: var(--gwen-blush) !important;
+}
+
+.fix-intro__step:nth-child(3) .fix-intro__step-number,
+.fix-intro__step:nth-child(6) .fix-intro__step-number {
+  color: #fff !important;
+  background: var(--gwen-strawberry) !important;
+}
+
+.fix-intro__step:nth-child(4) .fix-intro__step-number {
+  color: var(--gwen-cherry) !important;
+  background: var(--gwen-cream-deep) !important;
+}
+
+.industries-header__copy p,
+.process-card__number,
+.process-card__label,
+.testimonial-person span {
+  color: var(--muted) !important;
+}
+
+/* Cream, blush, fruit, and sky cards sampled from the reference. */
+.process-card {
+  --card-bg: #fff0e6 !important;
+}
+
+.process-card--one {
+  --card-bg: var(--gwen-blush-light) !important;
+}
+
+.process-card--two {
+  --card-bg: #fff1e5 !important;
+}
+
+.process-card--three {
+  --card-bg: var(--gwen-powder-light) !important;
+}
+
+.process-card--four {
+  --card-bg: #ffdcd6 !important;
+}
+
+.process-card--five {
+  --card-bg: var(--gwen-powder) !important;
+}
+
+.process-card--six {
+  --card-bg: var(--gwen-blush) !important;
+}
+
+/* Results, FAQ, utility content, and footer details */
+.testimonial-avatar,
+.testimonial-avatar--image,
+.faq-item--open {
+  background: var(--gwen-blush-light) !important;
+}
+
+.testimonial-controls button {
+  border-color: var(--gwen-cherry) !important;
+  color: var(--gwen-cherry) !important;
+}
+
+.testimonial-controls button:last-child {
+  border-color: var(--gwen-strawberry) !important;
+  color: #fff !important;
+  background: var(--gwen-strawberry) !important;
+}
+
+.testimonial-controls button:hover,
+.testimonial-controls button:last-child:hover {
+  color: #fff !important;
+  background: var(--gwen-cherry) !important;
+}
+
+.faq-item {
+  border-bottom-color: rgba(101, 21, 32, 0.14) !important;
+}
+
+.legal-section__item + .legal-section__item {
+  border-color: rgba(101, 21, 32, 0.14) !important;
+}
+
+.legal-section__link:hover {
+  color: var(--gwen-strawberry) !important;
+}
+
+.site-footer__brand-column p,
+.site-footer__bottom,
+.site-footer__legal a {
+  color: #e8bfc0 !important;
+}
+
+.site-footer__link-column a:hover,
+.site-footer__legal a:hover {
+  color: var(--gwen-powder) !important;
+}
+
+.site-footer a:focus-visible {
+  outline-color: var(--gwen-blush) !important;
+}
+
+@media (max-width: 1199.98px) {
+  .showcase-actions {
+    background: var(--gwen-cream) !important;
+  }
+}
+
+@media (max-width: 809.98px) {
+  .nav-shell::before {
+    background: rgba(255, 247, 236, 0.96) !important;
+  }
+}
