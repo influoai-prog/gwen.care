@@ -712,9 +712,9 @@
 
 .process-cta {
   overflow: hidden;
-  border: 1px solid rgba(183, 70, 86, 0.14);
-  border-radius: 32px;
-  background: #f1d7dc;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
   box-shadow: none;
 }
 
@@ -730,6 +730,6 @@
 
 @media (max-width: 620px) {
   .process-cta {
-    border-radius: 24px;
+    border-radius: 0;
   }
 }

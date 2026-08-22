@@ -554,12 +554,12 @@
 
 .fix-intro__step-copy {
   width: calc(100% - 14px);
-  min-height: 54px;
+  min-height: 0;
   justify-content: center;
-  padding: 10px 8px;
-  border: 1px solid rgba(120, 149, 161, 0.2);
-  border-radius: 14px;
-  background: #fff;
+  padding: 4px 8px 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
 }
 
 .fix-visual {
