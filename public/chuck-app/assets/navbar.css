@@ -133,7 +133,7 @@
   height: 60px;
 }
 
-/* Gwen identity: a symmetrical kiss mark with optically centered loading states. */
+/* gwen identity: a symmetrical kiss mark with optically centered loading states. */
 .brand__mark-header svg,
 .brand__mark-loader svg {
   display: none;
@@ -189,7 +189,7 @@
   will-change: top, left, gap, transform;
 }
 
-/* Editorial Gwen wordmark for the compact header. */
+/* Editorial gwen wordmark for the compact header. */
 .nav-shell:not(.nav-shell--loading) .nav-brand {
   gap: 0;
 }
@@ -322,7 +322,7 @@
   font-weight: 652;
   line-height: 24px;
   letter-spacing: -0.045em;
-  text-transform: capitalize;
+  text-transform: lowercase;
   color: #020407;
 }
 
@@ -627,7 +627,7 @@
   }
 }
 
-/* Temporary logo-free navigation while the Gwen identity is revisited. */
+/* Temporary logo-free navigation while the gwen identity is revisited. */
 .nav-shell:not(.nav-shell--loading) {
   width: min(420px, calc(100vw - 48px));
   justify-content: flex-end;
@@ -730,7 +730,7 @@
   }
 }
 
-/* Keep the complete Gwen wordmark visible in the mobile header. */
+/* Keep the complete gwen wordmark visible in the mobile header. */
 @media (max-width: 809.98px) {
   .brand__wordmark {
     gap: 4px;
@@ -741,7 +741,7 @@
   }
 }
 
-/* Gwen supplied wordmark: wide header and matching loading treatment. */
+/* gwen supplied wordmark: wide header and matching loading treatment. */
 .nav-shell:not(.nav-shell--loading) {
   width: min(520px, calc(100vw - 48px));
   justify-content: space-between;
@@ -769,7 +769,7 @@
   width: 64px;
   height: 19px;
   flex: 0 0 64px;
-  background: url('/chuck-app/gwen-wordmark.png') center / contain no-repeat;
+  background: url('/chuck-app/gwen-wordmark-lowercase.png') center / contain no-repeat;
   content: '';
   transform: translateY(0) scale(1);
   transition:
@@ -836,7 +836,7 @@
   flex: 0 0 174px;
   border: 0;
   border-radius: 58px;
-  background: #e9e9e9 url('/chuck-app/gwen-g-mark-loader-clean.png') center / 92px 92px no-repeat;
+  background: #e9e9e9 url('/chuck-app/gwen-g-lowercase-mark.png') center / 92px 92px no-repeat;
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.9),
     0 22px 60px rgba(57, 34, 40, 0.08);
@@ -861,14 +861,14 @@
   font-weight: 750;
   line-height: 1;
   letter-spacing: -0.055em;
-  text-transform: capitalize;
+  text-transform: lowercase;
   color: #010205;
 }
 
 .nav-shell.nav-shell--loading .brand__wordmark strong::after {
   font-size: 25px;
   letter-spacing: -0.035em;
-  content: 'Gwen';
+  content: 'gwen';
 }
 
 .nav-shell.nav-shell--loading .brand__wordmark span {

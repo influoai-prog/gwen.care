@@ -1,7 +1,7 @@
 {
-  "name": "Gwen",
-  "short_name": "Gwen",
-  "description": "Gwen finds operational drag and creates room for cleaner growth.",
+  "name": "gwen",
+  "short_name": "gwen",
+  "description": "gwen finds operational drag and creates room for cleaner growth.",
   "start_url": "/chuck",
   "display": "standalone",
   "orientation": "portrait-primary",
@@ -9,7 +9,7 @@
   "theme_color": "#fbfbfa",
   "icons": [
     {
-      "src": "/chuck-app/gwen-g-mark-rounded.png",
+      "src": "/chuck-app/gwen-g-lowercase-mark.png",
       "sizes": "256x256",
       "type": "image/png"
     }

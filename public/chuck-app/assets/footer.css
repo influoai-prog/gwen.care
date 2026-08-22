@@ -80,7 +80,7 @@
   width: 46px;
   height: 46px;
   flex: 0 0 46px;
-  background: url("/chuck-app/gwen-g-mark-rounded.png") center / contain no-repeat;
+  background: url("/chuck-app/gwen-g-lowercase-mark.png") center / contain no-repeat;
   filter: drop-shadow(0 7px 16px rgba(231, 53, 88, 0.22));
 }
 
@@ -273,7 +273,7 @@
   }
 }
 
-/* Gwen footer lockup */
+/* gwen footer lockup */
 .site-footer__brand {
   display: inline-flex;
   align-items: center;
@@ -286,7 +286,7 @@
   height: 48px;
   flex: 0 0 48px;
   border-radius: 0;
-  background: url("/chuck-app/gwen-g-mark-rounded.png") center / contain no-repeat;
+  background: url("/chuck-app/gwen-g-lowercase-mark.png") center / contain no-repeat;
   box-shadow: none;
   filter: none;
   transform: none;
@@ -307,7 +307,7 @@
   font-weight: var(--type-footer-strong-font-weight);
   line-height: var(--type-footer-strong-line-height);
   letter-spacing: var(--type-footer-strong-letter-spacing);
-  text-transform: capitalize;
+  text-transform: lowercase;
   color: #fff;
   text-shadow: none;
 }
