@@ -830,16 +830,27 @@
 }
 
 .nav-shell.nav-shell--loading .nav-brand::before {
-  display: block;
+  display: flex;
   width: 174px;
   height: 174px;
   flex: 0 0 174px;
+  align-items: center;
+  justify-content: center;
   border: 0;
   border-radius: 58px;
-  background: #e9e9e9 url('/chuck-app/gwen-g-mark-loader-clean.png') center / 92px 92px no-repeat;
+  background: #e9e9e9;
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.9),
     0 22px 60px rgba(57, 34, 40, 0.08);
+  font-family: "Kalnia", Georgia, serif;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.06em;
+  text-transform: lowercase;
+  color: #b74656;
+  content: 'gwen';
   transform: translateY(0) scale(1);
   animation: gwen-loader-tile 1.8s ease-in-out infinite;
 }
@@ -861,14 +872,14 @@
   font-weight: 750;
   line-height: 1;
   letter-spacing: -0.055em;
-  text-transform: capitalize;
+  text-transform: lowercase;
   color: #010205;
 }
 
 .nav-shell.nav-shell--loading .brand__wordmark strong::after {
   font-size: 25px;
   letter-spacing: -0.035em;
-  content: 'gwen';
+  content: 'durden';
 }
 
 .nav-shell.nav-shell--loading .brand__wordmark span {
@@ -886,7 +897,7 @@
   line-height: 1;
   letter-spacing: -0.035em;
   color: rgba(1, 2, 5, 0.55);
-  content: 'Inc';
+  content: 'inc';
 }
 
 @media (max-width: 809.98px) {
@@ -927,7 +938,7 @@
     height: 150px;
     flex-basis: 150px;
     border-radius: 50px;
-    background-size: 82px 82px;
+    font-size: 45px;
   }
 
   .nav-shell.nav-shell--loading .brand__wordmark strong {
