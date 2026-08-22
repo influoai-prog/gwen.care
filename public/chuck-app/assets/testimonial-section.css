@@ -341,14 +341,14 @@
 
 .results-proof-card__visual img {
   display: block;
-  width: 100%;
+  width: auto;
   max-width: 100%;
-  height: 100%;
+  height: auto;
   max-height: 100%;
-  border-radius: 10px;
+  border-radius: 0;
   object-fit: contain;
   filter: saturate(0.92) contrast(0.98);
-  box-shadow: 0 12px 30px rgba(28, 22, 20, 0.13);
+  box-shadow: none;
 }
 
 .results-proof-card__copy {
