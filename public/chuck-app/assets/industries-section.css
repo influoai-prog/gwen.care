@@ -394,9 +394,7 @@
 
 /* OnlyFans creator offer treatment */
 .industries-section {
-  background:
-    radial-gradient(circle at 82% 18%, rgba(183, 70, 86, 0.12), transparent 30%),
-    linear-gradient(145deg, #dff1fc 0%, #e9f5fa 54%, #f7e7e9 100%);
+  background: #fff;
 }
 
 .industries-section h2 {

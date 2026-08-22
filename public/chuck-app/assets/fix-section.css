@@ -508,10 +508,14 @@
 }
 
 /* Creator revenue system refresh */
+.fix-section {
+  background: #fff;
+}
+
 .fix-intro {
-  border-top: 1px solid #d3e2e8;
-  border-bottom: 1px solid #d3e2e8;
-  background: #f2f7f9;
+  border-top: 0;
+  border-bottom: 0;
+  background: #fff;
 }
 
 .fix-intro__line--accent {
@@ -559,8 +563,8 @@
 }
 
 .fix-visual {
-  border-bottom: 1px solid #bfd9e3;
-  background: #dceff6;
+  border-bottom: 0;
+  background: #efefef;
 }
 
 .fix-visual__frame::before {
