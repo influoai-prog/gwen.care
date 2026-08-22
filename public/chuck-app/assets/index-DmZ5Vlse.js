@@ -28705,9 +28705,9 @@ var industries_section_default = "/chuck-app/assets/industries-section.css";
 })();
 var industries = [
 	{
-		title: "Costs & Margins",
-		titleLines: ["Costs &", "Margins"],
-		description: "Find hidden costs cutting into profit.",
+		title: "Positioning & Offer",
+		titleLines: ["Positioning &", "Offer"],
+		description: "Package your brand, pricing and profile to give fans a reason to subscribe.",
 		image: null,
 		svg: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", {
 			width: "257",
@@ -28793,9 +28793,9 @@ var industries = [
 		isSvg: true
 	},
 	{
-		title: "Systems & Workflow",
-		titleLines: ["Systems &", "Workflow"],
-		description: "Fix slow processes and automate draining work.",
+		title: "Content & Traffic",
+		titleLines: ["Content &", "Traffic"],
+		description: "Build the content engine that turns social attention into qualified profile visits.",
 		image: null,
 		svg: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", {
 			width: "253",
@@ -28841,9 +28841,9 @@ var industries = [
 		isSvg: true
 	},
 	{
-		title: "Growth & Capacity",
-		titleLines: ["Growth &", "Capacity"],
-		description: "Turn saved time and cash into margin and growth.",
+		title: "Conversion & Retention",
+		titleLines: ["Conversion &", "Retention"],
+		description: "Convert more visitors, raise subscriber value and keep revenue recurring.",
 		image: null,
 		svg: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", {
 			width: "211",
@@ -29216,7 +29216,7 @@ function IndustriesSection() {
 						className: "industries-header__copy",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 							id: "industries-title",
-							"aria-label": "Value Creation Process",
+							"aria-label": "Your 60-Day Creator Wealth System",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 								className: "industries-title__clip",
 								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.span, {
@@ -29231,7 +29231,7 @@ function IndustriesSection() {
 											}
 										}
 									},
-									children: "Value Creation Process"
+									children: "Your 60-Day Creator Wealth System"
 								})
 							})
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.p, {
@@ -29249,7 +29249,7 @@ function IndustriesSection() {
 									}
 								}
 							},
-							children: "We find where time and money are being lost, then build the systems that win both back."
+							children: "We turn your content and attention into an OnlyFans subscriber machine built for recurring revenue."
 						})]
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
 						className: "industries-header__action-wrap",
