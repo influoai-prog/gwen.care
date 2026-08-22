@@ -133,7 +133,7 @@
   height: 60px;
 }
 
-/* Gwen identity: keep the original motion system, replace the inherited mark. */
+/* Gwen identity: a routed workflow resolving into a growth node. */
 .brand__mark-header svg,
 .brand__mark-loader svg {
   opacity: 0;
@@ -141,32 +141,27 @@
 
 .brand__mark-header::before,
 .brand__mark-loader::before {
-  content: "g";
-  display: grid;
-  width: 36px;
-  height: 36px;
-  border: 1px solid rgba(5, 28, 42, 0.1);
-  border-radius: 12px;
-  place-items: center;
-  color: #071017;
-  background:
-    radial-gradient(circle at 76% 22%, #e9fe71 0 4px, transparent 4.5px),
-    linear-gradient(145deg, #dff3fd 0%, #8dcef2 58%, #64b2e3 100%);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.78),
-    0 5px 14px rgba(28, 126, 185, 0.17);
-  font-family: "M Saans", Arial, sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: -0.08em;
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url("/chuck-app/gwen-mark.svg") center / contain no-repeat;
+  filter: drop-shadow(0 5px 12px rgba(28, 126, 185, 0.16));
 }
 
 .brand__mark-loader::before {
-  width: 74px;
-  height: 74px;
-  border-radius: 24px;
-  font-size: 46px;
+  width: 78px;
+  height: 78px;
+}
+
+.nav-shell:not(.nav-shell--loading) .brand__mark {
+  width: 40px;
+  height: 40px;
+  flex-basis: 40px;
+}
+
+.nav-shell:not(.nav-shell--loading) .brand__mark-header {
+  inset: 0;
 }
 
 .brand__wordmark > span {
@@ -174,6 +169,8 @@
 }
 
 .brand__wordmark strong {
+  display: block;
+  line-height: 1;
   letter-spacing: -0.075em;
 }
 

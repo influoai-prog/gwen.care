@@ -25,17 +25,6 @@
   color: var(--ink);
 }
 
-.hero-section h1::before {
-  content: "GWEN  /  OPERATIONS STUDIO";
-  display: block;
-  margin-bottom: 26px;
-  color: #4b9bcb;
-  font-size: 10px;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0.19em;
-}
-
 .hero-title__clip {
   display: block;
   padding: 0.03em 0 0.08em;
