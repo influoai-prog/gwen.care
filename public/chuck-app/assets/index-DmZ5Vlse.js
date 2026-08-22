@@ -24934,20 +24934,20 @@ function Hero() {
 		initial: "hidden",
 		animate: "visible",
 		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h1", {
-			"aria-label": "Build Your Creator Wealth Machine Right Now",
+			"aria-label": "Build Your Creator Wealth Machine Now",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 				className: "hero-title__clip",
 				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.span, {
 					className: "hero-title__line",
 					variants: line,
-					children: "Build Your Creator Wealth"
+					children: "Build Your Creator"
 				})
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 				className: "hero-title__clip",
 				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.span, {
 					className: "hero-title__line",
 					variants: line,
-					children: "Machine Right Now"
+					children: "Wealth Machine Now"
 				})
 			})]
 		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.p, {
@@ -24962,7 +24962,7 @@ function Hero() {
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", { className: "hero-copy__mobile-break" }),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 					className: "hero-copy__line",
-					children: "into a subscriber machine built to print"
+					children: "into a subscriber machine that prints"
 				}),
 				" ",
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", { className: "hero-copy__mobile-break" }),
