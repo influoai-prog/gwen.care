@@ -23590,7 +23590,7 @@ function Navbar({ isLoading = false }) {
 		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
 			className: "nav-brand",
 			href: "#top",
-			"aria-label": "Gwen home",
+			"aria-label": "gwen home",
 			onClick: (event) => handleNavigation(event, "#top"),
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 				className: "brand__mark",
@@ -23763,7 +23763,7 @@ function Footer() {
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
 						className: "site-footer__brand",
 						href: "#top",
-						"aria-label": "Gwen home",
+						"aria-label": "gwen home",
 						onClick: (event) => handleHomeNavigation(event, "#top"),
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FooterSoapMark, {}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 							className: "site-footer__wordmark",
@@ -23784,7 +23784,7 @@ function Footer() {
 				})]
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "site-footer__bottom",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "© Gwen 2026" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "© gwen 2026" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 					className: "site-footer__legal",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
 						to: "/privacy-policy",
@@ -30099,14 +30099,14 @@ var testimonial_section_default = "/chuck-app/assets/testimonial-section.css";
 })();
 var testimonials = [
 	{
-		quote: "Gwen mapped where our margins were leaking, then built the operating system that closed the gaps. Within weeks, our team had fewer handoffs, clearer ownership, and more time for the work that actually grows the business.",
+		quote: "gwen mapped where our margins were leaking, then built the operating system that closed the gaps. Within weeks, our team had fewer handoffs, clearer ownership, and more time for the work that actually grows the business.",
 		name: "Michael Kaizer",
 		role: "CEO of Basecamp Corp",
 		avatar: "/chuck-app/images/michael-kaizer-avatar.png",
 		accent: "#e9fe71"
 	},
 	{
-		quote: "We had accepted duplicate work as part of scaling. Gwen showed us it was a design problem, not a people problem, and replaced it with one simple workflow our whole team could trust.",
+		quote: "We had accepted duplicate work as part of scaling. gwen showed us it was a design problem, not a people problem, and replaced it with one simple workflow our whole team could trust.",
 		name: "Amelia Stone",
 		role: "COO of Northstar Labs",
 		initials: "AS",
@@ -30120,7 +30120,7 @@ var testimonials = [
 		accent: "#d9c7ff"
 	},
 	{
-		quote: "Gwen did not hand us another generic playbook. They learned how the business really moved, found the constraint costing us the most, and built around the way our people actually work.",
+		quote: "gwen did not hand us another generic playbook. They learned how the business really moved, found the constraint costing us the most, and built around the way our people actually work.",
 		name: "Priya Nair",
 		role: "CEO of Pattern House",
 		initials: "PN",
@@ -30177,7 +30177,7 @@ function TestimonialSection() {
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 					className: "sr-only",
 					id: "testimonial-heading",
-					children: "What clients say about Gwen"
+					children: "What clients say about gwen"
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
 					className: "testimonial-stage",
@@ -30368,7 +30368,7 @@ var faq_section_default = "/chuck-app/assets/faq-section.css";
 })();
 var soapFaqs = [
 	{
-		question: "What does Gwen actually do?",
+		question: "What does gwen actually do?",
 		answer: "We find where your business is wasting time and money, then build and implement the systems to fix it."
 	},
 	{
@@ -30388,7 +30388,7 @@ var soapFaqs = [
 		answer: "Usually not. The goal is to get more out of what you already have first. We only recommend changing tools, systems, or roles when there’s a clear reason to."
 	},
 	{
-		question: "What kind of businesses are a good fit for Gwen?",
+		question: "What kind of businesses are a good fit for gwen?",
 		answer: "Established businesses with real revenue, growing teams and enough operational complexity that small inefficiencies are starting to become expensive."
 	}
 ];
@@ -30617,7 +30617,7 @@ function App() {
 	const location = useLocation();
 	const navigate = useNavigate();
 	(0, import_react.useEffect)(() => {
-		document.title = "Gwen | Better Operations";
+		document.title = "gwen | Better Operations";
 	}, []);
 	(0, import_react.useEffect)(() => {
 		const isMobile = window.matchMedia("(max-width: 809.98px)").matches;
@@ -30683,7 +30683,7 @@ function App() {
 		className: "portrait-guard",
 		role: "status",
 		"aria-live": "polite",
-		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Rotate your phone" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Gwen works best in portrait." })]
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Rotate your phone" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "gwen works best in portrait." })]
 	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(SiteLayout, {
 		pageClassName: isLoading ? "page--loading" : "",
 		navbarProps: { isLoading },
@@ -30774,7 +30774,7 @@ var sections$1 = [
 	{
 		id: "who-we-are",
 		heading: "Who we are",
-		body: ["Gwen is a consulting practice that maps operations, finds where money is being wasted, and builds the fix. We operate this website to explain what we do and how people can get in touch.", "This policy explains what information we collect when you use our website, why we collect it, and how it is handled. It applies to everyone who visits this website, whether or not they become a client."]
+		body: ["gwen is a consulting practice that maps operations, finds where money is being wasted, and builds the fix. We operate this website to explain what we do and how people can get in touch.", "This policy explains what information we collect when you use our website, why we collect it, and how it is handled. It applies to everyone who visits this website, whether or not they become a client."]
 	},
 	{
 		id: "information-we-collect",
@@ -30829,7 +30829,7 @@ var sections$1 = [
 ];
 function PrivacyPolicy() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(LegalPage, {
-		documentTitle: "Privacy | Gwen",
+		documentTitle: "Privacy | gwen",
 		eyebrow: "Legal",
 		title: "Privacy Policy",
 		updated: "Last updated: August 2026",
@@ -30850,7 +30850,7 @@ var sections = [
 	{
 		id: "acceptance-of-terms",
 		heading: "Acceptance of terms",
-		body: ["These Terms of Service (“Terms”) govern your use of the Gwen website. By accessing or using this website, you agree to be bound by these Terms. If you do not agree with any part of them, please do not use the website."]
+		body: ["These Terms of Service (“Terms”) govern your use of the gwen website. By accessing or using this website, you agree to be bound by these Terms. If you do not agree with any part of them, please do not use the website."]
 	},
 	{
 		id: "use-of-the-website",
@@ -30869,37 +30869,37 @@ var sections = [
 	{
 		id: "intellectual-property",
 		heading: "Intellectual property",
-		body: ["The content on this website, including text, graphics, logos, and design, belongs to Gwen or its licensors and is protected by intellectual property laws. You may view and print content for personal, non-commercial use, but you may not use it for any other purpose without our written permission."]
+		body: ["The content on this website, including text, graphics, logos, and design, belongs to gwen or its licensors and is protected by intellectual property laws. You may view and print content for personal, non-commercial use, but you may not use it for any other purpose without our written permission."]
 	},
 	{
 		id: "services-and-engagement",
 		heading: "Services and engagement",
-		body: ["This website describes the services Gwen offers. It is for information only and does not, on its own, create a contractual relationship.", "Work delivered by Gwen is carried out under a written agreement agreed with each client before any engagement begins. In the event of any conflict, the terms of that written agreement take precedence over anything described on this website."]
+		body: ["This website describes the services gwen offers. It is for information only and does not, on its own, create a contractual relationship.", "Work delivered by gwen is carried out under a written agreement agreed with each client before any engagement begins. In the event of any conflict, the terms of that written agreement take precedence over anything described on this website."]
 	},
 	{
 		id: "client-obligations",
 		heading: "Client obligations",
-		body: ["Where you engage Gwen to do work, you agree to provide accurate information, access, and support reasonably needed to complete the engagement, and to make decisions and provide feedback in a timely manner."]
+		body: ["Where you engage gwen to do work, you agree to provide accurate information, access, and support reasonably needed to complete the engagement, and to make decisions and provide feedback in a timely manner."]
 	},
 	{
 		id: "fees-and-payment",
 		heading: "Fees and payment",
-		body: ["Fees for services are set out in the written agreement for each engagement. Unless otherwise agreed, fees are due according to the payment terms in that agreement. Gwen is not responsible for delays caused by late or incomplete payment."]
+		body: ["Fees for services are set out in the written agreement for each engagement. Unless otherwise agreed, fees are due according to the payment terms in that agreement. gwen is not responsible for delays caused by late or incomplete payment."]
 	},
 	{
 		id: "confidentiality",
 		heading: "Confidentiality",
-		body: ["Gwen treats the information shared by clients during an engagement as confidential and uses it only to deliver the agreed work. This duty continues after the engagement ends, except where disclosure is required by law or the information is already public."]
+		body: ["gwen treats the information shared by clients during an engagement as confidential and uses it only to deliver the agreed work. This duty continues after the engagement ends, except where disclosure is required by law or the information is already public."]
 	},
 	{
 		id: "liability-and-disclaimers",
 		heading: "Liability and disclaimers",
-		body: ["This website is provided “as is” and without warranties of any kind, express or implied. We work to keep the information on the site accurate and up to date, but we make no guarantees that it is complete, error-free, or suitable for your particular circumstances.", "To the fullest extent permitted by law, Gwen will not be liable for any indirect or consequential loss arising from your use of this website. Nothing in these Terms limits or excludes liability that cannot be limited or excluded by law."]
+		body: ["This website is provided “as is” and without warranties of any kind, express or implied. We work to keep the information on the site accurate and up to date, but we make no guarantees that it is complete, error-free, or suitable for your particular circumstances.", "To the fullest extent permitted by law, gwen will not be liable for any indirect or consequential loss arising from your use of this website. Nothing in these Terms limits or excludes liability that cannot be limited or excluded by law."]
 	},
 	{
 		id: "third-party-services",
 		heading: "Third-party services",
-		body: ["This website may refer to or link to third-party products and services. Gwen is not responsible for the availability, content, or performance of third-party services, and any use you make of them is at your own risk."]
+		body: ["This website may refer to or link to third-party products and services. gwen is not responsible for the availability, content, or performance of third-party services, and any use you make of them is at your own risk."]
 	},
 	{
 		id: "termination",
@@ -30914,12 +30914,12 @@ var sections = [
 	{
 		id: "governing-law",
 		heading: "Governing law",
-		body: ["These Terms are governed by and interpreted in accordance with the laws of the jurisdiction in which Gwen operates. Any disputes relating to these Terms or your use of this website will be subject to the exclusive jurisdiction of the courts of that jurisdiction."]
+		body: ["These Terms are governed by and interpreted in accordance with the laws of the jurisdiction in which gwen operates. Any disputes relating to these Terms or your use of this website will be subject to the exclusive jurisdiction of the courts of that jurisdiction."]
 	}
 ];
 function TermsOfService() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(LegalPage, {
-		documentTitle: "Terms | Gwen",
+		documentTitle: "Terms | gwen",
 		eyebrow: "Legal",
 		title: "Terms of Service",
 		updated: "Last updated: August 2026",
