@@ -80,6 +80,42 @@
   filter: drop-shadow(0 7px 16px rgba(231, 53, 88, 0.22));
 }
 
+/* Carry the editorial text identity into the footer. */
+.site-footer__brand::before {
+  display: none;
+}
+
+.site-footer__wordmark {
+  position: relative;
+  z-index: 0;
+  padding: 0 6px 3px 2px;
+}
+
+.site-footer__brand .site-footer__wordmark strong {
+  position: relative;
+  z-index: 1;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 34px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.075em;
+  text-transform: lowercase;
+}
+
+.site-footer__wordmark::after {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 7px;
+  border-radius: 999px;
+  content: "";
+  background: linear-gradient(90deg, #ffb7bd, #f78290);
+  transform: rotate(-2deg);
+}
+
 .site-footer__wordmark {
   display: flex;
   flex-direction: column;
