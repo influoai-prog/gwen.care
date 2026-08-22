@@ -740,3 +740,274 @@
     display: flex;
   }
 }
+
+/* Gwen supplied wordmark: wide header and matching loading treatment. */
+.nav-shell:not(.nav-shell--loading) {
+  width: min(520px, calc(100vw - 48px));
+  justify-content: space-between;
+  padding: 0 12px 0 26px;
+}
+
+.nav-shell:not(.nav-shell--loading)::before {
+  animation: gwen-header-surface-in 940ms cubic-bezier(0.76, 0, 0.24, 1) both;
+}
+
+.nav-shell:not(.nav-shell--loading) .nav-brand {
+  display: flex;
+  width: 64px;
+  height: 60px;
+  flex: 0 0 64px;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(0);
+  transition: transform 760ms cubic-bezier(0.22, 1, 0.36, 1);
+  animation: gwen-brand-dock 940ms cubic-bezier(0.76, 0, 0.24, 1) both;
+}
+
+.nav-brand::before {
+  display: block;
+  width: 64px;
+  height: 19px;
+  flex: 0 0 64px;
+  background: url('/chuck-app/gwen-wordmark.png') center / contain no-repeat;
+  content: '';
+  transform: translateY(0) scale(1);
+  transition:
+    width 760ms cubic-bezier(0.22, 1, 0.36, 1),
+    height 760ms cubic-bezier(0.22, 1, 0.36, 1),
+    flex-basis 760ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 760ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 260ms ease;
+}
+
+.nav-shell:not(.nav-shell--loading) .nav-brand .brand__mark,
+.nav-shell:not(.nav-shell--loading) .nav-brand .brand__wordmark,
+.nav-shell.nav-shell--loading .nav-brand .brand__mark {
+  display: none !important;
+}
+
+.nav-shell:not(.nav-shell--loading) .nav-trailing {
+  width: auto;
+  flex: 1 1 auto;
+  transition:
+    opacity 180ms ease 820ms,
+    transform 360ms cubic-bezier(0.22, 1, 0.36, 1) 760ms;
+}
+
+.nav-shell.nav-shell--loading {
+  top: 50% !important;
+  width: 260px !important;
+  height: 292px !important;
+  min-height: 292px !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  overflow: visible;
+  border-radius: 0 !important;
+  visibility: visible;
+  opacity: 1 !important;
+  pointer-events: none;
+  translate: -50% -50% !important;
+}
+
+.nav-shell.nav-shell--loading::before {
+  display: none;
+}
+
+.nav-shell.nav-shell--loading::after {
+  display: none;
+}
+
+.nav-shell.nav-shell--loading .nav-brand {
+  display: flex !important;
+  width: 100% !important;
+  height: 100% !important;
+  flex: 0 0 100% !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center !important;
+  gap: 26px;
+  transform: none;
+}
+
+.nav-shell.nav-shell--loading .nav-brand::before {
+  display: block;
+  width: 174px;
+  height: 174px;
+  flex: 0 0 174px;
+  border: 0;
+  border-radius: 48px;
+  background: #e9e9e9 url('/chuck-app/gwen-wordmark.png') center / 100px auto no-repeat;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.9),
+    0 22px 60px rgba(57, 34, 40, 0.08);
+  transform: translateY(0) scale(1);
+  animation: gwen-loader-tile 1.8s ease-in-out infinite;
+}
+
+.nav-shell.nav-shell--loading .brand__wordmark {
+  display: flex !important;
+  height: auto;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 6px;
+  line-height: 1;
+  opacity: 1 !important;
+  animation: gwen-loader-caption 620ms ease both;
+}
+
+.nav-shell.nav-shell--loading .brand__wordmark strong {
+  font-family: 'M Saans', 'Segoe UI', sans-serif;
+  font-size: 0;
+  font-weight: 750;
+  line-height: 1;
+  letter-spacing: -0.055em;
+  text-transform: capitalize;
+  color: #010205;
+}
+
+.nav-shell.nav-shell--loading .brand__wordmark strong::after {
+  font-size: 25px;
+  letter-spacing: -0.035em;
+  content: 'Durden';
+}
+
+.nav-shell.nav-shell--loading .brand__wordmark span {
+  display: block !important;
+  height: auto;
+  padding: 0;
+  font-size: 0;
+  line-height: 1;
+}
+
+.nav-shell.nav-shell--loading .brand__wordmark span::after {
+  font-family: 'M Saans', 'Segoe UI', sans-serif;
+  font-size: 17px;
+  font-weight: 450;
+  line-height: 1;
+  letter-spacing: -0.035em;
+  color: rgba(1, 2, 5, 0.55);
+  content: 'Inc';
+}
+
+@media (max-width: 809.98px) {
+  .nav-shell:not(.nav-shell--loading):not(.nav-shell--open) {
+    right: auto;
+    left: 50%;
+    width: calc(100vw - 48px);
+    justify-content: space-between;
+    padding: 0 4px 0 14px;
+    translate: -50% 0;
+  }
+
+  .nav-shell:not(.nav-shell--loading) .nav-brand {
+    width: 62px;
+    height: 52px;
+    flex-basis: 62px;
+  }
+
+  .nav-shell:not(.nav-shell--loading) .nav-brand::before {
+    width: 62px;
+    height: 18px;
+    flex-basis: 62px;
+  }
+
+  .nav-shell.nav-shell--open {
+    padding-left: 14px;
+  }
+
+  .nav-shell.nav-shell--loading {
+    width: min(230px, calc(100vw - 48px)) !important;
+    height: 260px !important;
+    min-height: 260px !important;
+    border-radius: 0 !important;
+  }
+
+  .nav-shell.nav-shell--loading .nav-brand::before {
+    width: 150px;
+    height: 150px;
+    flex-basis: 150px;
+    border-radius: 42px;
+    background-size: 90px auto;
+  }
+
+  .nav-shell.nav-shell--loading .brand__wordmark strong {
+    font-size: 0;
+  }
+
+  .nav-shell.nav-shell--loading .brand__wordmark strong::after {
+    font-size: 23px;
+  }
+
+  .nav-shell.nav-shell--loading .brand__wordmark span::after {
+    font-size: 16px;
+  }
+}
+
+@keyframes gwen-loader-tile {
+  0%,
+  100% {
+    opacity: 0.9;
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.9),
+      0 20px 54px rgba(57, 34, 40, 0.06);
+    transform: translateY(2px) scale(0.99);
+  }
+
+  50% {
+    opacity: 1;
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.96),
+      0 26px 68px rgba(57, 34, 40, 0.11);
+    transform: translateY(-2px) scale(1);
+  }
+}
+
+@keyframes gwen-loader-caption {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gwen-brand-dock {
+  0% {
+    opacity: 0;
+    transform: translate(70px, 0);
+  }
+
+  62% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes gwen-header-surface-in {
+  0%,
+  48% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-shell.nav-shell--loading::before,
+  .nav-shell.nav-shell--loading::after,
+  .nav-shell.nav-shell--loading .nav-brand::before,
+  .nav-shell.nav-shell--loading .brand__wordmark,
+  .nav-shell:not(.nav-shell--loading) .nav-brand,
+  .nav-shell:not(.nav-shell--loading)::before {
+    animation: none;
+  }
+}
