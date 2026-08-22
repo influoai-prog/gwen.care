@@ -12,9 +12,9 @@ export async function generateMetadata(): Promise<Metadata> {
     title: "Gwen — Creator growth, handled",
     description: "A hands-on creator team for content, growth and everything behind the scenes.",
     icons: {
-      icon: [{ url: "/chuck-app/gwen-g-mark.png", type: "image/png", sizes: "256x256" }],
-      shortcut: "/chuck-app/gwen-g-mark.png",
-      apple: [{ url: "/chuck-app/gwen-g-mark.png", sizes: "256x256", type: "image/png" }],
+      icon: [{ url: "/chuck-app/gwen-g-mark-rounded.png", type: "image/png", sizes: "256x256" }],
+      shortcut: "/chuck-app/gwen-g-mark-rounded.png",
+      apple: [{ url: "/chuck-app/gwen-g-mark-rounded.png", sizes: "256x256", type: "image/png" }],
     },
     openGraph: {
       title: "Gwen — Creator growth, handled",

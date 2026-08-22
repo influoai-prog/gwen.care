@@ -4,9 +4,9 @@ export const metadata: Metadata = {
   title: "Gwen | Better Operations",
   description: "We find the costs, bottlenecks and wasted hours dragging down your margins, then turn them into profit.",
   icons: {
-    icon: [{ url: "/chuck-app/gwen-g-mark.png", type: "image/png", sizes: "256x256" }],
-    shortcut: "/chuck-app/gwen-g-mark.png",
-    apple: [{ url: "/chuck-app/gwen-g-mark.png", sizes: "256x256", type: "image/png" }],
+    icon: [{ url: "/chuck-app/gwen-g-mark-rounded.png", type: "image/png", sizes: "256x256" }],
+    shortcut: "/chuck-app/gwen-g-mark-rounded.png",
+    apple: [{ url: "/chuck-app/gwen-g-mark-rounded.png", sizes: "256x256", type: "image/png" }],
   },
 };
 
