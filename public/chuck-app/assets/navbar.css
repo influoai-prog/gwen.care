@@ -754,9 +754,9 @@
 
 .nav-shell:not(.nav-shell--loading) .nav-brand {
   display: flex;
-  width: 64px;
+  width: 70px;
   height: 60px;
-  flex: 0 0 64px;
+  flex: 0 0 70px;
   align-items: center;
   justify-content: center;
   transform: translateY(0);
@@ -766,12 +766,12 @@
 
 .nav-brand::before {
   display: block;
-  width: 64px;
-  height: 19px;
-  flex: 0 0 64px;
-  background: url('/chuck-app/gwen-wordmark.png') center / contain no-repeat;
+  width: 70px;
+  height: 22px;
+  flex: 0 0 70px;
+  background: url('/chuck-app/gwen-wordmark-lowercase.png') center / contain no-repeat;
   content: '';
-  transform: translateY(0) scale(1);
+  transform: translateY(-1px) scale(1);
   transition:
     width 760ms cubic-bezier(0.22, 1, 0.36, 1),
     height 760ms cubic-bezier(0.22, 1, 0.36, 1),
@@ -900,15 +900,15 @@
   }
 
   .nav-shell:not(.nav-shell--loading) .nav-brand {
-    width: 62px;
+    width: 68px;
     height: 52px;
-    flex-basis: 62px;
+    flex-basis: 68px;
   }
 
   .nav-shell:not(.nav-shell--loading) .nav-brand::before {
-    width: 62px;
-    height: 18px;
-    flex-basis: 62px;
+    width: 68px;
+    height: 21px;
+    flex-basis: 68px;
   }
 
   .nav-shell.nav-shell--open {
