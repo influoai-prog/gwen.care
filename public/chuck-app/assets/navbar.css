@@ -743,25 +743,25 @@
 
 /* Gwen supplied wordmark: wide header and matching loading treatment. */
 .nav-shell:not(.nav-shell--loading) {
-  width: min(590px, calc(100vw - 48px));
+  width: min(560px, calc(100vw - 48px));
   justify-content: space-between;
   padding: 0 12px 0 18px;
 }
 
 .nav-shell:not(.nav-shell--loading) .nav-brand {
   display: flex;
-  width: 90px;
+  width: 74px;
   height: 60px;
-  flex: 0 0 90px;
+  flex: 0 0 74px;
   align-items: center;
   justify-content: center;
 }
 
 .nav-brand::before {
   display: block;
-  width: 90px;
-  height: 26px;
-  flex: 0 0 90px;
+  width: 74px;
+  height: 22px;
+  flex: 0 0 74px;
   background: url('/chuck-app/gwen-wordmark.png') center / contain no-repeat;
   content: '';
 }
@@ -828,15 +828,15 @@
   }
 
   .nav-shell:not(.nav-shell--loading) .nav-brand {
-    width: 86px;
+    width: 72px;
     height: 52px;
-    flex-basis: 86px;
+    flex-basis: 72px;
   }
 
   .nav-shell:not(.nav-shell--loading) .nav-brand::before {
-    width: 86px;
-    height: 25px;
-    flex-basis: 86px;
+    width: 72px;
+    height: 21px;
+    flex-basis: 72px;
   }
 
   .nav-shell.nav-shell--open {
