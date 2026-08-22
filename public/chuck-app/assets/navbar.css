@@ -849,7 +849,7 @@
   height: auto;
   flex-direction: row;
   align-items: baseline;
-  gap: 8px;
+  gap: 6px;
   line-height: 1;
   opacity: 1 !important;
   animation: gwen-loader-caption 620ms ease both;
@@ -866,7 +866,8 @@
 }
 
 .nav-shell.nav-shell--loading .brand__wordmark strong::after {
-  font-size: 28px;
+  font-size: 25px;
+  letter-spacing: -0.07em;
   content: 'Systems';
 }
 
@@ -880,7 +881,7 @@
 
 .nav-shell.nav-shell--loading .brand__wordmark span::after {
   font-family: 'M Saans', 'Segoe UI', sans-serif;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 450;
   line-height: 1;
   letter-spacing: -0.035em;
@@ -934,11 +935,11 @@
   }
 
   .nav-shell.nav-shell--loading .brand__wordmark strong::after {
-    font-size: 26px;
+    font-size: 23px;
   }
 
   .nav-shell.nav-shell--loading .brand__wordmark span::after {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
