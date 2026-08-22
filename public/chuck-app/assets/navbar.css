@@ -748,6 +748,10 @@
   padding: 0 12px 0 26px;
 }
 
+.nav-shell:not(.nav-shell--loading)::before {
+  animation: gwen-header-surface-in 940ms cubic-bezier(0.76, 0, 0.24, 1) both;
+}
+
 .nav-shell:not(.nav-shell--loading) .nav-brand {
   display: flex;
   width: 68px;
@@ -776,8 +780,9 @@
     opacity 260ms ease;
 }
 
-.nav-brand .brand__mark,
-.nav-brand .brand__wordmark {
+.nav-shell:not(.nav-shell--loading) .nav-brand .brand__mark,
+.nav-shell:not(.nav-shell--loading) .nav-brand .brand__wordmark,
+.nav-shell.nav-shell--loading .nav-brand .brand__mark {
   display: none !important;
 }
 
@@ -791,12 +796,13 @@
 
 .nav-shell.nav-shell--loading {
   top: 50% !important;
-  width: 190px !important;
-  height: 76px !important;
-  min-height: 76px !important;
+  width: 260px !important;
+  height: 292px !important;
+  min-height: 292px !important;
   justify-content: center !important;
   padding: 0 !important;
-  border-radius: 28px !important;
+  overflow: visible;
+  border-radius: 0 !important;
   visibility: visible;
   opacity: 1 !important;
   pointer-events: none;
@@ -804,29 +810,11 @@
 }
 
 .nav-shell.nav-shell--loading::before {
-  border-color: rgba(188, 70, 92, 0.16);
-  background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.94), rgba(244, 239, 240, 0.86));
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.9),
-    0 18px 50px rgba(87, 35, 47, 0.1),
-    0 2px 8px rgba(87, 35, 47, 0.06);
-  animation: gwen-loader-surface 1.7s ease-in-out infinite;
+  display: none;
 }
 
 .nav-shell.nav-shell--loading::after {
-  position: absolute;
-  z-index: 2;
-  bottom: 13px;
-  left: 50%;
-  width: 72px;
-  height: 2px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, rgba(188, 70, 92, 0.18), #bc465c, rgba(188, 70, 92, 0.18));
-  content: '';
-  transform: translateX(-50%) scaleX(0.16);
-  transform-origin: center;
-  animation: gwen-loader-progress 1.55s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+  display: none;
 }
 
 .nav-shell.nav-shell--loading .nav-brand {
@@ -834,19 +822,67 @@
   width: 100% !important;
   height: 100% !important;
   flex: 0 0 100% !important;
+  flex-direction: column;
   align-items: center;
   justify-content: center !important;
-  gap: 0;
-  transform: translateY(-5px);
+  gap: 26px;
+  transform: none;
 }
 
 .nav-shell.nav-shell--loading .nav-brand::before {
   display: block;
-  width: 108px;
-  height: 31px;
-  flex: 0 0 108px;
+  width: 174px;
+  height: 174px;
+  flex: 0 0 174px;
+  border: 1px solid rgba(188, 70, 92, 0.08);
+  border-radius: 48px;
+  background:
+    url('/chuck-app/gwen-mark.svg') center / 94px 94px no-repeat,
+    linear-gradient(145deg, #f8f8f8, #eeeeee);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.9),
+    0 22px 60px rgba(57, 34, 40, 0.08);
   transform: translateY(0) scale(1);
-  animation: gwen-loader-wordmark 1.7s ease-in-out infinite;
+  animation: gwen-loader-tile 1.8s ease-in-out infinite;
+}
+
+.nav-shell.nav-shell--loading .brand__wordmark {
+  display: flex !important;
+  height: auto;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 8px;
+  line-height: 1;
+  opacity: 1 !important;
+  animation: gwen-loader-caption 620ms ease both;
+}
+
+.nav-shell.nav-shell--loading .brand__wordmark strong {
+  font-family: 'M Saans', 'Segoe UI', sans-serif;
+  font-size: 34px;
+  font-weight: 750;
+  line-height: 1;
+  letter-spacing: -0.055em;
+  text-transform: capitalize;
+  color: #010205;
+}
+
+.nav-shell.nav-shell--loading .brand__wordmark span {
+  display: block !important;
+  height: auto;
+  padding: 0;
+  font-size: 0;
+  line-height: 1;
+}
+
+.nav-shell.nav-shell--loading .brand__wordmark span::after {
+  font-family: 'M Saans', 'Segoe UI', sans-serif;
+  font-size: 24px;
+  font-weight: 450;
+  line-height: 1;
+  letter-spacing: -0.035em;
+  color: rgba(1, 2, 5, 0.55);
+  content: 'Inc';
 }
 
 @media (max-width: 809.98px) {
@@ -876,73 +912,84 @@
   }
 
   .nav-shell.nav-shell--loading {
-    width: min(184px, calc(100vw - 48px)) !important;
-    height: 72px !important;
-    min-height: 72px !important;
-    border-radius: 24px !important;
+    width: min(230px, calc(100vw - 48px)) !important;
+    height: 260px !important;
+    min-height: 260px !important;
+    border-radius: 0 !important;
   }
 
   .nav-shell.nav-shell--loading .nav-brand::before {
-    width: 96px;
-    height: 27px;
-    flex-basis: 96px;
+    width: 150px;
+    height: 150px;
+    flex-basis: 150px;
+    border-radius: 42px;
+    background-size: 82px 82px, auto;
+  }
+
+  .nav-shell.nav-shell--loading .brand__wordmark strong {
+    font-size: 30px;
+  }
+
+  .nav-shell.nav-shell--loading .brand__wordmark span::after {
+    font-size: 21px;
   }
 }
 
-@keyframes gwen-loader-surface {
+@keyframes gwen-loader-tile {
   0%,
   100% {
+    opacity: 0.9;
     box-shadow:
       inset 0 1px 0 rgba(255, 255, 255, 0.9),
-      0 18px 50px rgba(87, 35, 47, 0.08),
-      0 2px 8px rgba(87, 35, 47, 0.05);
+      0 20px 54px rgba(57, 34, 40, 0.06);
+    transform: translateY(2px) scale(0.99);
   }
 
   50% {
+    opacity: 1;
     box-shadow:
       inset 0 1px 0 rgba(255, 255, 255, 0.96),
-      0 22px 58px rgba(87, 35, 47, 0.14),
-      0 3px 10px rgba(87, 35, 47, 0.08);
+      0 26px 68px rgba(57, 34, 40, 0.11);
+    transform: translateY(-2px) scale(1);
   }
 }
 
-@keyframes gwen-loader-wordmark {
-  0%,
-  100% {
-    opacity: 0.78;
-    transform: translateY(0) scale(0.985);
-  }
-
-  50% {
-    opacity: 1;
-    transform: translateY(-1px) scale(1);
-  }
-}
-
-@keyframes gwen-loader-progress {
+@keyframes gwen-loader-caption {
   0% {
-    opacity: 0.36;
-    transform: translateX(-50%) scaleX(0.14);
-  }
-
-  50% {
-    opacity: 1;
-    transform: translateX(-50%) scaleX(1);
+    opacity: 0;
+    transform: translateY(8px);
   }
 
   100% {
-    opacity: 0.36;
-    transform: translateX(-50%) scaleX(0.14);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 @keyframes gwen-brand-dock {
   0% {
-    transform: translate(35px, -5px);
+    opacity: 0;
+    transform: translate(70px, 0);
+  }
+
+  62% {
+    opacity: 0;
   }
 
   100% {
+    opacity: 1;
     transform: translate(0, 0);
+  }
+}
+
+@keyframes gwen-header-surface-in {
+  0%,
+  48% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 
@@ -950,7 +997,9 @@
   .nav-shell.nav-shell--loading::before,
   .nav-shell.nav-shell--loading::after,
   .nav-shell.nav-shell--loading .nav-brand::before,
-  .nav-shell:not(.nav-shell--loading) .nav-brand {
+  .nav-shell.nav-shell--loading .brand__wordmark,
+  .nav-shell:not(.nav-shell--loading) .nav-brand,
+  .nav-shell:not(.nav-shell--loading)::before {
     animation: none;
   }
 }
