@@ -12175,7 +12175,7 @@ function useViewTransitionState(to, { relative } = {}) {
 var import_client = require_client();
 //#endregion
 //#region src/index.css?url
-var src_default = "/assets/index.css";
+var src_default = "/chuck-app/assets/index.css";
 //#endregion
 //#region node_modules/.pnpm/react@19.2.8/node_modules/react/cjs/react-jsx-runtime.production.js
 /**
@@ -23006,7 +23006,7 @@ function ArrowIcon({ direction = "down", size = 24, className, ...props }) {
 }
 //#endregion
 //#region src/components/booking/booking-provider.css?url
-var booking_provider_default = "/assets/booking-provider.css";
+var booking_provider_default = "/chuck-app/assets/booking-provider.css";
 //#endregion
 //#region src/components/booking/booking-provider.jsx
 (function() {
@@ -23506,7 +23506,7 @@ function useBooking() {
 }
 //#endregion
 //#region src/components/layout/navbar.css?url
-var navbar_default = "/assets/navbar.css";
+var navbar_default = "/chuck-app/assets/navbar.css";
 //#endregion
 //#region src/components/layout/navbar.jsx
 (function() {
@@ -23694,7 +23694,7 @@ function FooterSoapMark() {
 }
 //#endregion
 //#region src/components/layout/footer.css?url
-var footer_default = "/assets/footer.css";
+var footer_default = "/chuck-app/assets/footer.css";
 //#endregion
 //#region src/components/layout/footer.jsx
 (function() {
@@ -24875,7 +24875,7 @@ var easeOut$3 = [
 ];
 //#endregion
 //#region src/components/sections/hero.css?url
-var hero_default = "/assets/hero.css";
+var hero_default = "/chuck-app/assets/hero.css";
 //#endregion
 //#region src/components/sections/hero.jsx
 (function() {
@@ -28418,7 +28418,7 @@ function cn(...inputs) {
 }
 //#endregion
 //#region src/components/ui/button.css?url
-var button_default = "/assets/button.css";
+var button_default = "/chuck-app/assets/button.css";
 //#endregion
 //#region src/components/ui/button.jsx
 (function() {
@@ -28464,7 +28464,7 @@ function Button({ className, variant, children, ...props }) {
 }
 //#endregion
 //#region src/components/sections/showcase.css?url
-var showcase_default = "/assets/showcase.css";
+var showcase_default = "/chuck-app/assets/showcase.css";
 //#endregion
 //#region src/components/sections/showcase.jsx
 (function() {
@@ -28684,7 +28684,7 @@ function Showcase() {
 }
 //#endregion
 //#region src/components/sections/industries-section.css?url
-var industries_section_default = "/assets/industries-section.css";
+var industries_section_default = "/chuck-app/assets/industries-section.css";
 //#endregion
 //#region src/components/sections/industries-section.jsx
 (function() {
@@ -29387,10 +29387,10 @@ function IndustriesSection() {
 }
 //#endregion
 //#region src/assets/grow-business-frame.svg
-var grow_business_frame_default = "/assets/grow-business-frame-BJvyMZHD.svg";
+var grow_business_frame_default = "/chuck-app/assets/grow-business-frame-BJvyMZHD.svg";
 //#endregion
 //#region src/components/sections/fix-section.css?url
-var fix_section_default = "/assets/fix-section.css";
+var fix_section_default = "/chuck-app/assets/fix-section.css";
 //#endregion
 //#region src/components/sections/fix-section.jsx
 (function() {
@@ -29790,7 +29790,7 @@ function FixSection() {
 }
 //#endregion
 //#region src/components/sections/process-section.css?url
-var process_section_default = "/assets/process-section.css";
+var process_section_default = "/chuck-app/assets/process-section.css";
 //#endregion
 //#region src/components/sections/process-section.jsx
 (function() {
@@ -30088,7 +30088,7 @@ function ProcessSection() {
 }
 //#endregion
 //#region src/components/sections/testimonial-section.css?url
-var testimonial_section_default = "/assets/testimonial-section.css";
+var testimonial_section_default = "/chuck-app/assets/testimonial-section.css";
 //#endregion
 //#region src/components/sections/testimonial-section.jsx
 (function() {
@@ -30357,7 +30357,7 @@ function TestimonialSection() {
 }
 //#endregion
 //#region src/components/sections/faq-section.css?url
-var faq_section_default = "/assets/faq-section.css";
+var faq_section_default = "/chuck-app/assets/faq-section.css";
 //#endregion
 //#region src/components/sections/faq-section.jsx
 (function() {
@@ -30559,7 +30559,7 @@ function FAQSection() {
 }
 //#endregion
 //#region src/components/sections/legal-section.css?url
-var legal_section_default = "/assets/legal-section.css";
+var legal_section_default = "/chuck-app/assets/legal-section.css";
 //#endregion
 //#region src/components/sections/legal-section.jsx
 (function() {
@@ -30601,7 +30601,7 @@ function LegalSection() {
 }
 //#endregion
 //#region src/app.css?url
-var app_default = "/assets/app.css";
+var app_default = "/chuck-app/assets/app.css";
 //#endregion
 //#region src/app.jsx
 (function() {
@@ -30711,7 +30711,7 @@ function App() {
 }
 //#endregion
 //#region src/components/layout/legal-page.css?url
-var legal_page_default = "/assets/legal-page.css";
+var legal_page_default = "/chuck-app/assets/legal-page.css";
 //#endregion
 //#region src/components/layout/legal-page.jsx
 (function() {
