@@ -323,7 +323,7 @@
 }
 
 .site-footer__wordmark span::after {
-  content: "Gwen Inc";
+  content: "Durden Inc";
   font-size: var(--type-body-xs-font-size);
   letter-spacing: -0.03em;
 }
