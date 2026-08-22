@@ -4,8 +4,8 @@
  * layer owns only color and uses important declarations to remain final.
  */
 :root {
-  --ink: #4a1119 !important;
-  --muted: rgba(74, 17, 25, 0.62) !important;
+  --ink: #153e52 !important;
+  --muted: rgba(21, 62, 82, 0.64) !important;
   --surface: #fff7ec !important;
   --pink: #e98291 !important;
   --gwen-powder: #a9dbea;
@@ -17,6 +17,7 @@
   --gwen-cream: #fff7ec;
   --gwen-cream-deep: #f8eadc;
   --gwen-cherry: #651520;
+  --gwen-deep-blue: #153e52;
 }
 
 html,
@@ -42,49 +43,49 @@ html.is-white-screen body {
 .site-footer-shell,
 .site-footer-shell::before,
 .site-footer {
-  background: var(--gwen-cherry) !important;
+  background: var(--gwen-deep-blue) !important;
 }
 
 .page {
-  box-shadow: 0 28px 72px rgba(101, 21, 32, 0.08) !important;
+  box-shadow: 0 28px 72px rgba(21, 62, 82, 0.1) !important;
 }
 
 /* Navigation and calls to action */
 .nav-shell::before {
-  border-color: rgba(255, 255, 255, 0.62) !important;
-  background: rgba(255, 247, 236, 0.8) !important;
+  border-color: rgba(21, 62, 82, 0.14) !important;
+  background: rgba(169, 219, 234, 0.94) !important;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.82),
-    0 12px 34px rgba(101, 21, 32, 0.09) !important;
+    inset 0 1px 0 rgba(255, 255, 255, 0.68),
+    0 12px 34px rgba(21, 62, 82, 0.16) !important;
 }
 
 .nav-links a {
-  color: var(--gwen-cherry) !important;
+  color: var(--gwen-deep-blue) !important;
 }
 
 .nav-cta,
 .nav-shell--cta .nav-cta,
 .button--primary {
   color: #fff !important;
-  background: var(--gwen-red) !important;
+  background: var(--gwen-deep-blue) !important;
 }
 
 .nav-cta:hover,
 .nav-shell--cta .nav-cta:hover,
 .button--primary:hover {
   color: #fff !important;
-  background: var(--gwen-cherry) !important;
+  background: #0d2d3e !important;
 }
 
 .button--outline {
-  border-color: rgba(101, 21, 32, 0.18) !important;
-  color: var(--gwen-cherry) !important;
+  border-color: rgba(21, 62, 82, 0.2) !important;
+  color: var(--gwen-deep-blue) !important;
   background: rgba(255, 247, 236, 0.9) !important;
 }
 
 .button--outline:hover {
-  border-color: rgba(101, 21, 32, 0.34) !important;
-  background: #fff0e6 !important;
+  border-color: rgba(21, 62, 82, 0.38) !important;
+  background: var(--gwen-powder-light) !important;
 }
 
 .button:focus-visible,
@@ -120,12 +121,12 @@ html.is-white-screen body {
 }
 
 .fix-intro__track::before {
-  background: var(--gwen-cherry) !important;
+  background: var(--gwen-deep-blue) !important;
 }
 
 .fix-intro__step-number {
   border-color: var(--gwen-cream) !important;
-  background: var(--gwen-cherry) !important;
+  background: var(--gwen-deep-blue) !important;
 }
 
 .fix-intro__step:nth-child(2) .fix-intro__step-number,
@@ -140,7 +141,7 @@ html.is-white-screen body {
 }
 
 .fix-intro__step:nth-child(4) .fix-intro__step-number {
-  color: var(--gwen-cherry) !important;
+  color: var(--gwen-deep-blue) !important;
   background: var(--gwen-cream-deep) !important;
 }
 
@@ -188,8 +189,8 @@ html.is-white-screen body {
 }
 
 .testimonial-controls button {
-  border-color: var(--gwen-cherry) !important;
-  color: var(--gwen-cherry) !important;
+  border-color: var(--gwen-deep-blue) !important;
+  color: var(--gwen-deep-blue) !important;
 }
 
 .testimonial-controls button:last-child {
@@ -201,15 +202,15 @@ html.is-white-screen body {
 .testimonial-controls button:hover,
 .testimonial-controls button:last-child:hover {
   color: #fff !important;
-  background: var(--gwen-cherry) !important;
+  background: var(--gwen-deep-blue) !important;
 }
 
 .faq-item {
-  border-bottom-color: rgba(101, 21, 32, 0.14) !important;
+  border-bottom-color: rgba(21, 62, 82, 0.16) !important;
 }
 
 .legal-section__item + .legal-section__item {
-  border-color: rgba(101, 21, 32, 0.14) !important;
+  border-color: rgba(21, 62, 82, 0.16) !important;
 }
 
 .legal-section__link:hover {
@@ -219,7 +220,7 @@ html.is-white-screen body {
 .site-footer__brand-column p,
 .site-footer__bottom,
 .site-footer__legal a {
-  color: #e8bfc0 !important;
+  color: #b9dbe5 !important;
 }
 
 .site-footer__link-column a:hover,
@@ -239,6 +240,6 @@ html.is-white-screen body {
 
 @media (max-width: 809.98px) {
   .nav-shell::before {
-    background: rgba(255, 247, 236, 0.96) !important;
+    background: rgba(169, 219, 234, 0.97) !important;
   }
 }
