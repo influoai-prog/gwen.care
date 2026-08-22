@@ -67,11 +67,26 @@
 }
 
 .site-footer__brand .footer-soap-mark {
-  display: block;
-  width: 56px;
-  height: 56px;
-  flex: 0 0 56px;
-  color: #fff;
+  display: none;
+}
+
+.site-footer__brand::before {
+  content: "g";
+  display: grid;
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  border-radius: 15px;
+  place-items: center;
+  color: #071017;
+  background:
+    radial-gradient(circle at 76% 22%, #e9fe71 0 4px, transparent 4.5px),
+    linear-gradient(145deg, #dff3fd 0%, #8dcef2 58%, #64b2e3 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.65);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.08em;
 }
 
 .site-footer__wordmark {
@@ -87,10 +102,11 @@
 }
 
 .site-footer__wordmark span {
-  margin-top: 5px;
-  font-size: var(--type-body-xs-font-size);
-  font-weight: var(--type-body-xs-font-weight);
-  letter-spacing: -0.03em;
+  display: none;
+}
+
+.site-footer__wordmark strong {
+  letter-spacing: -0.075em;
 }
 
 .site-footer__brand-column p {
