@@ -399,23 +399,6 @@
     linear-gradient(145deg, #dff1fc 0%, #e9f5fa 54%, #f7e7e9 100%);
 }
 
-.industries-header__copy::before {
-  display: inline-flex;
-  min-height: 30px;
-  align-items: center;
-  padding: 7px 12px 6px;
-  border: 1px solid rgba(183, 70, 86, 0.2);
-  border-radius: 999px;
-  color: #9e3445;
-  background: rgba(255, 255, 255, 0.66);
-  font-size: 12px;
-  font-weight: 650;
-  line-height: 1;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  content: "The 60-day build";
-}
-
 .industries-section h2 {
   max-width: 820px;
   letter-spacing: -0.05em;
@@ -499,12 +482,6 @@
 }
 
 @media (max-width: 479px) {
-  .industries-header__copy::before {
-    min-height: 27px;
-    padding: 6px 10px 5px;
-    font-size: 10px;
-  }
-
   .industries-section h2 {
     max-width: 310px;
   }

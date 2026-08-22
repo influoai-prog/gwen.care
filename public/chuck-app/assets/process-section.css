@@ -679,3 +679,30 @@
     top: -4px;
   }
 }
+
+/* Creator-offer CTA */
+.process-cta {
+  overflow: hidden;
+  border: 1px solid rgba(183, 70, 86, 0.14);
+  border-radius: 32px;
+  background:
+    radial-gradient(circle at 88% 18%, rgba(159, 216, 237, 0.56), transparent 30%),
+    linear-gradient(135deg, #f9e9ec 0%, #eef7fb 100%);
+  box-shadow: 0 26px 68px rgba(66, 43, 47, 0.08);
+}
+
+.process-cta h3 {
+  max-width: 620px;
+  color: #010205;
+  font-weight: 600;
+}
+
+.process-cta__button {
+  border-radius: 999px;
+}
+
+@media (max-width: 620px) {
+  .process-cta {
+    border-radius: 24px;
+  }
+}

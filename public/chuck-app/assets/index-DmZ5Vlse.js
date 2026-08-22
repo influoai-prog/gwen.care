@@ -29499,27 +29499,27 @@ var easeOut$1 = [
 var timelineSteps = [
 	{
 		number: "01",
-		detail: "Spend uncovered"
+		detail: "Brand positioned"
 	},
 	{
 		number: "02",
-		detail: "Hours reclaimed"
+		detail: "Offer sharpened"
 	},
 	{
 		number: "03",
-		detail: "Cash retained"
+		detail: "Content systemized"
 	},
 	{
 		number: "04",
-		detail: "Capacity created"
+		detail: "Traffic activated"
 	},
 	{
 		number: "05",
-		detail: "Growth accelerated"
+		detail: "Fans converted"
 	},
 	{
 		number: "06",
-		detail: "Systems simplified"
+		detail: "Revenue retained"
 	}
 ];
 var titleVariants = {
@@ -29662,7 +29662,7 @@ function FixSection() {
 					className: "fix-intro__heading",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", {
 						id: "fix-title",
-						"aria-label": "Build More With What You Have",
+						"aria-label": "Build Your Subscriber Machine",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 							className: "fix-intro__clip",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.span, {
@@ -29673,7 +29673,7 @@ function FixSection() {
 									delay: .08,
 									ease: easeOut$1
 								},
-								children: "Build More"
+								children: "Build Your"
 							})
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 							className: "fix-intro__clip",
@@ -29685,7 +29685,7 @@ function FixSection() {
 									delay: .2,
 									ease: easeOut$1
 								},
-								children: "With What You Have"
+								children: "Subscriber Machine"
 							})
 						})]
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.p, {
@@ -29705,12 +29705,7 @@ function FixSection() {
 							delay: .26,
 							ease: easeOut$1
 						},
-						children: [
-							"We find the operational drag keeping your business from performing at its best.",
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
-							" ",
-							"Then free up the cash, time, and capacity you need to move faster."
-						]
+						children: "We install the brand, content, traffic, conversion and retention systems that turn attention into predictable monthly revenue."
 					})]
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
 					className: "fix-intro__timeline",
@@ -29775,9 +29770,9 @@ function FixSection() {
 						className: "fix-visual__title",
 						variants: reduceMotion ? void 0 : titleVariants,
 						children: [
-							"Turn Waste",
+							"Turn Attention",
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
-							"Into Growth"
+							"Into Revenue"
 						]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.div, {
@@ -29793,7 +29788,7 @@ function FixSection() {
 				]
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "fix-copy",
-				children: "Cleaner operations and less dependence on people holding everything together. We build the infrastructure your business needs to scale without adding more complexity."
+			children: "We connect your content, traffic, DMs, pricing and retention into one system designed to grow recurring OnlyFans revenue."
 			})]
 		})]
 	});
@@ -30073,7 +30068,7 @@ function ProcessSection() {
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.span, {
 								className: "process-card__title-line",
 								variants: titleLine,
-								children: "Let's find what your business is leaving on the table."
+								children: "Ready to build your creator wealth machine?"
 							})
 						}) })
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
@@ -30084,7 +30079,7 @@ function ProcessSection() {
 							onClick: openBooking,
 							variant: "outline",
 							className: "process-cta__button",
-							children: ["See our plans", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowIcon, {
+							children: ["Apply now", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowIcon, {
 								direction: "right",
 								size: 20,
 								"aria-hidden": "true"
