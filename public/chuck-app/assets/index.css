@@ -1,4 +1,12 @@
 /*! tailwindcss v4.3.3 | MIT License | https://tailwindcss.com */
+@font-face {
+  font-family: "Kalnia";
+  src: url("/chuck-app/fonts/kalnia-medium-latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
 @layer properties {
   @supports (((-webkit-hyphens: none)) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color: rgb(from red r g b)))) {
     *, :before, :after, ::backdrop {

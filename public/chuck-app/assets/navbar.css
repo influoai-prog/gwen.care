@@ -769,7 +769,7 @@
   width: 68px;
   height: 21px;
   flex: 0 0 68px;
-  background: url('/chuck-app/gwen-wordmark-header-optimized.png') center / contain no-repeat;
+  background: none;
   content: '';
   transform: translateY(1.5px) scale(1);
   transition:
@@ -1009,5 +1009,73 @@
   .nav-shell:not(.nav-shell--loading) .nav-brand,
   .nav-shell:not(.nav-shell--loading)::before {
     animation: none;
+  }
+}
+
+/* Kalnia text wordmark. The square G remains an icon in the loader only. */
+.nav-shell:not(.nav-shell--loading) .nav-brand::before {
+  display: none;
+}
+
+.nav-shell:not(.nav-shell--loading) .nav-brand {
+  display: flex;
+  width: auto;
+  height: 60px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nav-shell:not(.nav-shell--loading) .nav-brand .brand__wordmark {
+  display: flex !important;
+  width: auto;
+  height: auto;
+  padding: 0;
+  overflow: visible;
+  transform: translateY(1px);
+}
+
+.nav-shell:not(.nav-shell--loading) .brand__wordmark strong,
+.loading-wordmark strong,
+.nav-shell.nav-shell--loading .brand__wordmark strong {
+  font-family: "Kalnia", Georgia, serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.06em;
+  text-transform: lowercase;
+  color: #b74656;
+  text-shadow: none;
+}
+
+.nav-shell:not(.nav-shell--loading) .brand__wordmark strong {
+  font-size: 34px;
+}
+
+.nav-shell:not(.nav-shell--loading) .brand__wordmark span {
+  display: none !important;
+}
+
+.nav-shell.nav-shell--loading .brand__wordmark strong {
+  font-size: 25px;
+}
+
+.nav-shell.nav-shell--loading .brand__wordmark strong::after {
+  content: none;
+}
+
+@media (max-width: 809.98px) {
+  .nav-shell:not(.nav-shell--loading) .nav-brand {
+    width: auto;
+    height: 52px;
+    flex-basis: auto;
+  }
+
+  .nav-shell:not(.nav-shell--loading) .brand__wordmark strong {
+    font-size: 32px;
+  }
+
+  .nav-shell.nav-shell--loading .brand__wordmark strong {
+    font-size: 23px;
   }
 }
