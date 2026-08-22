@@ -277,19 +277,11 @@
 .site-footer__brand {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 0;
 }
 
 .site-footer__brand::before {
-  display: block;
-  width: 48px;
-  height: 48px;
-  flex: 0 0 48px;
-  border-radius: 0;
-  background: url("/chuck-app/gwen-g-mark-rounded.png") center / contain no-repeat;
-  box-shadow: none;
-  filter: none;
-  transform: none;
+  display: none;
 }
 
 .site-footer__wordmark {
