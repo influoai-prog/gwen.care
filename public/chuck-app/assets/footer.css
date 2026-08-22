@@ -277,17 +277,17 @@
 .site-footer__brand {
   display: inline-flex;
   align-items: center;
-  gap: 17px;
+  gap: 8px;
 }
 
 .site-footer__brand::before {
   display: block;
-  width: 58px;
-  height: 58px;
-  flex: 0 0 58px;
-  border-radius: 17px;
-  background: #f1f1f1 url("/chuck-app/gwen-mark.svg") center / 43px 43px no-repeat;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+  width: 56px;
+  height: 56px;
+  flex: 0 0 56px;
+  border-radius: 0;
+  background: url("/chuck-app/gwen-mark.svg") center / contain no-repeat;
+  box-shadow: none;
   filter: none;
   transform: rotate(-7deg);
 }
@@ -296,17 +296,17 @@
   display: flex;
   padding: 0;
   flex-direction: column;
-  gap: 4px;
-  line-height: 1;
+  gap: 0;
+  line-height: 0.88;
 }
 
 .site-footer__brand .site-footer__wordmark strong {
   font-family: "M Saans", "Segoe UI", sans-serif;
-  font-size: 31px;
+  font-size: var(--type-footer-strong-font-size);
   font-style: normal;
-  font-weight: 750;
-  line-height: 0.92;
-  letter-spacing: -0.055em;
+  font-weight: var(--type-footer-strong-font-weight);
+  line-height: var(--type-footer-strong-line-height);
+  letter-spacing: var(--type-footer-strong-letter-spacing);
   text-transform: capitalize;
   color: #fff;
   text-shadow: none;
@@ -314,53 +314,28 @@
 
 .site-footer__wordmark span {
   display: block;
+  margin-top: 5px;
   font-family: "M Saans", "Segoe UI", sans-serif;
   font-size: 0;
-  font-weight: 450;
-  line-height: 1;
+  font-weight: var(--type-body-xs-font-weight);
+  line-height: var(--type-body-xs-line-height);
   color: rgba(255, 255, 255, 0.8);
 }
 
 .site-footer__wordmark span::after {
   content: "Durden Inc";
-  font-size: 19px;
-  letter-spacing: -0.025em;
+  font-size: var(--type-body-xs-font-size);
+  letter-spacing: -0.03em;
 }
 
 .site-footer__brand-column {
-  gap: 34px;
+  gap: 20px;
 }
 
 .site-footer__brand-column p {
-  max-width: 660px;
-  font-size: clamp(19px, 2vw, 28px);
-  font-weight: 400;
-  line-height: 1.22;
-  letter-spacing: -0.035em;
-}
-
-@media (max-width: 809.98px) {
-  .site-footer__brand::before {
-    width: 52px;
-    height: 52px;
-    flex-basis: 52px;
-    border-radius: 15px;
-    background-size: 38px 38px;
-  }
-
-  .site-footer__brand .site-footer__wordmark strong {
-    font-size: 28px;
-  }
-
-  .site-footer__wordmark span::after {
-    font-size: 17px;
-  }
-
-  .site-footer__brand-column {
-    gap: 28px;
-  }
-
-  .site-footer__brand-column p {
-    font-size: 19px;
-  }
+  max-width: none;
+  font-size: var(--type-body-xs-font-size);
+  font-weight: var(--type-body-xs-font-weight);
+  line-height: 20px;
+  letter-spacing: normal;
 }
