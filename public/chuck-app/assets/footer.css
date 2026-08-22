@@ -80,7 +80,7 @@
   width: 46px;
   height: 46px;
   flex: 0 0 46px;
-  background: url("/chuck-app/gwen-mark.svg") center / contain no-repeat;
+  background: url("/chuck-app/gwen-g-mark-rounded.png") center / contain no-repeat;
   filter: drop-shadow(0 7px 16px rgba(231, 53, 88, 0.22));
 }
 
@@ -271,4 +271,71 @@
     flex-wrap: wrap;
     row-gap: 10px;
   }
+}
+
+/* Gwen footer lockup */
+.site-footer__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.site-footer__brand::before {
+  display: block;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  border-radius: 0;
+  background: url("/chuck-app/gwen-g-mark-rounded.png") center / contain no-repeat;
+  box-shadow: none;
+  filter: none;
+  transform: none;
+}
+
+.site-footer__wordmark {
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  gap: 0;
+  line-height: 0.88;
+}
+
+.site-footer__brand .site-footer__wordmark strong {
+  font-family: "M Saans", "Segoe UI", sans-serif;
+  font-size: var(--type-footer-strong-font-size);
+  font-style: normal;
+  font-weight: var(--type-footer-strong-font-weight);
+  line-height: var(--type-footer-strong-line-height);
+  letter-spacing: var(--type-footer-strong-letter-spacing);
+  text-transform: capitalize;
+  color: #fff;
+  text-shadow: none;
+}
+
+.site-footer__wordmark span {
+  display: block;
+  margin-top: 5px;
+  font-family: "M Saans", "Segoe UI", sans-serif;
+  font-size: 0;
+  font-weight: var(--type-body-xs-font-weight);
+  line-height: var(--type-body-xs-line-height);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.site-footer__wordmark span::after {
+  content: "Gwen Inc";
+  font-size: var(--type-body-xs-font-size);
+  letter-spacing: -0.03em;
+}
+
+.site-footer__brand-column {
+  gap: 20px;
+}
+
+.site-footer__brand-column p {
+  max-width: none;
+  font-size: var(--type-body-xs-font-size);
+  font-weight: var(--type-body-xs-font-weight);
+  line-height: 20px;
+  letter-spacing: normal;
 }
