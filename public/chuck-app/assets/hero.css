@@ -126,7 +126,7 @@
 @media (max-width: 639px) {
 
   .hero-section h1 {
-    --mobile-hero-size: clamp(38px, 7.4vw, 43px);
+    --mobile-hero-size: clamp(24px, 8.3vw, 34px);
     font-size: var(--mobile-hero-size);
   }
 
@@ -144,15 +144,15 @@
   }
 
   .hero-title__clip:nth-child(1) .hero-title__line::before {
-    content: 'Your Business Is';
+    content: 'Build Your Creator Wealth';
   }
 
   .hero-title__clip:nth-child(1) .hero-title__line::after {
-    content: 'Leaking Money';
+    content: none;
   }
 
   .hero-title__clip:nth-child(2) .hero-title__line::before {
-    content: 'Right Now';
+    content: 'Machine Right Now';
   }
 
   .hero-title__clip:nth-child(2) .hero-title__line::after {
@@ -181,7 +181,7 @@
 
 @media (max-width: 359px) {
   .hero-section h1 {
-    --mobile-hero-size: clamp(35px, 10.8vw, 39px);
+    --mobile-hero-size: clamp(24px, 8.3vw, 30px);
   }
 
   .hero-copy {

@@ -24934,20 +24934,20 @@ function Hero() {
 		initial: "hidden",
 		animate: "visible",
 		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h1", {
-			"aria-label": "Build Your Creator Wealth Machine Now",
+			"aria-label": "Build Your Creator Wealth Machine Right Now",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 				className: "hero-title__clip",
 				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.span, {
 					className: "hero-title__line",
 					variants: line,
-					children: "Build Your Creator"
+					children: "Build Your Creator Wealth"
 				})
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 				className: "hero-title__clip",
 				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.span, {
 					className: "hero-title__line",
 					variants: line,
-					children: "Wealth Machine Now"
+					children: "Machine Right Now"
 				})
 			})]
 		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.p, {
