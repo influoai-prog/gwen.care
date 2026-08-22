@@ -29788,7 +29788,7 @@ function FixSection() {
 				]
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "fix-copy",
-			children: "We connect your content, traffic, DMs, pricing and retention into one system designed to grow recurring OnlyFans revenue."
+			children: "We connect your content, traffic, DMs, pricing, and retention into one revenue machine that converts more fans, lifts spend, and compounds monthly income."
 			})]
 		})]
 	});
@@ -29813,49 +29813,49 @@ var easeOut = [
 var steps = [
 	{
 		number: "01",
-		label: "Discover",
-		title: "Trace friction",
-		description: "Find what’s slowing work down, wasting time, or draining value.",
+		label: "Audit",
+		title: "Find the leaks",
+		description: "See where content, traffic, pricing, and DMs lose subscribers or leave money unclaimed.",
 		direction: "right",
 		className: "process-card--one"
 	},
 	{
 		number: "02",
-		label: "Prioritize",
-		title: "Find the wins",
-		description: "Rank each fix by impact, effort, urgency, and potential upside.",
+		label: "Identify",
+		title: "Find what converts",
+		description: "Pinpoint the content, traffic sources, and offers already driving the highest fan spend.",
 		direction: "right",
 		className: "process-card--two"
 	},
 	{
 		number: "03",
 		label: "Plan",
-		title: "Map the plan",
-		description: "Turn the findings into a clear rollout plan with priorities and timing.",
+		title: "Map 60-day growth",
+		description: "Turn the data into a focused weekly plan with clear subscriber and revenue targets.",
 		direction: "down",
 		className: "process-card--three"
 	},
 	{
 		number: "04",
 		label: "Build",
-		title: "Build the systems",
-		description: "Create the systems, workflows, and automations needed to run better.",
+		title: "Install the machine",
+		description: "Build the content, DM sales, upsell, and retention systems that grow revenue every day.",
 		direction: "left",
 		className: "process-card--four"
 	},
 	{
 		number: "05",
 		label: "Launch",
-		title: "Put it live",
-		description: "Launch fast, test it in the real business, and refine what matters.",
+		title: "Scale what works",
+		description: "Launch fast, track fan behavior, and put more traffic behind the highest-converting moves.",
 		direction: "left",
 		className: "process-card--five"
 	},
 	{
 		number: "06",
-		label: "Improve",
-		title: "Compound gains",
-		description: "Track the impact, improve what works, and expand it across the business.",
+		label: "Compound",
+		title: "Keep fans spending",
+		description: "Retain subscribers, reactivate expired fans, and compound recurring revenue month after month.",
 		direction: "down",
 		className: "process-card--six"
 	}
