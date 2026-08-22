@@ -1,6 +1,6 @@
 .hero-section {
   display: flex;
-  width: min(779px, 100%);
+  width: min(1120px, 100%);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -14,10 +14,10 @@
 .hero-section h1 {
   display: flex;
   width: 100%;
-  max-width: 779px;
+  max-width: 1120px;
   flex-direction: column;
   margin: 0;
-  font-size: clamp(48px, 10.5vw, 71px);
+  font-size: clamp(48px, 5vw, 64px);
   font-weight: var(--type-h1-font-weight);
   line-height: var(--type-h1-line-height);
   letter-spacing: -0.035em;
@@ -44,7 +44,7 @@
 }
 
 .hero-copy {
-  max-width: 580px;
+  max-width: 760px;
   margin-top: 32px;
   font-size: 22px;
   font-weight: var(--type-body-lg-font-weight);
@@ -126,7 +126,7 @@
 @media (max-width: 639px) {
 
   .hero-section h1 {
-    --mobile-hero-size: clamp(24px, 8.3vw, 34px);
+    --mobile-hero-size: clamp(20px, 6.3vw, 26px);
     font-size: var(--mobile-hero-size);
   }
 
@@ -144,15 +144,15 @@
   }
 
   .hero-title__clip:nth-child(1) .hero-title__line::before {
-    content: 'Build Your Creator Wealth';
+    content: 'Turn Your First';
   }
 
   .hero-title__clip:nth-child(1) .hero-title__line::after {
-    content: none;
+    content: '$10K Months Into';
   }
 
   .hero-title__clip:nth-child(2) .hero-title__line::before {
-    content: 'Machine Right Now';
+    content: 'Predictable Recurring Revenue';
   }
 
   .hero-title__clip:nth-child(2) .hero-title__line::after {
@@ -181,7 +181,7 @@
 
 @media (max-width: 359px) {
   .hero-section h1 {
-    --mobile-hero-size: clamp(24px, 8.3vw, 30px);
+    --mobile-hero-size: clamp(20px, 6.3vw, 23px);
   }
 
   .hero-copy {
