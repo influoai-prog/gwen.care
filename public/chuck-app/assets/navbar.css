@@ -12,7 +12,7 @@
   justify-content: space-between;
   gap: 10px;
   overflow: hidden;
-  padding: 0 24px 0 0;
+  padding: 0 24px 0 12px;
   border-radius: 30px;
   translate: -50% 0;
   background: transparent;
@@ -76,7 +76,7 @@
   height: 60px;
   flex: 0 0 auto;
   align-items: center;
-  gap: 0;
+  gap: 6px;
   text-decoration: none;
 }
 
@@ -143,8 +143,8 @@
 .brand__mark-loader::before {
   content: "";
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   background: url("/chuck-app/gwen-mark.svg") center / contain no-repeat;
   filter: drop-shadow(0 5px 12px rgba(183, 45, 77, 0.2));
 }
@@ -155,9 +155,9 @@
 }
 
 .nav-shell:not(.nav-shell--loading) .brand__mark {
-  width: 40px;
-  height: 40px;
-  flex-basis: 40px;
+  width: 36px;
+  height: 36px;
+  flex-basis: 36px;
 }
 
 .nav-shell:not(.nav-shell--loading) .brand__mark-header {
@@ -176,7 +176,7 @@
 
 .brand__wordmark {
   width: auto;
-  height: 28px;
+  height: 24px;
   align-items: center;
   gap: 5px;
   white-space: nowrap;
@@ -282,7 +282,7 @@
 .brand__wordmark strong {
   font-size: var(--type-wordmark-font-size);
   font-weight: 652;
-  line-height: 28px;
+  line-height: 24px;
   letter-spacing: -0.045em;
   text-transform: capitalize;
   color: #020407;
@@ -420,7 +420,7 @@
     width: calc(100vw - 48px);
     height: 52px;
     min-height: 52px;
-    padding: 0 4px 0 0;
+    padding: 0 4px 0 8px;
     border-radius: 28px;
   }
 
@@ -474,7 +474,7 @@
   .nav-brand {
     width: auto;
     height: 52px;
-    gap: 0;
+    gap: 6px;
   }
 
   .brand__mark {

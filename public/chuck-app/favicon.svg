@@ -1,18 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <defs>
-    <radialGradient id="surface" cx="0" cy="0" r="1" gradientTransform="translate(19 12) rotate(48) scale(65)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="surface" x1="10" y1="8" x2="55" y2="57" gradientUnits="userSpaceOnUse">
       <stop stop-color="#ffe7e9"/>
-      <stop offset=".5" stop-color="#ffb7bd"/>
+      <stop offset=".56" stop-color="#ffb7bd"/>
       <stop offset="1" stop-color="#f78290"/>
-    </radialGradient>
-    <linearGradient id="kiss" x1="13" y1="23" x2="50" y2="43" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#761831"/>
-      <stop offset=".52" stop-color="#a32345"/>
+    </linearGradient>
+    <linearGradient id="ribbon" x1="13" y1="22" x2="51" y2="45" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#74172f"/>
+      <stop offset=".5" stop-color="#a32345"/>
       <stop offset="1" stop-color="#d63b58"/>
     </linearGradient>
   </defs>
   <rect x="2" y="2" width="60" height="60" rx="19" fill="url(#surface)"/>
-  <path d="M9.5 32c5.8-8.3 12.5-12.4 20.2-8.4L32 26l2.3-2.4c7.7-4 14.4.1 20.2 8.4C48.6 40.3 41 44.5 32 44.5S15.4 40.3 9.5 32Z" fill="url(#kiss)"/>
-  <path d="M16.7 32c5.2-2.8 10.3-4.2 15.3-4.2S42.1 29.2 47.3 32c-5.2 2.8-10.3 4.2-15.3 4.2S21.9 34.8 16.7 32Z" fill="#ffd9dc"/>
-  <path d="M19.2 32c4.4-.8 8.7-1.2 12.8-1.2s8.4.4 12.8 1.2" fill="none" stroke="#f46f80" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M13 22.5C16.7 37 21.7 44 27.2 44c4 0 4.8-7 4.8-16 0 9 .8 16 4.8 16 5.5 0 10.5-7 14.2-21.5" fill="none" stroke="url(#ribbon)" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
