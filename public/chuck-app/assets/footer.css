@@ -307,7 +307,7 @@
   font-weight: var(--type-footer-strong-font-weight);
   line-height: var(--type-footer-strong-line-height);
   letter-spacing: var(--type-footer-strong-letter-spacing);
-  text-transform: capitalize;
+  text-transform: lowercase;
   color: #fff;
   text-shadow: none;
 }
