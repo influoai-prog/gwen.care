@@ -843,7 +843,7 @@
     inset 0 1px 0 rgba(255, 255, 255, 0.9),
     0 22px 60px rgba(57, 34, 40, 0.08);
   font-family: "Kalnia", Georgia, serif;
-  font-size: 52px;
+  font-size: 49px;
   font-style: normal;
   font-weight: 500;
   line-height: 1;
@@ -860,7 +860,7 @@
   height: auto;
   flex-direction: row;
   align-items: baseline;
-  gap: 4px;
+  gap: 6px;
   line-height: 1;
   opacity: 1 !important;
   animation: gwen-loader-caption 620ms ease both;
@@ -938,7 +938,7 @@
     height: 150px;
     flex-basis: 150px;
     border-radius: 50px;
-    font-size: 45px;
+    font-size: 42px;
   }
 
   .nav-shell.nav-shell--loading .brand__wordmark strong {
