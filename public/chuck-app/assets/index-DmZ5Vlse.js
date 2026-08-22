@@ -24934,20 +24934,20 @@ function Hero() {
 		initial: "hidden",
 		animate: "visible",
 		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h1", {
-			"aria-label": "Your Business Is Leaking Money Right Now",
+			"aria-label": "Build Your Creator Wealth Machine Right Now",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 				className: "hero-title__clip",
 				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.span, {
 					className: "hero-title__line",
 					variants: line,
-					children: "Your Business Is Leaking"
+					children: "Build Your Creator Wealth"
 				})
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 				className: "hero-title__clip",
 				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.span, {
 					className: "hero-title__line",
 					variants: line,
-					children: "Money Right Now"
+					children: "Machine Right Now"
 				})
 			})]
 		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.p, {
@@ -24956,19 +24956,19 @@ function Hero() {
 			children: [
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 					className: "hero-copy__line",
-					children: "We find the costs, bottlenecks and"
+					children: "Give us 60 days. We turn your content"
 				}),
 				" ",
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", { className: "hero-copy__mobile-break" }),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 					className: "hero-copy__line",
-					children: "wasted hours dragging down your margins"
+					children: "into a subscriber machine built to print"
 				}),
 				" ",
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", { className: "hero-copy__mobile-break" }),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 					className: "hero-copy__line",
-					children: "then turn them into profit."
+					children: "recurring revenue."
 				})
 			]
 		})]
