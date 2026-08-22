@@ -200,6 +200,7 @@
   height: 32px;
   padding: 0 5px 1px 2px;
   overflow: visible;
+  transform: translateY(-7px);
 }
 
 .nav-shell:not(.nav-shell--loading) .brand__wordmark strong {
@@ -212,8 +213,8 @@
   line-height: 32px;
   letter-spacing: -0.045em;
   text-transform: lowercase;
-  color: #f78290;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75), 0 4px 12px rgba(214, 59, 88, 0.14);
+  color: #f56f6f;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.72), 0 4px 12px rgba(213, 48, 48, 0.14);
 }
 
 .nav-shell:not(.nav-shell--loading) .brand__wordmark::after {
@@ -265,9 +266,10 @@
   top: 40px;
   left: calc(50% - 267px);
   display: flex;
-  width: auto;
-  height: 28px;
+  width: 180px;
+  height: 180px;
   align-items: center;
+  justify-content: center;
   gap: 5px;
   white-space: nowrap;
   pointer-events: none;
@@ -299,12 +301,13 @@
   line-height: 1;
   letter-spacing: -0.045em;
   text-transform: lowercase;
-  color: #f78290;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8), 0 6px 18px rgba(214, 59, 88, 0.16);
+  color: #f56f6f;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.78), 0 6px 18px rgba(213, 48, 48, 0.16);
+  transform: translate(6px, -10px);
 }
 
 .loading-wordmark span {
-  display: flex;
+  display: none;
   height: 28px;
   align-items: center;
   padding-top: 3px;

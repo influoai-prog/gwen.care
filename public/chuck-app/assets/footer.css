@@ -101,8 +101,8 @@
   line-height: 1;
   letter-spacing: -0.045em;
   text-transform: lowercase;
-  color: #f78290;
-  text-shadow: 0 5px 18px rgba(247, 130, 144, 0.18);
+  color: #f56f6f;
+  text-shadow: 0 5px 18px rgba(213, 48, 48, 0.18);
 }
 
 .site-footer__wordmark::after {
