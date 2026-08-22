@@ -754,9 +754,9 @@
 
 .nav-shell:not(.nav-shell--loading) .nav-brand {
   display: flex;
-  width: 70px;
+  width: 68px;
   height: 60px;
-  flex: 0 0 70px;
+  flex: 0 0 68px;
   align-items: center;
   justify-content: center;
   transform: translateY(0);
@@ -766,9 +766,9 @@
 
 .nav-brand::before {
   display: block;
-  width: 70px;
-  height: 22px;
-  flex: 0 0 70px;
+  width: 68px;
+  height: 21px;
+  flex: 0 0 68px;
   background: url('/chuck-app/gwen-wordmark-lowercase.png') center / contain no-repeat;
   content: '';
   transform: translateY(1px) scale(1);
@@ -900,15 +900,15 @@
   }
 
   .nav-shell:not(.nav-shell--loading) .nav-brand {
-    width: 68px;
+    width: 66px;
     height: 52px;
-    flex-basis: 68px;
+    flex-basis: 66px;
   }
 
   .nav-shell:not(.nav-shell--loading) .nav-brand::before {
-    width: 68px;
-    height: 21px;
-    flex-basis: 68px;
+    width: 66px;
+    height: 20px;
+    flex-basis: 66px;
   }
 
   .nav-shell.nav-shell--open {
