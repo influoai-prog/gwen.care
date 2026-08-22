@@ -688,7 +688,7 @@
 
 .process-card {
   border: 1px solid rgba(1, 2, 5, 0.08);
-  box-shadow: 0 10px 0 rgba(1, 2, 5, 0.035);
+  box-shadow: none;
 }
 
 .process-card--one,
@@ -715,7 +715,7 @@
   border: 1px solid rgba(183, 70, 86, 0.14);
   border-radius: 32px;
   background: #f1d7dc;
-  box-shadow: 10px 12px 0 #c9e6f1;
+  box-shadow: none;
 }
 
 .process-cta h3 {
