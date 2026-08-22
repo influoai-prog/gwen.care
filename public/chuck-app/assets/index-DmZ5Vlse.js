@@ -23262,7 +23262,7 @@ function BookingProvider({ children }) {
 										})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Primary platform" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
 											name: "primaryPlatform",
 											onChange: updateAnswer,
-											placeholder: "e.g. OnlyFans",
+											placeholder: "e.g. OnlyFans + Instagram",
 											required: true,
 											type: "text",
 											value: answers.primaryPlatform
@@ -23271,7 +23271,7 @@ function BookingProvider({ children }) {
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Profile links or handles" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
 										name: "profileLinks",
 										onChange: updateAnswer,
-										placeholder: "@handle or profile link",
+										placeholder: "@handle or https://your-profile-link.com",
 										required: true,
 										type: "text",
 										value: answers.profileLinks
