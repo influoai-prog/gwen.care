@@ -759,7 +759,7 @@
   flex: 0 0 68px;
   align-items: center;
   justify-content: center;
-  transform: translateY(-6px);
+  transform: translateY(-8px);
   transition: transform 760ms cubic-bezier(0.22, 1, 0.36, 1);
   animation: gwen-brand-dock 940ms cubic-bezier(0.76, 0, 0.24, 1) both;
 }
