@@ -94,26 +94,19 @@
 .site-footer__brand .site-footer__wordmark strong {
   position: relative;
   z-index: 1;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 34px;
-  font-style: italic;
-  font-weight: 700;
+  font-family: "Snell Roundhand", "Apple Chancery", "Segoe Script", "Brush Script MT", cursive;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 600;
   line-height: 1;
-  letter-spacing: -0.075em;
+  letter-spacing: -0.045em;
   text-transform: lowercase;
+  color: #f78290;
+  text-shadow: 0 5px 18px rgba(247, 130, 144, 0.18);
 }
 
 .site-footer__wordmark::after {
-  position: absolute;
-  z-index: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 7px;
-  border-radius: 999px;
-  content: "";
-  background: linear-gradient(90deg, #ffb7bd, #f78290);
-  transform: rotate(-2deg);
+  display: none;
 }
 
 .site-footer__wordmark {
