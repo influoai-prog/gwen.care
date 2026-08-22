@@ -740,3 +740,111 @@
     display: flex;
   }
 }
+
+/* Gwen supplied wordmark: wide header and matching loading treatment. */
+.nav-shell:not(.nav-shell--loading) {
+  width: min(680px, calc(100vw - 48px));
+  justify-content: space-between;
+  padding: 0 12px 0 20px;
+}
+
+.nav-shell:not(.nav-shell--loading) .nav-brand {
+  display: flex;
+  width: 126px;
+  height: 60px;
+  flex: 0 0 126px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-brand::before {
+  display: block;
+  width: 126px;
+  height: 36px;
+  flex: 0 0 126px;
+  background: url('/chuck-app/gwen-wordmark.png') center / contain no-repeat;
+  content: '';
+}
+
+.nav-brand .brand__mark,
+.nav-brand .brand__wordmark {
+  display: none !important;
+}
+
+.nav-shell:not(.nav-shell--loading) .nav-trailing {
+  width: auto;
+  flex: 1 1 auto;
+}
+
+.nav-shell.nav-shell--loading {
+  top: 50% !important;
+  width: 300px !important;
+  height: 112px !important;
+  min-height: 112px !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  border-radius: 36px !important;
+  visibility: visible;
+  opacity: 1 !important;
+  pointer-events: none;
+  translate: -50% -50% !important;
+}
+
+.nav-shell.nav-shell--loading .nav-brand {
+  display: flex !important;
+  width: 100% !important;
+  height: 100% !important;
+  flex: 0 0 100% !important;
+  align-items: center;
+  justify-content: center !important;
+}
+
+.nav-shell.nav-shell--loading .nav-brand::before {
+  width: 214px;
+  height: 60px;
+  flex-basis: 214px;
+}
+
+.nav-shell.nav-shell--loading .nav-trailing {
+  display: none;
+}
+
+@media (max-width: 809.98px) {
+  .nav-shell:not(.nav-shell--loading):not(.nav-shell--open) {
+    right: auto;
+    left: 50%;
+    width: calc(100vw - 48px);
+    justify-content: space-between;
+    padding: 0 4px 0 14px;
+    translate: -50% 0;
+  }
+
+  .nav-shell:not(.nav-shell--loading) .nav-brand {
+    width: 108px;
+    height: 52px;
+    flex-basis: 108px;
+  }
+
+  .nav-shell:not(.nav-shell--loading) .nav-brand::before {
+    width: 108px;
+    height: 30px;
+    flex-basis: 108px;
+  }
+
+  .nav-shell.nav-shell--open {
+    padding-left: 14px;
+  }
+
+  .nav-shell.nav-shell--loading {
+    width: min(280px, calc(100vw - 48px)) !important;
+    height: 104px !important;
+    min-height: 104px !important;
+    border-radius: 34px !important;
+  }
+
+  .nav-shell.nav-shell--loading .nav-brand::before {
+    width: 198px;
+    height: 55px;
+    flex-basis: 198px;
+  }
+}
