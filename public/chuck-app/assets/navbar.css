@@ -754,9 +754,9 @@
 
 .nav-shell:not(.nav-shell--loading) .nav-brand {
   display: flex;
-  width: 64px;
+  width: 68px;
   height: 60px;
-  flex: 0 0 64px;
+  flex: 0 0 68px;
   align-items: center;
   justify-content: center;
   transform: translateY(0);
@@ -766,12 +766,12 @@
 
 .nav-brand::before {
   display: block;
-  width: 64px;
-  height: 19px;
-  flex: 0 0 64px;
-  background: url('/chuck-app/gwen-wordmark.png') center / contain no-repeat;
+  width: 68px;
+  height: 21px;
+  flex: 0 0 68px;
+  background: url('/chuck-app/gwen-wordmark-header-optimized.png') center / contain no-repeat;
   content: '';
-  transform: translateY(0) scale(1);
+  transform: translateY(1.5px) scale(1);
   transition:
     width 760ms cubic-bezier(0.22, 1, 0.36, 1),
     height 760ms cubic-bezier(0.22, 1, 0.36, 1),
@@ -836,7 +836,7 @@
   flex: 0 0 174px;
   border: 0;
   border-radius: 58px;
-  background: #e9e9e9 url('/chuck-app/gwen-g-mark-loader-rounded.png') center / 92px 92px no-repeat;
+  background: #e9e9e9 url('/chuck-app/gwen-g-mark-loader-clean.png') center / 92px 92px no-repeat;
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.9),
     0 22px 60px rgba(57, 34, 40, 0.08);
@@ -849,7 +849,7 @@
   height: auto;
   flex-direction: row;
   align-items: baseline;
-  gap: 6px;
+  gap: 4px;
   line-height: 1;
   opacity: 1 !important;
   animation: gwen-loader-caption 620ms ease both;
@@ -868,7 +868,7 @@
 .nav-shell.nav-shell--loading .brand__wordmark strong::after {
   font-size: 25px;
   letter-spacing: -0.035em;
-  content: 'Gwen';
+  content: 'gwen';
 }
 
 .nav-shell.nav-shell--loading .brand__wordmark span {
@@ -900,15 +900,15 @@
   }
 
   .nav-shell:not(.nav-shell--loading) .nav-brand {
-    width: 62px;
+    width: 66px;
     height: 52px;
-    flex-basis: 62px;
+    flex-basis: 66px;
   }
 
   .nav-shell:not(.nav-shell--loading) .nav-brand::before {
-    width: 62px;
-    height: 18px;
-    flex-basis: 62px;
+    width: 66px;
+    height: 20px;
+    flex-basis: 66px;
   }
 
   .nav-shell.nav-shell--open {

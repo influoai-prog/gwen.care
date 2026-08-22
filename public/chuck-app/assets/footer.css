@@ -307,7 +307,7 @@
   font-weight: var(--type-footer-strong-font-weight);
   line-height: var(--type-footer-strong-line-height);
   letter-spacing: var(--type-footer-strong-letter-spacing);
-  text-transform: capitalize;
+  text-transform: lowercase;
   color: #fff;
   text-shadow: none;
 }
@@ -323,7 +323,7 @@
 }
 
 .site-footer__wordmark span::after {
-  content: "Gwen Inc";
+  content: "Durden Inc";
   font-size: var(--type-body-xs-font-size);
   letter-spacing: -0.03em;
 }

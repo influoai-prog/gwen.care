@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Gwen | Better Operations",
+  title: "gwen | Better Operations",
   description: "We find the costs, bottlenecks and wasted hours dragging down your margins, then turn them into profit.",
   icons: {
     icon: [{ url: "/chuck-app/gwen-g-mark-rounded.png", type: "image/png", sizes: "256x256" }],
@@ -14,7 +14,7 @@ export default function Page() {
   return (
     <iframe
       src="/chuck-app/index.html"
-      title="Gwen — Better Operations"
+      title="gwen — Better Operations"
       style={{
         position: "fixed",
         inset: 0,

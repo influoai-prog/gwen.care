@@ -1,7 +1,7 @@
 {
-  "name": "Gwen",
-  "short_name": "Gwen",
-  "description": "Gwen finds operational drag and creates room for cleaner growth.",
+  "name": "gwen",
+  "short_name": "gwen",
+  "description": "gwen finds operational drag and creates room for cleaner growth.",
   "start_url": "/chuck",
   "display": "standalone",
   "orientation": "portrait-primary",

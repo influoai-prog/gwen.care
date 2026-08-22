@@ -23020,10 +23020,11 @@ var CAL_URL = `https://cal.com/${CAL_LINK}`;
 var CAL_NAMESPACE = "soaplabsAudit";
 var CAL_CONTAINER_ID = "soaplabs-cal-booking";
 var INITIAL_ANSWERS = {
-	company: "",
-	industry: "",
-	revenue: "",
-	teamSize: "",
+	creatorName: "",
+	primaryPlatform: "",
+	profileLinks: "",
+	audienceSize: "",
+	teamSetup: "",
 	challenge: "",
 	desiredOutcome: "",
 	priority: "",
@@ -23100,13 +23101,14 @@ function initializeCalEmbed(answers) {
 			} }
 		});
 		const notes = [
-			`Business: ${answers.company}`,
-			`Industry: ${answers.industry}`,
-			`Annual revenue: ${answers.revenue}`,
-			`Team size: ${answers.teamSize}`,
-			`Primary priority: ${answers.priority}`,
+			`Creator / channel: ${answers.creatorName}`,
+			`Primary platform: ${answers.primaryPlatform}`,
+			`Profiles / handles: ${answers.profileLinks}`,
+			`Audience size: ${answers.audienceSize}`,
+			`Team setup: ${answers.teamSetup}`,
+			`Primary goal: ${answers.priority}`,
 			`Timing: ${answers.urgency}`,
-			answers.desiredOutcome ? `Desired outcome: ${answers.desiredOutcome}` : null
+			answers.desiredOutcome ? `90-day win: ${answers.desiredOutcome}` : null
 		].filter(Boolean).join("\n");
 		const config = {
 			layout: "month_view",
@@ -23194,7 +23196,7 @@ function BookingProvider({ children }) {
 			className: "booking-modal",
 			role: "dialog",
 			"aria-modal": "true",
-			"aria-label": "Book an evolution audit",
+			"aria-label": "Creator application",
 			initial: reduceMotion ? false : { opacity: 0 },
 			animate: { opacity: 1 },
 			exit: { opacity: 0 },
@@ -23249,28 +23251,36 @@ function BookingProvider({ children }) {
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 										className: "booking-form__row",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Business name" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Creator or channel name" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
 											autoComplete: "organization",
-											name: "company",
+											name: "creatorName",
 											onChange: updateAnswer,
-											placeholder: "Your company",
+											placeholder: "How people know you",
 											required: true,
 											type: "text",
-											value: answers.company
-										})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Industry" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
-											name: "industry",
+											value: answers.creatorName
+										})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Primary platform" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
+											name: "primaryPlatform",
 											onChange: updateAnswer,
-											placeholder: "e.g. Healthcare",
+											placeholder: "e.g. OnlyFans",
 											required: true,
 											type: "text",
-											value: answers.industry
+											value: answers.primaryPlatform
 										})] })]
 									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Annual revenue" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("select", {
-										name: "revenue",
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Profile links or handles" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
+										name: "profileLinks",
+										onChange: updateAnswer,
+										placeholder: "@handle or profile link",
+										required: true,
+										type: "text",
+										value: answers.profileLinks
+									})] }),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Total audience" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("select", {
+										name: "audienceSize",
 										onChange: updateAnswer,
 										required: true,
-										value: answers.revenue,
+										value: answers.audienceSize,
 										children: [
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
 												value: "",
@@ -23278,36 +23288,36 @@ function BookingProvider({ children }) {
 												children: "Select a range"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-												value: "Below $250k",
-												children: "Below $250k"
+												value: "Just started",
+												children: "Just started"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-												value: "$250k–$500k",
-												children: "$250k–$500k"
+												value: "Under 10k",
+												children: "Under 10k"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-												value: "$500k–$1m",
-												children: "$500k–$1m"
+												value: "10k-50k",
+												children: "10k-50k"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-												value: "$1m–$3m",
-												children: "$1m–$3m"
+												value: "50k-250k",
+												children: "50k-250k"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-												value: "$3m–$10m",
-												children: "$3m–$10m"
+												value: "250k-1m",
+												children: "250k-1m"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-												value: "$10m+",
-												children: "$10m+"
+												value: "1m+",
+												children: "1m+"
 											})
 										]
 									})] }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Team size" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("select", {
-										name: "teamSize",
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Current setup" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("select", {
+										name: "teamSetup",
 										onChange: updateAnswer,
 										required: true,
-										value: answers.teamSize,
+										value: answers.teamSetup,
 										children: [
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
 												value: "",
@@ -23315,24 +23325,24 @@ function BookingProvider({ children }) {
 												children: "Select a range"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-												value: "1–5 people",
-												children: "1–5 people"
+												value: "Solo creator",
+												children: "Solo creator"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-												value: "6–15 people",
-												children: "6–15 people"
+												value: "Freelancers as needed",
+												children: "Freelancers as needed"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-												value: "16–50 people",
-												children: "16–50 people"
+												value: "Manager or assistant",
+												children: "Manager or assistant"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-												value: "51–150 people",
-												children: "51–150 people"
+												value: "Small in-house team",
+												children: "Small in-house team"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-												value: "151+ people",
-												children: "151+ people"
+												value: "Agency support",
+												children: "Agency support"
 											})
 										]
 									})] }),
@@ -23354,17 +23364,17 @@ function BookingProvider({ children }) {
 								className: "booking-form",
 								onSubmit: advanceStep,
 								children: [
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Biggest operational problem" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("textarea", {
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "What is holding your content back?" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("textarea", {
 										name: "challenge",
 										onChange: updateAnswer,
-										placeholder: "What is costing the most time, money, or capacity?",
+										placeholder: "Tell us what is stuck: content, promotion, subscriber growth, retention, DMs, or the work behind the scenes.",
 										required: true,
 										rows: "3",
 										value: answers.challenge
 									})] }),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 										className: "booking-form__row",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Primary priority" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("select", {
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Primary goal" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("select", {
 											name: "priority",
 											onChange: updateAnswer,
 											required: true,
@@ -23374,26 +23384,26 @@ function BookingProvider({ children }) {
 													value: "",
 													disabled: true,
 													children: "Select one"
-												}),
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
+												value: "Build a clear creator brand",
+												children: "Creator positioning"
+											}),
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-													value: "Reduce costs",
-													children: "Reduce costs"
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-													value: "Improve margins",
-													children: "Improve margins"
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-													value: "Reclaim team time",
-													children: "Reclaim team time"
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-													value: "Create capacity",
-													children: "Create capacity"
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-													value: "Simplify systems",
-													children: "Simplify systems"
+														value: "Create content consistently",
+														children: "Consistent production"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
+												value: "Grow social reach",
+												children: "Audience growth"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
+												value: "Grow and retain subscribers",
+												children: "Subscriber growth"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
+												value: "Increase creator revenue",
+												children: "Monetization"
 												})
 											]
 										})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Timing" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("select", {
@@ -23426,10 +23436,10 @@ function BookingProvider({ children }) {
 											]
 										})] })]
 									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "What would a win look like?" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "What would make the next 90 days a win?" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
 										name: "desiredOutcome",
 										onChange: updateAnswer,
-										placeholder: "More margin, reclaimed time, extra capacity…",
+										placeholder: "A publishing rhythm, stronger reach, better deals…",
 										type: "text",
 										value: answers.desiredOutcome
 									})] }),
@@ -23590,7 +23600,7 @@ function Navbar({ isLoading = false }) {
 		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
 			className: "nav-brand",
 			href: "#top",
-			"aria-label": "Gwen home",
+			"aria-label": "gwen home",
 			onClick: (event) => handleNavigation(event, "#top"),
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 				className: "brand__mark",
@@ -23763,7 +23773,7 @@ function Footer() {
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
 						className: "site-footer__brand",
 						href: "#top",
-						"aria-label": "Gwen home",
+						"aria-label": "gwen home",
 						onClick: (event) => handleHomeNavigation(event, "#top"),
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FooterSoapMark, {}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 							className: "site-footer__wordmark",
@@ -23784,7 +23794,7 @@ function Footer() {
 				})]
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "site-footer__bottom",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "© Gwen 2026" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "© gwen 2026" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 					className: "site-footer__legal",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
 						to: "/privacy-policy",
@@ -30099,14 +30109,14 @@ var testimonial_section_default = "/chuck-app/assets/testimonial-section.css";
 })();
 var testimonials = [
 	{
-		quote: "Gwen mapped where our margins were leaking, then built the operating system that closed the gaps. Within weeks, our team had fewer handoffs, clearer ownership, and more time for the work that actually grows the business.",
+		quote: "gwen mapped where our margins were leaking, then built the operating system that closed the gaps. Within weeks, our team had fewer handoffs, clearer ownership, and more time for the work that actually grows the business.",
 		name: "Michael Kaizer",
 		role: "CEO of Basecamp Corp",
 		avatar: "/chuck-app/images/michael-kaizer-avatar.png",
 		accent: "#e9fe71"
 	},
 	{
-		quote: "We had accepted duplicate work as part of scaling. Gwen showed us it was a design problem, not a people problem, and replaced it with one simple workflow our whole team could trust.",
+		quote: "We had accepted duplicate work as part of scaling. gwen showed us it was a design problem, not a people problem, and replaced it with one simple workflow our whole team could trust.",
 		name: "Amelia Stone",
 		role: "COO of Northstar Labs",
 		initials: "AS",
@@ -30120,7 +30130,7 @@ var testimonials = [
 		accent: "#d9c7ff"
 	},
 	{
-		quote: "Gwen did not hand us another generic playbook. They learned how the business really moved, found the constraint costing us the most, and built around the way our people actually work.",
+		quote: "gwen did not hand us another generic playbook. They learned how the business really moved, found the constraint costing us the most, and built around the way our people actually work.",
 		name: "Priya Nair",
 		role: "CEO of Pattern House",
 		initials: "PN",
@@ -30177,7 +30187,7 @@ function TestimonialSection() {
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 					className: "sr-only",
 					id: "testimonial-heading",
-					children: "What clients say about Gwen"
+					children: "What clients say about gwen"
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
 					className: "testimonial-stage",
@@ -30368,28 +30378,32 @@ var faq_section_default = "/chuck-app/assets/faq-section.css";
 })();
 var soapFaqs = [
 	{
-		question: "What does Gwen actually do?",
-		answer: "We find where your business is wasting time and money, then build and implement the systems to fix it."
+		question: "What does gwen actually do?",
+		answer: "We help OnlyFans creators build a stronger business around their content. That can include positioning, content planning, social growth, subscriber retention, messaging, and the day-to-day systems that keep everything moving."
 	},
 	{
-		question: "How do you find where money is being wasted?",
-		answer: "We audit your workflows, tools, team structure and recurring processes to find unnecessary spend, bottlenecks, and manual work that can be improved or removed."
+		question: "Who is a good fit for gwen?",
+		answer: "Adult creators who want to take OnlyFans seriously and build something consistent. You can be established or just getting started. What matters is that you are 18 or older, willing to collaborate, and ready to follow through on a clear plan."
 	},
 	{
-		question: "What happens after you map our operations?",
-		answer: "We show you what’s costing you money, what should change and where the biggest upside is. Then, if it makes sense, we implement the fixes for you."
+		question: "What happens after I apply?",
+		answer: "We review your handles, audience stage, goals, and what you want help with. If it looks like a fit, you can choose a call time and talk it through with us. Applying does not guarantee acceptance or representation."
 	},
 	{
-		question: "How quickly can we expect to see an impact?",
-		answer: "It depends on the business, but the biggest inefficiencies usually become clear early. From there, we prioritize the changes that can create the fastest meaningful impact."
+		question: "Will the content still sound and feel like me?",
+		answer: "Yes. Your personality, boundaries, and relationship with your audience come first. We help with the plan and execution, but you keep a say in what goes out and how you are presented."
 	},
 	{
-		question: "Will we need to replace our current tools or team?",
-		answer: "Usually not. The goal is to get more out of what you already have first. We only recommend changing tools, systems, or roles when there’s a clear reason to."
+		question: "Which platforms and formats do you support?",
+		answer: "OnlyFans is the main focus. We can also build a promotion plan around Instagram, TikTok, X, Reddit, and other channels that make sense for your audience and stay within each platform's rules."
 	},
 	{
-		question: "What kind of businesses are a good fit for Gwen?",
-		answer: "Established businesses with real revenue, growing teams and enough operational complexity that small inefficiencies are starting to become expensive."
+		question: "Do you guarantee followers, views, or income?",
+		answer: "No. Nobody controls algorithms, reach, subscriber behavior, or platform decisions. We focus on a clear strategy, consistent execution, useful reporting, and better decisions based on real performance."
+	},
+	{
+		question: "Do I keep control of my account and content?",
+		answer: "Yes. Your ownership, access, approvals, and boundaries are set out clearly before we work together. We will never ask for passwords through the public application form, and we do not expect you to submit explicit content when you apply."
 	}
 ];
 function FAQ({ items, className, ...props }) {
@@ -30617,7 +30631,7 @@ function App() {
 	const location = useLocation();
 	const navigate = useNavigate();
 	(0, import_react.useEffect)(() => {
-		document.title = "Gwen | Better Operations";
+		document.title = "gwen | Better Operations";
 	}, []);
 	(0, import_react.useEffect)(() => {
 		const isMobile = window.matchMedia("(max-width: 809.98px)").matches;
@@ -30683,7 +30697,7 @@ function App() {
 		className: "portrait-guard",
 		role: "status",
 		"aria-live": "polite",
-		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Rotate your phone" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Gwen works best in portrait." })]
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Rotate your phone" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "gwen works best in portrait." })]
 	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(SiteLayout, {
 		pageClassName: isLoading ? "page--loading" : "",
 		navbarProps: { isLoading },
@@ -30774,62 +30788,74 @@ var sections$1 = [
 	{
 		id: "who-we-are",
 		heading: "Who we are",
-		body: ["Gwen is a consulting practice that maps operations, finds where money is being wasted, and builds the fix. We operate this website to explain what we do and how people can get in touch.", "This policy explains what information we collect when you use our website, why we collect it, and how it is handled. It applies to everyone who visits this website, whether or not they become a client."]
+		body: ["gwen is an agency for adult creators, with a focus on OnlyFans growth, content planning, promotion, subscriber retention, and account operations. This policy explains how we handle personal information when you visit this website, submit a creator application, book a call, or work with us.", "For the information collected directly through this website and application flow, gwen is the organisation responsible for deciding how and why that information is used."]
 	},
 	{
 		id: "information-we-collect",
 		heading: "Information we collect",
-		body: ["We only collect the information needed to run the business and to respond to requests. The information we may collect falls into two groups:", { list: ["Information you provide directly, such as your name, email address, company, and anything you include when you message us or book a call.", "Information collected automatically, such as anonymised usage data (for example the pages you visit) so we can understand how the site is used and keep it working reliably."] }]
+		body: ["We collect information you choose to provide and limited technical information generated when you use the site, including:", { list: [
+			"Application information, such as your creator name, primary platforms, public profile links or handles, audience range, team setup, goals, timing, challenges, and the outcome you want to achieve.",
+			"Booking and contact information, such as your name, email address, time zone, meeting details, and answers passed into the booking flow.",
+			"Communications and service information you send us by email, during calls, or while we work together.",
+			"Technical and usage information, such as IP address, browser and device details, referring page, pages viewed, timestamps, and interactions measured through cookies or similar technologies."
+		] }]
 	},
 	{
 		id: "how-we-use-information",
-		heading: "How we use your information",
-		body: ["We use the information we hold only for the purposes it was shared for, including:", { list: [
-			"Responding to enquiries and messages you send us.",
-			"Arranging and carrying out calls or meetings you book.",
-			"Preparing proposals and carrying out work we are engaged to do.",
-			"Improving this website and the way we describe and deliver our services."
+		heading: "How and why we use information",
+		body: ["We use personal information only where we have a valid reason to do so, including:", { list: [
+			"To review your application, decide whether there may be a fit, contact you, and arrange a call. We do this at your request and to take steps toward a possible agreement.",
+			"To prepare proposals, manage our relationship, and deliver agreed services. We do this to perform a contract or take requested steps before one.",
+			"To operate, secure, troubleshoot, and improve the website and our services. We do this where necessary for our legitimate interests, balanced against your rights.",
+			"To measure campaigns and understand how people find and use the site. Where consent is required for cookies or tracking technologies, consent is the relevant basis.",
+			"To keep records, prevent misuse, and meet legal, tax, accounting, or regulatory obligations."
 		] }]
+	},
+	{
+		id: "booking-and-providers",
+		heading: "Booking and service providers",
+		body: ["The application flow uses Cal.com to display availability and complete bookings. When you continue to the calendar, Cal.com may receive your contact details, meeting information, and the answers you provided so that it can create and manage the booking. Cal.com processes booking data for us and also handles certain information under its own privacy policy.", "We also use hosting, security, email, and other operational providers where needed to run the website and our services. Each provider receives only the information reasonably required for its role."]
+	},
+	{
+		id: "cookies-and-tracking",
+		heading: "Cookies, Meta Pixel, and measurement",
+		body: ["This website includes Meta Pixel, an advertising and measurement technology provided by Meta. It may use cookies or similar identifiers and receive information about your device, browser, visit, and interactions with this site, including whether you have a Meta account. Meta may use that information under its own privacy and cookies policies.", "You can control cookies through your browser and Meta settings. Blocking non-essential cookies or tracking may reduce measurement accuracy but should not prevent you from reading the site."
+		]
 	},
 	{
 		id: "sharing-and-disclosure",
 		heading: "Sharing and disclosure",
-		body: ["We do not sell personal data, and we do not share it for advertising purposes. We only share information where it is necessary to deliver our services, such as with the tools and providers we use to operate, or where we are required to do so by law.", "Where we do work with providers, we keep the data we share to the minimum required and make sure the provider handles it responsibly."]
-	},
-	{
-		id: "cookies-and-analytics",
-		heading: "Cookies and analytics",
-		body: ["This website uses cookies and similar technologies to keep the site working and to collect anonymised analytics about how it is used. You can disable cookies in your browser at any time, though some parts of the site may not work as well without them."]
+		body: ["We do not sell your application or booking information. We may share personal information with the providers described above, professional advisers, a buyer or successor if the business changes ownership, or public authorities where disclosure is legally required.", "We limit sharing to what is reasonably necessary and require providers acting on our behalf to protect the information they process."]
 	},
 	{
 		id: "data-retention",
 		heading: "How long we keep information",
-		body: ["We keep personal information only for as long as it is needed for the purpose it was collected, or for as long as the law requires. When information is no longer needed, we delete it securely."]
+		body: ["We keep application and booking information only while it is reasonably needed to assess your application, manage follow-up, maintain business records, or establish, exercise, or defend legal rights. If we work together, relevant information may be retained for the relationship and any legally required accounting or record-keeping period. We delete or anonymise information when those purposes no longer apply, subject to limited backup and legal-retention periods."]
 	},
 	{
 		id: "your-rights",
-		heading: "Your rights",
-		body: ["You can ask us at any time to see what information we hold about you, to correct it, to delete it, or to limit how it is used. Where we rely on your consent, you can withdraw it at any time. We will respond to any request without delay and within the timeframes required by law."]
+		heading: "Your privacy rights",
+		body: ["Depending on where you live, you may have rights to access, correct, delete, or receive a copy of your personal information; restrict or object to certain processing; withdraw consent; and complain to your local data protection authority. These rights can be subject to legal limits and verification of your identity.", "To make a request, email hello@gwen.care. We will respond within the period required by applicable law."]
 	},
 	{
-		id: "data-security",
-		heading: "Security",
-		body: ["We take reasonable technical and organisational measures to protect the information we hold against loss, misuse, and unauthorised access. No method of transmission over the internet is completely secure, and we cannot guarantee absolute security."]
+		id: "security-and-transfers",
+		heading: "Security and international transfers",
+		body: ["We use reasonable technical and organisational safeguards designed to protect personal information. No online service can guarantee absolute security.", "Some providers, including Cal.com and Meta, may process information in the United States or other countries. Where required, transfers are supported by recognised legal safeguards. Their own policies provide more detail about locations and transfer mechanisms."]
 	},
 	{
-		id: "third-party-links",
-		heading: "Links to other sites",
-		body: ["This website may link to third-party websites. We are not responsible for the privacy practices or the content of those sites, and we recommend you read their policies before sharing any information with them."]
+		id: "children",
+		heading: "Age requirements",
+		body: ["The creator application is only for people aged 18 or older. Do not use the application to send explicit content, identity documents, or content featuring another person. We do not knowingly collect applications from children. If you believe a child has submitted personal information, contact us so we can review and delete it where appropriate."]
 	},
 	{
-		id: "changes-to-this-policy",
-		heading: "Changes to this policy",
-		body: ["We may update this policy from time to time. When we do, we will change the “Last updated” date above. Where changes are significant, we will draw your attention to them on this website."]
+		id: "changes-and-contact",
+		heading: "Changes and contact",
+		body: ["We may update this policy as the website, application flow, or providers change. The latest version will appear here with a revised date.", "Questions, requests, or complaints can be sent to hello@gwen.care. You may also have the right to contact the data protection authority where you live."]
 	}
 ];
 function PrivacyPolicy() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(LegalPage, {
-		documentTitle: "Privacy | Gwen",
+		documentTitle: "Privacy | gwen",
 		eyebrow: "Legal",
 		title: "Privacy Policy",
 		updated: "Last updated: August 2026",
@@ -30850,76 +30876,73 @@ var sections = [
 	{
 		id: "acceptance-of-terms",
 		heading: "Acceptance of terms",
-		body: ["These Terms of Service (“Terms”) govern your use of the Gwen website. By accessing or using this website, you agree to be bound by these Terms. If you do not agree with any part of them, please do not use the website."]
+		body: ["These Terms of Service (“Terms”) govern your use of the gwen website and creator application. By using the site or submitting an application, you agree to these Terms. If you do not agree, do not use the site or application."]
 	},
 	{
-		id: "use-of-the-website",
-		heading: "Use of the website",
-		body: [
-			"You agree to use this website for lawful purposes only and in a way that does not infringe the rights of, or restrict or inhibit the use of the website by, anyone else.",
-			"You must not:",
-			{ list: [
-				"Copy, reproduce, resell, or misuse the content of this website for commercial purposes without permission.",
-				"Attempt to gain unauthorised access to the website, its servers, or any systems connected to it.",
-				"Use the website in a way that could damage, disable, or impair the website or interfere with anyone else’s use of it.",
-				"Use the website to transmit any harmful code, spam, or unlawful material."
-			] }
-		]
+		id: "eligibility",
+		heading: "Eligibility",
+		body: ["You must be at least 18 years old and able to enter into a binding agreement to submit an application. The application is intended for adult creators and their authorised representatives. If you apply for someone else, you confirm that you are authorised to share the information and act on their behalf."]
 	},
 	{
-		id: "intellectual-property",
-		heading: "Intellectual property",
-		body: ["The content on this website, including text, graphics, logos, and design, belongs to Gwen or its licensors and is protected by intellectual property laws. You may view and print content for personal, non-commercial use, but you may not use it for any other purpose without our written permission."]
+		id: "creator-application",
+		heading: "Creator applications",
+		body: ["Submitting an application does not guarantee a reply, call, offer, partnership, representation, or any particular service. We may accept, decline, pause, or close an application at our discretion.", "You agree that the information, handles, and links you submit are accurate, current, and safe for us to review. Do not include passwords, private access tokens, identity documents, explicit content, sensitive personal information, or material you are not allowed to share."]
 	},
 	{
 		id: "services-and-engagement",
 		heading: "Services and engagement",
-		body: ["This website describes the services Gwen offers. It is for information only and does not, on its own, create a contractual relationship.", "Work delivered by Gwen is carried out under a written agreement agreed with each client before any engagement begins. In the event of any conflict, the terms of that written agreement take precedence over anything described on this website."]
+		body: ["The website describes gwen’s services in general terms. Nothing on the site is a binding offer or creates an agency, employment, management, fiduciary, partnership, or client relationship.", "If we decide to work together, scope, deliverables, approvals, fees, rights, confidentiality, term, and termination will be set out in a separate written agreement. That agreement takes priority if it conflicts with these website Terms."]
 	},
 	{
-		id: "client-obligations",
-		heading: "Client obligations",
-		body: ["Where you engage Gwen to do work, you agree to provide accurate information, access, and support reasonably needed to complete the engagement, and to make decisions and provide feedback in a timely manner."]
+		id: "creator-responsibilities",
+		heading: "Creator responsibilities",
+		body: ["You remain responsible for your accounts, content, statements, audience relationship, and compliance with laws and platform rules unless a written agreement expressly says otherwise.", { list: [
+			"Only submit or publish material you own, license, or have permission to use, including music, footage, images, trademarks, and appearances by other people.",
+			"Make sure every person shown in adult content is at least 18 and that you hold any consent, release, identity, and age-verification records required by law and the platform.",
+			"Review and approve content, claims, links, promotions, and brand partnerships before publication.",
+			"Clearly disclose paid, gifted, affiliate, employment, family, or other material brand relationships wherever required by law or platform rules.",
+			"Keep account credentials secure and provide access only through methods agreed in writing."
+		] }]
 	},
 	{
-		id: "fees-and-payment",
-		heading: "Fees and payment",
-		body: ["Fees for services are set out in the written agreement for each engagement. Unless otherwise agreed, fees are due according to the payment terms in that agreement. Gwen is not responsible for delays caused by late or incomplete payment."]
+		id: "results-and-platforms",
+		heading: "Results and third-party platforms",
+		body: ["We do not guarantee followers, views, reach, subscribers, revenue, platform access, verification, or algorithmic performance. Results depend on many factors outside our control, including your decisions, consistency, audience behavior, platform changes, and market conditions.", "OnlyFans, Instagram, TikTok, X, Reddit, Meta, Cal.com, and other third-party services operate under their own terms and policies. We are not responsible for their availability, decisions, outages, suspensions, data practices, or changes."]
 	},
 	{
-		id: "confidentiality",
-		heading: "Confidentiality",
-		body: ["Gwen treats the information shared by clients during an engagement as confidential and uses it only to deliver the agreed work. This duty continues after the engagement ends, except where disclosure is required by law or the information is already public."]
+		id: "intellectual-property",
+		heading: "Intellectual property",
+		body: ["The website, its design, text, graphics, and branding belong to gwen or its licensors and are protected by intellectual property laws. You may use the site for your own informational purposes but may not copy, resell, scrape, or commercially exploit it without permission.", "You keep ownership of the creator content and brand assets you already own. Ownership and permitted use of strategies, drafts, edits, templates, campaign materials, and other work created during a paid engagement will be governed by the separate written agreement."]
+	},
+	{
+		id: "fees-and-confidentiality",
+		heading: "Fees and confidentiality",
+		body: ["Fees, expenses, invoicing, and payment terms apply only if stated in a signed engagement agreement.", "We treat non-public application and client information with reasonable care. Formal confidentiality obligations, permitted disclosures, and any exceptions will be set out in the engagement agreement. Do not submit trade secrets or highly sensitive information through the public application form."]
+	},
+	{
+		id: "acceptable-use",
+		heading: "Acceptable use",
+		body: ["You must not misuse the website or application, interfere with its operation, attempt unauthorised access, submit malicious code or spam, impersonate another person, infringe rights, or use the site for unlawful, deceptive, abusive, or fraudulent activity."]
 	},
 	{
 		id: "liability-and-disclaimers",
-		heading: "Liability and disclaimers",
-		body: ["This website is provided “as is” and without warranties of any kind, express or implied. We work to keep the information on the site accurate and up to date, but we make no guarantees that it is complete, error-free, or suitable for your particular circumstances.", "To the fullest extent permitted by law, Gwen will not be liable for any indirect or consequential loss arising from your use of this website. Nothing in these Terms limits or excludes liability that cannot be limited or excluded by law."]
+		heading: "Disclaimers and liability",
+		body: ["The website and application are provided “as is” and “as available.” We do not promise that they will always be available, secure, complete, or error-free, or that the information on them is professional, legal, financial, or tax advice.", "To the fullest extent permitted by law, gwen will not be liable for indirect, incidental, special, consequential, or lost-profit damages arising from use of the site, an application decision, third-party platforms, or reliance on website content. Nothing in these Terms excludes liability that cannot lawfully be excluded."]
 	},
 	{
-		id: "third-party-services",
-		heading: "Third-party services",
-		body: ["This website may refer to or link to third-party products and services. Gwen is not responsible for the availability, content, or performance of third-party services, and any use you make of them is at your own risk."]
-	},
-	{
-		id: "termination",
-		heading: "Termination",
-		body: ["We may restrict or suspend access to this website, or any part of it, at any time without notice if we reasonably believe these Terms have been breached. Provisions of these Terms that are intended to survive termination will continue to apply."]
-	},
-	{
-		id: "changes-to-terms",
-		heading: "Changes to these terms",
-		body: ["We may update these Terms from time to time. When we do, we will change the “Last updated” date above. Your continued use of the website after changes are made means you accept the updated Terms."]
+		id: "suspension-and-changes",
+		heading: "Suspension and changes",
+		body: ["We may block or suspend access where we reasonably believe these Terms have been breached or the site is being misused. We may also change or discontinue website features without notice.", "We may update these Terms from time to time. The revised version will be posted here with an updated date and will apply to later use of the website."]
 	},
 	{
 		id: "governing-law",
 		heading: "Governing law",
-		body: ["These Terms are governed by and interpreted in accordance with the laws of the jurisdiction in which Gwen operates. Any disputes relating to these Terms or your use of this website will be subject to the exclusive jurisdiction of the courts of that jurisdiction."]
+		body: ["Any paid engagement will be governed by the law and dispute terms in the signed engagement agreement. For website use outside an engagement, applicable law will determine the rights and forum that cannot be changed by these Terms."]
 	}
 ];
 function TermsOfService() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(LegalPage, {
-		documentTitle: "Terms | Gwen",
+		documentTitle: "Terms | gwen",
 		eyebrow: "Legal",
 		title: "Terms of Service",
 		updated: "Last updated: August 2026",
