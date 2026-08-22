@@ -18,6 +18,7 @@
   --gwen-cream-deep: #f8eadc;
   --gwen-cherry: #651520;
   --gwen-deep-blue: #153e52;
+  --gwen-heading-blue: #5caee0;
 }
 
 html,
@@ -97,7 +98,7 @@ html.is-white-screen body {
 
 /* Film and service flow */
 .hero-section h1 {
-  color: var(--gwen-deep-blue) !important;
+  color: var(--gwen-heading-blue) !important;
 }
 
 .showcase-actions,
@@ -121,7 +122,7 @@ html.is-white-screen body {
 }
 
 .fix-intro__line--accent {
-  color: var(--gwen-deep-blue) !important;
+  color: var(--gwen-heading-blue) !important;
 }
 
 .fix-intro__track::before {
