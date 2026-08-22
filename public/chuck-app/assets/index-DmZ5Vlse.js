@@ -23532,7 +23532,7 @@ var links = [
 	},
 	{
 		label: "Results",
-		href: "#testimonials"
+		href: "#results"
 	},
 	{
 		label: "FAQ",
@@ -23728,8 +23728,8 @@ var footerLinks = [[
 	}
 ], [
 	{
-		label: "Testimonials",
-		href: "#testimonials"
+		label: "Results",
+		href: "#results"
 	},
 	{
 		label: "Contact",
@@ -30145,7 +30145,7 @@ var testimonials = [
 	}
 ];
 var padIndex = (index) => String(index + 1).padStart(2, "0");
-function TestimonialSection() {
+function LegacyTestimonialSection() {
 	const reduceMotion = useReducedMotion();
 	const [activeIndex, setActiveIndex] = (0, import_react.useState)(0);
 	const [direction, setDirection] = (0, import_react.useState)(1);
@@ -30360,6 +30360,98 @@ function TestimonialSection() {
 							})
 						]
 					})]
+				})
+			]
+		})
+	});
+}
+var creatorResults = [
+	{
+		image: "/chuck-app/images/results/results-3904495.png",
+		alt: "Creator earnings dashboard showing more than 3.9 million dollars in net earnings",
+		title: "$3.9M net tracked",
+		body: "A multi-year creator account with revenue across subscriptions, tips, posts, messages, referrals and streams.",
+		accent: "#f5a2ad"
+	},
+	{
+		image: "/chuck-app/images/results/results-5181871.png",
+		alt: "Creator earnings dashboard showing more than 5.1 million dollars in net earnings",
+		title: "$5.18M net tracked",
+		body: "Long-term growth captured directly from the creator dashboard, with more than five million dollars in net earnings.",
+		accent: "#9fd8ed"
+	},
+	{
+		image: "/chuck-app/images/results/results-1979768.png",
+		alt: "Creator earnings dashboard showing more than 1.9 million dollars in net earnings",
+		title: "$1.97M net tracked",
+		body: "A creator revenue curve built over time, with messages accounting for the largest share of total earnings.",
+		accent: "#f4cf8f"
+	},
+	{
+		image: "/chuck-app/images/results/results-2025-months.png",
+		alt: "Monthly creator earnings from January through August 2025",
+		title: "Six-figure months through 2025",
+		body: "Eight consecutive months shown between $103k and $212k, straight from the monthly earnings view.",
+		accent: "#cdeca3"
+	},
+	{
+		image: "/chuck-app/images/results/results-2024-months.png",
+		alt: "Monthly creator earnings from March through October 2024",
+		title: "Consistent $98k to $120k months",
+		body: "A sustained run of high five-figure and six-figure months without relying on one isolated spike.",
+		accent: "#e5dba0"
+	},
+	{
+		image: "/chuck-app/images/results/results-2026-months.png",
+		alt: "Monthly creator earnings from March through July 2026",
+		title: "$50k+ months into 2026",
+		body: "Five consecutive months above $50k, with the account continuing to climb into the second half of the year.",
+		accent: "#9dddc5"
+	}
+];
+function TestimonialSection() {
+	const reduceMotion = useReducedMotion();
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
+		className: "results-proof-section",
+		id: "results",
+		"aria-labelledby": "results-proof-heading",
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.div, {
+			className: "results-proof-inner",
+			initial: reduceMotion ? false : { opacity: 0, y: 30 },
+			whileInView: { opacity: 1, y: 0 },
+			viewport: { once: true, amount: .08 },
+			transition: { duration: reduceMotion ? 0 : .72, ease: easeOut$3 },
+			children: [
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", {
+					className: "results-proof-header",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", {
+						id: "results-proof-heading",
+						children: ["Real numbers.", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Real screenshots." })]
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						children: "Straight from creator dashboards, with the timelines attached. Individual results vary and are not guaranteed."
+					})]
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+					className: "results-proof-grid",
+					children: creatorResults.map((result) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
+						className: "results-proof-card",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							className: "results-proof-card__visual",
+							style: { "--result-accent": result.accent },
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+								src: result.image,
+								alt: result.alt,
+								loading: "lazy"
+							})
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "results-proof-card__copy",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: result.title }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: result.body })]
+						})]
+					}, result.image))
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					className: "results-proof-disclaimer",
+					children: "These examples are provided for context only. Earnings depend on the creator, audience, offer, consistency, platform conditions and many other factors."
 				})
 			]
 		})
