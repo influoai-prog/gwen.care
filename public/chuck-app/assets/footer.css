@@ -80,7 +80,7 @@
   width: 46px;
   height: 46px;
   flex: 0 0 46px;
-  background: url("/chuck-app/gwen-mark.svg") center / contain no-repeat;
+  background: url("/chuck-app/gwen-g-mark.png") center / contain no-repeat;
   filter: drop-shadow(0 7px 16px rgba(231, 53, 88, 0.22));
 }
 
@@ -286,7 +286,7 @@
   height: 56px;
   flex: 0 0 56px;
   border-radius: 0;
-  background: url("/chuck-app/gwen-mark.svg") center / contain no-repeat;
+  background: url("/chuck-app/gwen-g-mark.png") center / contain no-repeat;
   box-shadow: none;
   filter: none;
   transform: rotate(-7deg);
