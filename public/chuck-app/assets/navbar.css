@@ -743,25 +743,25 @@
 
 /* Gwen supplied wordmark: wide header and matching loading treatment. */
 .nav-shell:not(.nav-shell--loading) {
-  width: min(680px, calc(100vw - 48px));
+  width: min(620px, calc(100vw - 48px));
   justify-content: space-between;
-  padding: 0 12px 0 20px;
+  padding: 0 12px 0 18px;
 }
 
 .nav-shell:not(.nav-shell--loading) .nav-brand {
   display: flex;
-  width: 126px;
+  width: 102px;
   height: 60px;
-  flex: 0 0 126px;
+  flex: 0 0 102px;
   align-items: center;
   justify-content: center;
 }
 
 .nav-brand::before {
   display: block;
-  width: 126px;
-  height: 36px;
-  flex: 0 0 126px;
+  width: 102px;
+  height: 29px;
+  flex: 0 0 102px;
   background: url('/chuck-app/gwen-wordmark.png') center / contain no-repeat;
   content: '';
 }
@@ -778,12 +778,12 @@
 
 .nav-shell.nav-shell--loading {
   top: 50% !important;
-  width: 300px !important;
-  height: 112px !important;
-  min-height: 112px !important;
+  width: 236px !important;
+  height: 84px !important;
+  min-height: 84px !important;
   justify-content: center !important;
   padding: 0 !important;
-  border-radius: 36px !important;
+  border-radius: 28px !important;
   visibility: visible;
   opacity: 1 !important;
   pointer-events: none;
@@ -797,12 +797,23 @@
   flex: 0 0 100% !important;
   align-items: center;
   justify-content: center !important;
+  gap: 12px;
 }
 
 .nav-shell.nav-shell--loading .nav-brand::before {
-  width: 214px;
-  height: 60px;
-  flex-basis: 214px;
+  width: 48px;
+  height: 48px;
+  flex-basis: 48px;
+  background-image: url('/chuck-app/gwen-mark.svg');
+}
+
+.nav-shell.nav-shell--loading .nav-brand::after {
+  display: block;
+  width: 108px;
+  height: 31px;
+  flex: 0 0 108px;
+  background: url('/chuck-app/gwen-wordmark.png') center / contain no-repeat;
+  content: '';
 }
 
 .nav-shell.nav-shell--loading .nav-trailing {
@@ -820,15 +831,15 @@
   }
 
   .nav-shell:not(.nav-shell--loading) .nav-brand {
-    width: 108px;
+    width: 94px;
     height: 52px;
-    flex-basis: 108px;
+    flex-basis: 94px;
   }
 
   .nav-shell:not(.nav-shell--loading) .nav-brand::before {
-    width: 108px;
-    height: 30px;
-    flex-basis: 108px;
+    width: 94px;
+    height: 27px;
+    flex-basis: 94px;
   }
 
   .nav-shell.nav-shell--open {
@@ -836,15 +847,21 @@
   }
 
   .nav-shell.nav-shell--loading {
-    width: min(280px, calc(100vw - 48px)) !important;
-    height: 104px !important;
-    min-height: 104px !important;
-    border-radius: 34px !important;
+    width: min(220px, calc(100vw - 48px)) !important;
+    height: 78px !important;
+    min-height: 78px !important;
+    border-radius: 26px !important;
   }
 
   .nav-shell.nav-shell--loading .nav-brand::before {
-    width: 198px;
-    height: 55px;
-    flex-basis: 198px;
+    width: 44px;
+    height: 44px;
+    flex-basis: 44px;
+  }
+
+  .nav-shell.nav-shell--loading .nav-brand::after {
+    width: 96px;
+    height: 27px;
+    flex-basis: 96px;
   }
 }
