@@ -750,18 +750,18 @@
 
 .nav-shell:not(.nav-shell--loading) .nav-brand {
   display: flex;
-  width: 62px;
+  width: 68px;
   height: 60px;
-  flex: 0 0 62px;
+  flex: 0 0 68px;
   align-items: center;
   justify-content: center;
 }
 
 .nav-brand::before {
   display: block;
-  width: 62px;
-  height: 18px;
-  flex: 0 0 62px;
+  width: 68px;
+  height: 20px;
+  flex: 0 0 68px;
   background: url('/chuck-app/gwen-wordmark.png') center / contain no-repeat;
   content: '';
 }
@@ -828,15 +828,15 @@
   }
 
   .nav-shell:not(.nav-shell--loading) .nav-brand {
-    width: 60px;
+    width: 66px;
     height: 52px;
-    flex-basis: 60px;
+    flex-basis: 66px;
   }
 
   .nav-shell:not(.nav-shell--loading) .nav-brand::before {
-    width: 60px;
-    height: 18px;
-    flex-basis: 60px;
+    width: 66px;
+    height: 19px;
+    flex-basis: 66px;
   }
 
   .nav-shell.nav-shell--open {
