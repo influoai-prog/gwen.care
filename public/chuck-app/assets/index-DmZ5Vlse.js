@@ -29830,7 +29830,7 @@ var steps = [
 	{
 		number: "03",
 		label: "Plan",
-		title: "Map 60-day growth",
+		title: "Map growth plan",
 		description: "Turn the data into a focused weekly plan with clear subscriber and revenue targets.",
 		direction: "down",
 		className: "process-card--three"
