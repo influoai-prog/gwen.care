@@ -754,9 +754,9 @@
 
 .nav-shell:not(.nav-shell--loading) .nav-brand {
   display: flex;
-  width: 68px;
+  width: 64px;
   height: 60px;
-  flex: 0 0 68px;
+  flex: 0 0 64px;
   align-items: center;
   justify-content: center;
   transform: translateY(0);
@@ -766,9 +766,9 @@
 
 .nav-brand::before {
   display: block;
-  width: 68px;
-  height: 20px;
-  flex: 0 0 68px;
+  width: 64px;
+  height: 19px;
+  flex: 0 0 64px;
   background: url('/chuck-app/gwen-wordmark.png') center / contain no-repeat;
   content: '';
   transform: translateY(0) scale(1);
@@ -836,7 +836,7 @@
   flex: 0 0 174px;
   border: 0;
   border-radius: 48px;
-  background: #e9e9e9 url('/chuck-app/gwen-wordmark.png') center / 112px auto no-repeat;
+  background: #e9e9e9 url('/chuck-app/gwen-wordmark.png') center / 100px auto no-repeat;
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.9),
     0 22px 60px rgba(57, 34, 40, 0.08);
@@ -866,7 +866,7 @@
 }
 
 .nav-shell.nav-shell--loading .brand__wordmark strong::after {
-  font-size: 34px;
+  font-size: 28px;
   content: 'Systems';
 }
 
@@ -880,7 +880,7 @@
 
 .nav-shell.nav-shell--loading .brand__wordmark span::after {
   font-family: 'M Saans', 'Segoe UI', sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 450;
   line-height: 1;
   letter-spacing: -0.035em;
@@ -899,15 +899,15 @@
   }
 
   .nav-shell:not(.nav-shell--loading) .nav-brand {
-    width: 66px;
+    width: 62px;
     height: 52px;
-    flex-basis: 66px;
+    flex-basis: 62px;
   }
 
   .nav-shell:not(.nav-shell--loading) .nav-brand::before {
-    width: 66px;
-    height: 19px;
-    flex-basis: 66px;
+    width: 62px;
+    height: 18px;
+    flex-basis: 62px;
   }
 
   .nav-shell.nav-shell--open {
@@ -926,7 +926,7 @@
     height: 150px;
     flex-basis: 150px;
     border-radius: 42px;
-    background-size: 98px auto;
+    background-size: 90px auto;
   }
 
   .nav-shell.nav-shell--loading .brand__wordmark strong {
@@ -934,11 +934,11 @@
   }
 
   .nav-shell.nav-shell--loading .brand__wordmark strong::after {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .nav-shell.nav-shell--loading .brand__wordmark span::after {
-    font-size: 21px;
+    font-size: 18px;
   }
 }
 
