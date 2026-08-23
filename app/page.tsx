@@ -85,7 +85,7 @@ export default function Home() {
         <div className="gwen-results-grid">
           {results.map((result) => (
             <article className="gwen-result-card" key={result.value}>
-              <div className="gwen-result-media"><Image src={result.image} alt="Creator earnings dashboard result" width={1600} height={1300} unoptimized /></div>
+              <div className="gwen-result-media"><Image src={result.image} alt="Creator earnings dashboard result" fill sizes="(max-width: 760px) calc(100vw - 40px), 31vw" unoptimized /></div>
               <div className="gwen-result-copy"><strong>{result.value}</strong><h3>{result.title}</h3><p>{result.copy}</p></div>
             </article>
           ))}
@@ -116,11 +116,21 @@ export default function Home() {
 
       <section className="gwen-final" aria-labelledby="final-title"><p>BUILT FOR CREATORS READY TO SCALE</p><h2 id="final-title">Turn momentum into<br /><em>your next level.</em></h2><a className="gwen-button gwen-button-dark" href="/chuck">Apply to gwen <span>↗</span></a></section>
 
-      <footer className="gwen-footer">
-        <div><a className="gwen-footer-logo" href="#top">gwen</a><span>Durden Inc</span></div>
-        <p>Creator growth systems built to compound.</p>
-        <nav aria-label="Footer navigation"><a href="#services">Services</a><a href="#results">Results</a><a href="#faq">FAQ</a><a href="/chuck">Apply</a></nav>
-      </footer>
+      <div className="gwen-footer-shell">
+        <footer className="gwen-footer" aria-label="Footer">
+          <div className="gwen-footer-top">
+            <div className="gwen-footer-brand-column">
+              <a className="gwen-footer-brand" href="#top" aria-label="gwen home"><strong>gwen</strong><span>Durden Inc</span></a>
+              <p>Better operations. Less waste. More room to grow.</p>
+            </div>
+            <nav className="gwen-footer-nav" aria-label="Footer navigation">
+              <div><a href="#services">Service</a><a href="#services">Agency</a><a href="#system">Process</a></div>
+              <div><a href="#results">Results</a><a href="mailto:hello@gwen.care">Contact</a><a href="/chuck">Apply now</a></div>
+            </nav>
+          </div>
+          <div className="gwen-footer-bottom"><span>© gwen 2026</span><div><a href="/privacy-policy">Privacy policy</a><a href="/terms-of-service">Terms</a></div></div>
+        </footer>
+      </div>
     </main>
   );
 }
