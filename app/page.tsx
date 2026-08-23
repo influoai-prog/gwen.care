@@ -32,7 +32,7 @@ export default function Home() {
       <header className="gwen-nav-shell">
         <a className="gwen-wordmark" href="#top" aria-label="gwen home">gwen</a>
         <nav aria-label="Primary navigation"><a href="#services">Services</a><a href="#results">Results</a><a href="#faq">FAQ</a></nav>
-        <a className="gwen-nav-cta" href="/chuck">Apply now <span>↗</span></a>
+        <a className="gwen-nav-cta" href="/chuck">Apply now</a>
       </header>
 
       <section className="gwen-hero" aria-labelledby="gwen-hero-title">
