@@ -36,7 +36,6 @@ export default function Home() {
       </header>
 
       <section className="gwen-hero" aria-labelledby="gwen-hero-title">
-        <p className="gwen-kicker"><span>Creator growth systems</span><i>Durden Inc</i></p>
         <h1 id="gwen-hero-title">Turn your attention into a <em>creator business.</em></h1>
         <p className="gwen-hero-copy">gwen builds the content, subscriber growth, conversion, and retention systems behind predictable recurring revenue.</p>
         <div className="gwen-hero-actions"><a className="gwen-button gwen-button-dark" href="/chuck">Apply now <span>↗</span></a><a className="gwen-text-link" href="#system">See the system <span>↓</span></a></div>
