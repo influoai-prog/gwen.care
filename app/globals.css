@@ -235,22 +235,23 @@ footer { padding:70px 5vw 26px; background:var(--ink); color:white; }
 @media (prefers-reduced-motion:reduce){.chuck-modal-panel{animation:none}.chuck-card,.chuck-button,.chuck-play span{transition:none}}
 
 /* Gwen flagship homepage */
-@font-face { font-family:"Gwen Sans"; src:url("/chuck-app/fonts/m-saans-regular.woff2") format("woff2"); font-weight:400; font-display:swap; }
-@font-face { font-family:"Gwen Sans"; src:url("/chuck-app/fonts/m-saans-semibold.woff2") format("woff2"); font-weight:600; font-display:swap; }
-@font-face { font-family:"Gwen Sans"; src:url("/chuck-app/fonts/m-saans-bold.woff2") format("woff2"); font-weight:700 900; font-display:swap; }
+@font-face { font-family:"M Saans"; src:url("/chuck-app/fonts/m-saans-light.woff2") format("woff2"); font-style:normal; font-weight:300; font-display:swap; }
+@font-face { font-family:"M Saans"; src:url("/chuck-app/fonts/m-saans-regular.woff2") format("woff2"); font-style:normal; font-weight:456; font-display:swap; }
+@font-face { font-family:"M Saans"; src:url("/chuck-app/fonts/m-saans-semibold.woff2") format("woff2"); font-style:normal; font-weight:600; font-display:swap; }
+@font-face { font-family:"M Saans"; src:url("/chuck-app/fonts/m-saans-bold.woff2") format("woff2"); font-style:normal; font-weight:652; font-display:swap; }
 @font-face { font-family:"Gwen Serif"; src:url("/chuck-app/fonts/kalnia-medium-latin.woff2") format("woff2"); font-weight:500; font-display:swap; }
 
-.gwen-home { --gwen-ink:#080a0b; --gwen-paper:#fff; --gwen-blue:#dff1fc; --gwen-blue-strong:#9fd8ed; --gwen-rose:#b74656; --gwen-rose-soft:#f2d6db; --gwen-cream:#fff8e9; overflow:hidden; background:var(--gwen-paper); color:var(--gwen-ink); font-family:"Gwen Sans",Arial,sans-serif; }
+.gwen-home { --gwen-ink:#080a0b; --gwen-paper:#fff; --gwen-blue:#dff1fc; --gwen-blue-strong:#9fd8ed; --gwen-rose:#b74656; --gwen-rose-soft:#f2d6db; --gwen-cream:#fff8e9; overflow:hidden; background:var(--gwen-paper); color:var(--gwen-ink); font-family:"M Saans","Segoe UI",sans-serif; font-synthesis:none; text-rendering:optimizeLegibility; -webkit-font-smoothing:antialiased; }
 .gwen-home * { box-sizing:border-box; }
 .gwen-home h1,.gwen-home h2,.gwen-home h3,.gwen-home p { text-wrap:pretty; }
-.gwen-home h1,.gwen-home h2 { font-family:"Gwen Sans",Arial,sans-serif; font-weight:600; }
+.gwen-home h1,.gwen-home h2 { font-family:"M Saans","Segoe UI",sans-serif; font-weight:600; }
 .gwen-home h1 em,.gwen-home h2 em { font-family:"Gwen Serif",Georgia,serif; font-weight:500; font-style:normal; }
 .gwen-nav-shell { position:fixed; z-index:30; top:24px; left:50%; display:grid; width:min(620px,calc(100% - 48px)); height:60px; padding:0 8px 0 20px; border:1px solid rgba(255,255,255,.24); border-radius:30px; grid-template-columns:auto 1fr auto; align-items:center; background:rgba(237,237,237,.72); box-shadow:inset 0 1px 0 rgba(255,255,255,.28); -webkit-backdrop-filter:blur(48px); backdrop-filter:blur(48px); transform:translateX(-50%); }
 .gwen-wordmark { position:relative; top:-2px; color:var(--gwen-rose); font-family:"Gwen Serif",Georgia,serif; font-size:31px; font-weight:500; line-height:1; letter-spacing:-.07em; }
 .gwen-nav-shell nav { display:flex; gap:26px; align-items:center; justify-content:center; font-size:16px; font-weight:500; line-height:1.375; letter-spacing:.0032em; }
 .gwen-nav-shell nav a { transition:color .2s ease; }
 .gwen-nav-shell nav a:hover { color:var(--gwen-rose); }
-.gwen-nav-cta { display:inline-flex; height:40px; min-height:40px; padding:0 16px; border-radius:999px; justify-self:end; align-items:center; justify-content:center; gap:8px; background:var(--gwen-ink); color:white; font-size:14px; font-weight:600; line-height:1; letter-spacing:-.01em; }
+.gwen-nav-cta { display:inline-flex; height:40px; min-height:40px; padding:0 16px; border-radius:999px; justify-self:end; align-items:center; justify-content:center; gap:8px; background:var(--gwen-ink); color:white; font-size:16px; font-weight:500; line-height:1.375; letter-spacing:.0032em; }
 .gwen-nav-cta span,.gwen-button span { font-size:18px; transition:transform .2s ease; }
 .gwen-nav-cta:hover span,.gwen-button:hover span { transform:translate(2px,-2px); }
 
@@ -357,7 +358,7 @@ footer { padding:70px 5vw 26px; background:var(--ink); color:white; }
 .gwen-footer-top { align-items:flex-start; }
 .gwen-footer-brand-column { display:flex; min-width:0; flex:2 1 0; flex-direction:column; align-items:flex-start; gap:20px; }
 .gwen-footer-brand { display:flex; flex-direction:column; gap:0; color:white; line-height:.88; }
-.gwen-footer-brand strong { font-family:"Gwen Sans",Arial,sans-serif; font-size:22px; font-weight:600; line-height:.88; letter-spacing:-.05em; text-transform:lowercase; }
+.gwen-footer-brand strong { font-family:"M Saans","Segoe UI",sans-serif; font-size:22px; font-weight:600; line-height:.88; letter-spacing:-.05em; text-transform:lowercase; }
 .gwen-footer-brand span { display:block; margin-top:5px; color:rgba(255,255,255,.8); font-size:14px; line-height:1.35; letter-spacing:-.03em; }
 .gwen-footer-brand-column p { max-width:none; margin:0; color:#adadad; font-size:14px; line-height:20px; }
 .gwen-footer-nav { display:flex; flex:1 1 0; align-items:flex-start; gap:20px; }
