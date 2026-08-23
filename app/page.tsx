@@ -3,27 +3,27 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "gwen | OnlyFans growth and management",
-  description: "gwen builds and operates the content, traffic, conversion, monetization, and retention systems behind serious OnlyFans creator businesses.",
+  description: "gwen builds and operates the systems behind serious OnlyFans creator businesses. That includes content and traffic. It also covers sales and retention.",
 };
 
 const services = [
-  { number: "01", label: "Offer", title: "Give fans a reason to subscribe.", copy: "We sharpen your positioning, page offer, pricing, and content promise so the right fan knows exactly why they should pay.", tone: "rose" },
-  { number: "02", label: "Traffic", title: "Bring in fans who actually buy.", copy: "We build your channel plan, content angles, posting rhythm, and profile funnel around qualified traffic instead of empty views.", tone: "blue" },
-  { number: "03", label: "Monetization", title: "Turn new fans into real spend.", copy: "We improve your welcome flow, paid messages, PPV offers, pricing, and upsell paths so attention has somewhere profitable to go.", tone: "cream" },
-  { number: "04", label: "Retention", title: "Keep your best fans spending longer.", copy: "We build renewal, reactivation, and VIP journeys that give good subscribers a reason to stay active and keep buying.", tone: "ink" },
+  { number: "01", label: "Offer", title: "Give fans a reason to subscribe.", copy: "We sharpen your positioning and page offer. Then we set pricing and a content promise that gives the right fan a clear reason to pay.", tone: "rose" },
+  { number: "02", label: "Traffic", title: "Bring in fans who actually buy.", copy: "We build a channel plan and posting rhythm around qualified traffic. Every content angle and profile step has a job.", tone: "blue" },
+  { number: "03", label: "Monetization", title: "Turn new fans into real spend.", copy: "We improve the welcome flow and paid messages. PPV, pricing and upsells give attention somewhere profitable to go.", tone: "cream" },
+  { number: "04", label: "Retention", title: "Keep your best fans spending longer.", copy: "We build renewal and reactivation journeys for your best fans. VIP buyers get a clear reason to stay active and keep buying.", tone: "ink" },
 ];
 
 const results = [
-  { image: "/chuck-app/images/results/results-3904495.png", value: "$3.9M", title: "Net revenue on one creator account", copy: "Multi-year performance across subscriptions, tips, posts, messages, referrals, and streams, shown directly from the creator dashboard." },
-  { image: "/chuck-app/images/results/results-5181871.png", value: "$5.18M", title: "Net revenue built over time", copy: "Long-term account performance powered by consistent traffic, stronger fan monetization, and retention that did not rely on one spike." },
-  { image: "/chuck-app/images/results/results-2025-months.png", value: "$100K+", title: "Eight straight six-figure months", copy: "January through August 2025 ranged from $103K to $212K per month, shown directly from the monthly earnings view." },
+  { image: "/chuck-app/images/results/results-3904495.png", value: "$3.9M", title: "Net revenue on one creator account", copy: "The dashboard shows multi-year performance across every revenue stream. That covers subscriptions and tips through messages and streams." },
+  { image: "/chuck-app/images/results/results-5181871.png", value: "$5.18M", title: "Net revenue built over time", copy: "Long-term performance came from consistent traffic and stronger fan monetization. Retention mattered more than a single spike." },
+  { image: "/chuck-app/images/results/results-2025-months.png", value: "$100K+", title: "Eight straight six-figure months", copy: "The monthly earnings view shows January through August 2025. Revenue ranged from $103K to $212K per month." },
 ];
 
 const system = [
-  ["01", "Find the leaks", "Audit your profile, pricing, traffic, content, paid offers, messages, and retention."],
-  ["02", "Build the offer", "Set the positioning, page promise, pricing, welcome flow, and reasons fans buy."],
-  ["03", "Install the engine", "Launch the content plan, traffic system, conversion flows, and weekly reporting."],
-  ["04", "Scale what pays", "Cut weak plays, push the winners, and improve fan value and retention every week."],
+  ["01", "Find the leaks", "Audit the full customer path from profile visit to renewal."],
+  ["02", "Build the offer", "Set the positioning and page promise. Then lock in pricing and the welcome flow."],
+  ["03", "Install the engine", "Launch the content and traffic plan. Connect it to conversion flows and weekly reporting."],
+  ["04", "Scale what pays", "Cut weak plays and push the winners. Improve fan value and retention every week."],
 ];
 
 export default function Home() {
@@ -37,7 +37,7 @@ export default function Home() {
 
       <section className="gwen-hero" aria-labelledby="gwen-hero-title">
         <h1 id="gwen-hero-title">Turn your OnlyFans into a <em>real creator business.</em></h1>
-        <p className="gwen-hero-copy">Give us 60 days. We build the content plan, traffic engine, paid conversion, fan sales, and retention systems while you stay focused on creating.</p>
+        <p className="gwen-hero-copy">Give us 60 days. We build the content plan and traffic engine. Then we improve paid conversion, fan sales and retention while you stay focused on creating.</p>
         <div className="gwen-hero-actions"><a className="gwen-button gwen-button-dark" href="/chuck">Apply now <span>↗</span></a><a className="gwen-text-link" href="#system">See the system <span>↓</span></a></div>
         <div className="gwen-hero-board" aria-label="The gwen creator revenue system">
           <div className="gwen-board-top"><span>THE GWEN SYSTEM</span><b>BUILT IN 60 DAYS</b></div>
@@ -59,15 +59,15 @@ export default function Home() {
           <h2 id="problem-title">Your content is not the problem.<br /><em>The business behind it is.</em></h2>
           <div className="gwen-problem-list">
             <article><span>01</span><div><h3>Your traffic is random</h3><p>Posting more is not a growth plan. We turn social content and promotion into a steady flow of qualified fans.</p></div></article>
-            <article><span>02</span><div><h3>New fans do not spend enough</h3><p>Weak pricing, welcome flows, paid offers, and messages leave money untouched. We fix the path from first click to first purchase.</p></div></article>
-            <article><span>03</span><div><h3>You are doing every job</h3><p>Content, posting, sales, analytics, and retention should not all live in your head. We build the operating team around you.</p></div></article>
+            <article><span>02</span><div><h3>New fans do not spend enough</h3><p>Fans drop when pricing and offers feel random. We fix the welcome flow and the path from first click to first purchase.</p></div></article>
+            <article><span>03</span><div><h3>You are doing every job</h3><p>You should not have to run the whole account alone. We handle the operations so you can focus on content.</p></div></article>
           </div>
         </div>
       </section>
 
       <section className="gwen-services gwen-pad" id="services" aria-labelledby="services-title">
         <div className="gwen-section-tag"><span>02</span> What we build</div>
-        <div className="gwen-section-head"><h2 id="services-title">We run the business behind your <em>OnlyFans growth.</em></h2><p>You create. We handle strategy, content planning, traffic, account conversion, fan monetization, retention, and weekly performance decisions.</p></div>
+        <div className="gwen-section-head"><h2 id="services-title">We run the business behind your <em>OnlyFans growth.</em></h2><p>You create. We run everything from strategy and traffic to monetization and retention. Weekly decisions come from real account data.</p></div>
         <div className="gwen-service-grid">
           {services.map((service) => (
             <article className={`gwen-service-card gwen-service-card-${service.tone}`} key={service.number}>
@@ -90,7 +90,7 @@ export default function Home() {
             </article>
           ))}
         </div>
-        <p className="gwen-results-note">Results are not guaranteed. Performance depends on the creator, audience, offer, consistency, and market.</p>
+        <p className="gwen-results-note">Results are not guaranteed. Performance depends on your audience and offer. Consistency and market conditions matter too.</p>
       </section>
 
       <section className="gwen-system gwen-pad" id="system" aria-labelledby="system-title">
@@ -106,11 +106,11 @@ export default function Home() {
         <div className="gwen-faq-grid">
           <h2 id="faq-title">Questions before<br /><em>we build?</em></h2>
           <div className="gwen-faq-list">
-            <details open><summary>Is gwen an OnlyFans agency?<span>+</span></summary><p>Yes. gwen is a growth and management partner for adult creators. We work across your offer, content strategy, traffic, account conversion, fan monetization, retention, and reporting.</p></details>
-            <details><summary>Who is a strong fit?<span>+</span></summary><p>Creators aged 18 or older who are already producing content, take the business seriously, respect clear boundaries, and want a hands-on team to help them grow.</p></details>
-            <details><summary>What do I still control?<span>+</span></summary><p>You keep your brand, voice, content boundaries, and final say. We agree on the strategy together and run the business systems around your creative work.</p></details>
-            <details><summary>Do you guarantee income?<span>+</span></summary><p>No. Nobody credible can guarantee a creator&apos;s income. We build, test, measure, and improve the parts of the business we can control.</p></details>
-            <details><summary>How quickly can we start?<span>+</span></summary><p>Apply through the short form. If the fit is right, we review your current account, agree on priorities and boundaries, then map the first 60 days.</p></details>
+            <details open><summary>Is gwen an OnlyFans agency?<span>+</span></summary><p>Yes. gwen is a growth and management partner for adult creators. We handle the business layer from offer to reporting. That includes growth and conversion. It also covers monetization and retention.</p></details>
+            <details><summary>Who is a strong fit?<span>+</span></summary><p>You must be 18 or older and already producing content. The best fit takes the business seriously, respects clear boundaries and wants a hands-on growth team.</p></details>
+            <details><summary>What do I still control?<span>+</span></summary><p>You keep your brand and voice. You also control your content boundaries and final decisions. We run the business systems around your creative work.</p></details>
+            <details><summary>Do you guarantee income?<span>+</span></summary><p>No. Nobody credible can guarantee a creator&apos;s income. We build and test the parts of the business we can control. Then we measure what works and improve it.</p></details>
+            <details><summary>How quickly can we start?<span>+</span></summary><p>Apply through the short form. If the fit is right we review your account first. Then we agree on priorities and boundaries before mapping the first 60 days.</p></details>
           </div>
         </div>
       </section>
