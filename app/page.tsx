@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { ApplicationProvider, ApplyButton } from "./application-modal";
 
 export const metadata: Metadata = {
   title: "gwen | OnlyFans growth and management",
@@ -28,17 +29,18 @@ const system = [
 
 export default function Home() {
   return (
+    <ApplicationProvider>
     <main className="gwen-home" id="top">
       <header className="gwen-nav-shell">
         <a className="gwen-wordmark" href="#top" aria-label="gwen home">gwen</a>
         <nav aria-label="Primary navigation"><a href="#services">Services</a><a href="#results">Results</a><a href="#faq">FAQ</a></nav>
-        <a className="gwen-nav-cta" href="/chuck">Apply now</a>
+        <ApplyButton className="gwen-nav-cta">Apply now</ApplyButton>
       </header>
 
       <section className="gwen-hero" aria-labelledby="gwen-hero-title">
         <h1 id="gwen-hero-title">Turn your OnlyFans into a <em>real creator business.</em></h1>
         <p className="gwen-hero-copy">Give us 60 days. We build the content plan and traffic engine. Then we improve paid conversion, fan sales and retention while you stay focused on creating.</p>
-        <div className="gwen-hero-actions"><a className="gwen-button gwen-button-dark" href="/chuck">Apply now <span>↗</span></a><a className="gwen-text-link" href="#system">See the system <span>↓</span></a></div>
+        <div className="gwen-hero-actions"><ApplyButton className="gwen-button gwen-button-dark">Apply now <span>↗</span></ApplyButton><a className="gwen-text-link" href="#system">See the system <span>↓</span></a></div>
         <div className="gwen-hero-board" aria-label="The gwen creator revenue system">
           <div className="gwen-board-top"><span>THE GWEN SYSTEM</span><b>BUILT IN 60 DAYS</b></div>
           <div className="gwen-board-flow">
@@ -95,7 +97,7 @@ export default function Home() {
 
       <section className="gwen-system gwen-pad" id="system" aria-labelledby="system-title">
         <div className="gwen-section-tag"><span>04</span> The system</div>
-        <div className="gwen-system-head"><h2 id="system-title">What we build in your<br /><em>first 60 days.</em></h2><a className="gwen-button gwen-button-dark" href="/chuck">Apply now <span>↗</span></a></div>
+        <div className="gwen-system-head"><h2 id="system-title">What we build in your<br /><em>first 60 days.</em></h2><ApplyButton className="gwen-button gwen-button-dark">Apply now <span>↗</span></ApplyButton></div>
         <ol className="gwen-system-list">
           {system.map(([number, title, copy]) => <li key={number}><span>{number}</span><h3>{title}</h3><p>{copy}</p><i>↘</i></li>)}
         </ol>
@@ -115,7 +117,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="gwen-final" aria-labelledby="final-title"><p>FOR ADULT CREATORS READY TO BUILD PROPERLY</p><h2 id="final-title">Stop winging it.<br /><em>Build the account properly.</em></h2><a className="gwen-button gwen-button-dark" href="/chuck">Apply to work with gwen <span>↗</span></a></section>
+      <section className="gwen-final" aria-labelledby="final-title"><p>FOR ADULT CREATORS READY TO BUILD PROPERLY</p><h2 id="final-title">Stop winging it.<br /><em>Build the account properly.</em></h2><ApplyButton className="gwen-button gwen-button-dark">Apply to work with gwen <span>↗</span></ApplyButton></section>
 
       <div className="gwen-footer-shell">
         <footer className="gwen-footer" aria-label="Footer">
@@ -126,12 +128,13 @@ export default function Home() {
             </div>
             <nav className="gwen-footer-nav" aria-label="Footer navigation">
               <div><a href="#services">Service</a><a href="#services">Agency</a><a href="#system">Process</a></div>
-              <div><a href="#results">Results</a><a href="mailto:hello@gwen.care">Contact</a><a href="/chuck">Apply now</a></div>
+              <div><a href="#results">Results</a><a href="mailto:hello@gwen.care">Contact</a><ApplyButton className="gwen-footer-apply">Apply now</ApplyButton></div>
             </nav>
           </div>
           <div className="gwen-footer-bottom"><span>© gwen 2026</span><div><a href="/privacy-policy">Privacy policy</a><a href="/terms-of-service">Terms</a></div></div>
         </footer>
       </div>
     </main>
+    </ApplicationProvider>
   );
 }

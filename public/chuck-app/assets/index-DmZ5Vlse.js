@@ -23024,7 +23024,7 @@ var INITIAL_ANSWERS = {
 	primaryPlatform: "",
 	profileLinks: "",
 	audienceSize: "",
-	teamSetup: "",
+	monthlyEarnings: "",
 	challenge: "",
 	desiredOutcome: "",
 	priority: "",
@@ -23105,7 +23105,7 @@ function initializeCalEmbed(answers) {
 			`Primary platform: ${answers.primaryPlatform}`,
 			`Profiles / handles: ${answers.profileLinks}`,
 			`Audience size: ${answers.audienceSize}`,
-			`Team setup: ${answers.teamSetup}`,
+			`Current monthly earnings: ${answers.monthlyEarnings}`,
 			`Primary goal: ${answers.priority}`,
 			`Timing: ${answers.urgency}`,
 			answers.desiredOutcome ? `90-day win: ${answers.desiredOutcome}` : null
@@ -23313,11 +23313,11 @@ function BookingProvider({ children }) {
 											})
 										]
 									})] }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Current setup" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("select", {
-										name: "teamSetup",
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Current monthly earnings" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("select", {
+										name: "monthlyEarnings",
 										onChange: updateAnswer,
 										required: true,
-										value: answers.teamSetup,
+										value: answers.monthlyEarnings,
 										children: [
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
 												value: "",
@@ -23325,24 +23325,32 @@ function BookingProvider({ children }) {
 												children: "Select a range"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-												value: "Solo creator",
-												children: "Solo creator"
+												value: "Not earning yet",
+												children: "Not earning yet"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-												value: "Freelancers as needed",
-												children: "Freelancers as needed"
+												value: "Under $1k",
+												children: "Under $1k"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-												value: "Manager or assistant",
-												children: "Manager or assistant"
+												value: "$1k-$5k",
+												children: "$1k-$5k"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-												value: "Small in-house team",
-												children: "Small in-house team"
+												value: "$5k-$10k",
+												children: "$5k-$10k"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-												value: "Agency support",
-												children: "Agency support"
+												value: "$10k-$25k",
+												children: "$10k-$25k"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
+												value: "$25k-$50k",
+												children: "$25k-$50k"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
+												value: "$50k+",
+												children: "$50k+"
 											})
 										]
 									})] }),
@@ -30881,7 +30889,7 @@ var sections$1 = [
 		id: "information-we-collect",
 		heading: "Information we collect",
 		body: ["We collect information you choose to provide and limited technical information generated when you use the site, including:", { list: [
-			"Application information, such as your creator name, primary platforms, public profile links or handles, audience range, team setup, goals, timing, challenges, and the outcome you want to achieve.",
+			"Application information, such as your creator name, primary platforms, public profile links or handles, audience range, current earnings range, goals, timing, challenges, and the outcome you want to achieve.",
 			"Booking and contact information, such as your name, email address, time zone, meeting details, and answers passed into the booking flow.",
 			"Communications and service information you send us by email, during calls, or while we work together.",
 			"Technical and usage information, such as IP address, browser and device details, referring page, pages viewed, timestamps, and interactions measured through cookies or similar technologies."
