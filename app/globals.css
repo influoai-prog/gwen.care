@@ -255,20 +255,20 @@ footer { padding:70px 5vw 26px; background:var(--ink); color:white; }
 .gwen-nav-cta span,.gwen-button span { font-size:18px; transition:transform .2s ease; }
 .gwen-nav-cta:hover span,.gwen-button:hover span { transform:translate(2px,-2px); }
 
-.gwen-hero { min-height:100svh; padding:155px 5vw 0; background:var(--gwen-paper); text-align:center; }
-.gwen-hero h1 { max-width:1140px; margin:0 auto; font-size:clamp(64px,7.25vw,108px); line-height:.88; letter-spacing:-.072em; }
+.gwen-hero { min-height:100svh; padding:182px 5vw 0; background:var(--gwen-paper); text-align:center; }
+.gwen-hero h1 { max-width:1000px; margin:0 auto; font-size:clamp(58px,6.1vw,90px); line-height:.9; letter-spacing:-.068em; }
 .gwen-hero h1 em { display:inline; color:var(--gwen-rose); letter-spacing:-.075em; }
-.gwen-hero-copy { max-width:650px; margin:30px auto 0; color:#595c5d; font-size:clamp(17px,1.45vw,21px); line-height:1.42; letter-spacing:-.025em; }
-.gwen-hero-actions { display:flex; margin-top:28px; align-items:center; justify-content:center; gap:28px; }
-.gwen-button { display:inline-flex; min-height:54px; padding:0 21px; border:1px solid var(--gwen-ink); border-radius:999px; align-items:center; justify-content:space-between; gap:38px; font-size:14px; font-weight:600; transition:transform .2s ease; }
+.gwen-hero-copy { max-width:600px; margin:24px auto 0; color:#595c5d; font-size:clamp(16px,1.2vw,18px); line-height:1.42; letter-spacing:-.025em; }
+.gwen-hero-actions { display:flex; margin-top:22px; align-items:center; justify-content:center; gap:24px; }
+.gwen-button { display:inline-flex; min-height:54px; padding:0 21px; border:1px solid var(--gwen-ink); border-radius:999px; align-items:center; justify-content:space-between; gap:38px; font-family:"M Saans","Segoe UI",sans-serif; font-size:15px; font-weight:600; line-height:1; letter-spacing:-.01em; transition:transform .2s ease; }
 .gwen-button:hover { transform:translateY(-2px); }
 .gwen-button-dark { background:var(--gwen-ink); color:white; }
 .gwen-text-link { padding:10px 0; border-bottom:1px solid; font-size:14px; font-weight:600; }
 .gwen-text-link span { margin-left:14px; }
-.gwen-hero-board { position:relative; width:min(1180px,100%); min-height:350px; margin:64px auto 0; overflow:hidden; border:1px solid rgba(8,10,11,.14); border-radius:38px 38px 0 0; background:var(--gwen-blue); text-align:left; }
+.gwen-hero-board { position:relative; width:min(1120px,100%); min-height:330px; margin:46px auto 0; overflow:hidden; border:1px solid rgba(8,10,11,.14); border-radius:34px 34px 0 0; background:var(--gwen-blue); text-align:left; }
 .gwen-board-top { display:flex; min-height:54px; padding:0 24px; border-bottom:1px solid rgba(8,10,11,.14); align-items:center; justify-content:space-between; font-size:9px; font-weight:700; letter-spacing:.12em; }
-.gwen-board-flow { display:grid; padding:62px 54px 72px; grid-template-columns:repeat(7,auto); align-items:center; justify-content:space-between; }
-.gwen-board-flow article { display:flex; width:190px; min-height:165px; padding:18px; border:1px solid rgba(8,10,11,.15); border-radius:22px; flex-direction:column; background:white; }
+.gwen-board-flow { display:grid; padding:52px 46px 64px; grid-template-columns:repeat(7,auto); align-items:center; justify-content:space-between; }
+.gwen-board-flow article { display:flex; width:178px; min-height:154px; padding:18px; border:1px solid rgba(8,10,11,.15); border-radius:22px; flex-direction:column; background:white; }
 .gwen-board-flow article:nth-of-type(2) { background:var(--gwen-rose-soft); }
 .gwen-board-flow article:nth-of-type(3) { background:var(--gwen-cream); }
 .gwen-board-flow article:nth-of-type(4) { background:var(--gwen-ink); color:white; }
