@@ -2,28 +2,28 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "gwen — The creator growth company",
-  description: "We build the content, conversion, and retention systems that turn creator attention into recurring revenue.",
+  title: "gwen | OnlyFans growth and management",
+  description: "gwen builds and operates the content, traffic, conversion, monetization, and retention systems behind serious OnlyFans creator businesses.",
 };
 
 const services = [
-  { number: "01", label: "Positioning", title: "Become impossible to scroll past.", copy: "We sharpen your brand, offer, and content angles so the right audience instantly understands why they should stay.", tone: "rose" },
-  { number: "02", label: "Growth", title: "Turn attention into subscribers.", copy: "We build the traffic and content engine that brings qualified fans into your world every single day.", tone: "blue" },
-  { number: "03", label: "Conversion", title: "Make every fan worth more.", copy: "Pricing, DMs, upsells, and buyer journeys work together to lift conversion and increase fan spend.", tone: "cream" },
-  { number: "04", label: "Retention", title: "Build revenue that comes back.", copy: "We create retention and reactivation systems that keep subscribers engaged and monthly income compounding.", tone: "ink" },
+  { number: "01", label: "Offer", title: "Give fans a reason to subscribe.", copy: "We sharpen your positioning, page offer, pricing, and content promise so the right fan knows exactly why they should pay.", tone: "rose" },
+  { number: "02", label: "Traffic", title: "Bring in fans who actually buy.", copy: "We build your channel plan, content angles, posting rhythm, and profile funnel around qualified traffic instead of empty views.", tone: "blue" },
+  { number: "03", label: "Monetization", title: "Turn new fans into real spend.", copy: "We improve your welcome flow, paid messages, PPV offers, pricing, and upsell paths so attention has somewhere profitable to go.", tone: "cream" },
+  { number: "04", label: "Retention", title: "Keep your best fans spending longer.", copy: "We build renewal, reactivation, and VIP journeys that give good subscribers a reason to stay active and keep buying.", tone: "ink" },
 ];
 
 const results = [
-  { image: "/chuck-app/images/results/results-3904495.png", value: "$3.9M", title: "Net creator revenue tracked", copy: "A multi-year account built through content, conversion, and retention working as one system." },
-  { image: "/chuck-app/images/results/results-5181871.png", value: "$5.18M", title: "Net creator revenue tracked", copy: "Long-term growth driven by consistency, stronger monetization, and a system designed to compound." },
-  { image: "/chuck-app/images/results/results-2025-months.png", value: "$100K+", title: "Consistent monthly revenue", copy: "Eight consecutive six-figure months, built without depending on one short-lived viral spike." },
+  { image: "/chuck-app/images/results/results-3904495.png", value: "$3.9M", title: "Net revenue on one creator account", copy: "Multi-year performance across subscriptions, tips, posts, messages, referrals, and streams, shown directly from the creator dashboard." },
+  { image: "/chuck-app/images/results/results-5181871.png", value: "$5.18M", title: "Net revenue built over time", copy: "Long-term account performance powered by consistent traffic, stronger fan monetization, and retention that did not rely on one spike." },
+  { image: "/chuck-app/images/results/results-2025-months.png", value: "$100K+", title: "Eight straight six-figure months", copy: "January through August 2025 ranged from $103K to $212K per month, shown directly from the monthly earnings view." },
 ];
 
 const system = [
-  ["01", "Position", "Build the brand, offer, and reason fans choose you."],
-  ["02", "Create", "Install a content rhythm designed around what converts."],
-  ["03", "Convert", "Turn traffic and DMs into paid subscribers and higher spend."],
-  ["04", "Compound", "Retain fans, reactivate buyers, and scale the winning moves."],
+  ["01", "Find the leaks", "Audit your profile, pricing, traffic, content, paid offers, messages, and retention."],
+  ["02", "Build the offer", "Set the positioning, page promise, pricing, welcome flow, and reasons fans buy."],
+  ["03", "Install the engine", "Launch the content plan, traffic system, conversion flows, and weekly reporting."],
+  ["04", "Scale what pays", "Cut weak plays, push the winners, and improve fan value and retention every week."],
 ];
 
 export default function Home() {
@@ -36,38 +36,38 @@ export default function Home() {
       </header>
 
       <section className="gwen-hero" aria-labelledby="gwen-hero-title">
-        <h1 id="gwen-hero-title">Turn your attention into a <em>creator business.</em></h1>
-        <p className="gwen-hero-copy">gwen builds the content, subscriber growth, conversion, and retention systems behind predictable recurring revenue.</p>
+        <h1 id="gwen-hero-title">Turn your OnlyFans into a <em>real creator business.</em></h1>
+        <p className="gwen-hero-copy">Give us 60 days. We build the content plan, traffic engine, paid conversion, fan sales, and retention systems while you stay focused on creating.</p>
         <div className="gwen-hero-actions"><a className="gwen-button gwen-button-dark" href="/chuck">Apply now <span>↗</span></a><a className="gwen-text-link" href="#system">See the system <span>↓</span></a></div>
         <div className="gwen-hero-board" aria-label="The gwen creator revenue system">
-          <div className="gwen-board-top"><span>THE GWEN SYSTEM</span><b>BUILT TO COMPOUND</b></div>
+          <div className="gwen-board-top"><span>THE GWEN SYSTEM</span><b>BUILT IN 60 DAYS</b></div>
           <div className="gwen-board-flow">
-            <article><small>01</small><strong>Content</strong><span>Attention</span></article><i>→</i>
-            <article><small>02</small><strong>Traffic</strong><span>Qualified fans</span></article><i>→</i>
-            <article><small>03</small><strong>Conversion</strong><span>Paid subscribers</span></article><i>→</i>
-            <article><small>04</small><strong>Retention</strong><span>Recurring revenue</span></article>
+            <article><small>01</small><strong>Offer</strong><span>Why fans pay</span></article><i>→</i>
+            <article><small>02</small><strong>Traffic</strong><span>Fans who fit</span></article><i>→</i>
+            <article><small>03</small><strong>Sales</strong><span>More fan spend</span></article><i>→</i>
+            <article><small>04</small><strong>Retention</strong><span>More renewals</span></article>
           </div>
           <div className="gwen-board-stamp">g</div>
         </div>
       </section>
 
-      <section className="gwen-signal" aria-label="What gwen builds"><span>CONTENT THAT CONVERTS</span><i>✦</i><span>MORE PAID SUBSCRIBERS</span><i>✦</i><span>STRONGER FAN SPEND</span><i>✦</i><span>REVENUE THAT RETURNS</span></section>
+      <section className="gwen-signal" aria-label="What gwen builds"><span>BETTER CONTENT OFFERS</span><i>✦</i><span>MORE QUALIFIED FANS</span><i>✦</i><span>HIGHER FAN SPEND</span><i>✦</i><span>STRONGER RETENTION</span></section>
 
       <section className="gwen-problem gwen-pad" aria-labelledby="problem-title">
         <div className="gwen-section-tag gwen-section-tag-light"><span>01</span> The real problem</div>
         <div className="gwen-problem-grid">
-          <h2 id="problem-title">You do not need more noise.<br /><em>You need a machine.</em></h2>
+          <h2 id="problem-title">Your content is not the problem.<br /><em>The business behind it is.</em></h2>
           <div className="gwen-problem-list">
-            <article><span>01</span><div><h3>Attention without conversion</h3><p>Views feel good. A system turns them into subscribers, buyers, and repeat revenue.</p></div></article>
-            <article><span>02</span><div><h3>Income without consistency</h3><p>One strong month is not a business. We build the structure that makes growth repeatable.</p></div></article>
-            <article><span>03</span><div><h3>Growth without leverage</h3><p>Your best work should compound. We connect every moving part so momentum stops resetting.</p></div></article>
+            <article><span>01</span><div><h3>Your traffic is random</h3><p>Posting more is not a growth plan. We turn social content and promotion into a steady flow of qualified fans.</p></div></article>
+            <article><span>02</span><div><h3>New fans do not spend enough</h3><p>Weak pricing, welcome flows, paid offers, and messages leave money untouched. We fix the path from first click to first purchase.</p></div></article>
+            <article><span>03</span><div><h3>You are doing every job</h3><p>Content, posting, sales, analytics, and retention should not all live in your head. We build the operating team around you.</p></div></article>
           </div>
         </div>
       </section>
 
       <section className="gwen-services gwen-pad" id="services" aria-labelledby="services-title">
         <div className="gwen-section-tag"><span>02</span> What we build</div>
-        <div className="gwen-section-head"><h2 id="services-title">One team behind your <em>entire growth engine.</em></h2><p>Strategy is only useful when it gets built. We work across the full creator journey, from first impression to recurring fan spend.</p></div>
+        <div className="gwen-section-head"><h2 id="services-title">We run the business behind your <em>OnlyFans growth.</em></h2><p>You create. We handle strategy, content planning, traffic, account conversion, fan monetization, retention, and weekly performance decisions.</p></div>
         <div className="gwen-service-grid">
           {services.map((service) => (
             <article className={`gwen-service-card gwen-service-card-${service.tone}`} key={service.number}>
@@ -81,7 +81,7 @@ export default function Home() {
 
       <section className="gwen-results gwen-pad" id="results" aria-labelledby="results-title">
         <div className="gwen-section-tag"><span>03</span> Real results</div>
-        <div className="gwen-results-head"><h2 id="results-title">Real numbers.<br /><em>Real creator growth.</em></h2><p>Direct from creator dashboards. Individual outcomes vary, but the systems behind strong results are never accidental.</p></div>
+        <div className="gwen-results-head"><h2 id="results-title">Creator revenue.<br /><em>Shown, not promised.</em></h2><p>These are dashboard results from individual creator accounts. They show what is possible, not what every creator should expect.</p></div>
         <div className="gwen-results-grid">
           {results.map((result) => (
             <article className="gwen-result-card" key={result.value}>
@@ -95,7 +95,7 @@ export default function Home() {
 
       <section className="gwen-system gwen-pad" id="system" aria-labelledby="system-title">
         <div className="gwen-section-tag"><span>04</span> The system</div>
-        <div className="gwen-system-head"><h2 id="system-title">Your next 60 days,<br /><em>built to compound.</em></h2><a className="gwen-button gwen-button-dark" href="/chuck">Apply now <span>↗</span></a></div>
+        <div className="gwen-system-head"><h2 id="system-title">What we build in your<br /><em>first 60 days.</em></h2><a className="gwen-button gwen-button-dark" href="/chuck">Apply now <span>↗</span></a></div>
         <ol className="gwen-system-list">
           {system.map(([number, title, copy]) => <li key={number}><span>{number}</span><h3>{title}</h3><p>{copy}</p><i>↘</i></li>)}
         </ol>
@@ -106,22 +106,23 @@ export default function Home() {
         <div className="gwen-faq-grid">
           <h2 id="faq-title">Questions before<br /><em>we build?</em></h2>
           <div className="gwen-faq-list">
-            <details open><summary>What exactly does gwen do?<span>+</span></summary><p>We build and operate the content, traffic, conversion, and retention systems that help creator businesses grow recurring revenue.</p></details>
-            <details><summary>Who is gwen for?<span>+</span></summary><p>Creators with strong potential who want a hands-on growth partner, clearer systems, and a serious plan for scaling.</p></details>
-            <details><summary>Will my content still feel like me?<span>+</span></summary><p>Yes. The brand and voice stay yours. Our job is to sharpen what makes you compelling and build the machine around it.</p></details>
-            <details><summary>How quickly can we start?<span>+</span></summary><p>Apply through the short form. If there is a fit, we will map the opportunity, agree on the plan, and move quickly.</p></details>
+            <details open><summary>Is gwen an OnlyFans agency?<span>+</span></summary><p>Yes. gwen is a growth and management partner for adult creators. We work across your offer, content strategy, traffic, account conversion, fan monetization, retention, and reporting.</p></details>
+            <details><summary>Who is a strong fit?<span>+</span></summary><p>Creators aged 18 or older who are already producing content, take the business seriously, respect clear boundaries, and want a hands-on team to help them grow.</p></details>
+            <details><summary>What do I still control?<span>+</span></summary><p>You keep your brand, voice, content boundaries, and final say. We agree on the strategy together and run the business systems around your creative work.</p></details>
+            <details><summary>Do you guarantee income?<span>+</span></summary><p>No. Nobody credible can guarantee a creator&apos;s income. We build, test, measure, and improve the parts of the business we can control.</p></details>
+            <details><summary>How quickly can we start?<span>+</span></summary><p>Apply through the short form. If the fit is right, we review your current account, agree on priorities and boundaries, then map the first 60 days.</p></details>
           </div>
         </div>
       </section>
 
-      <section className="gwen-final" aria-labelledby="final-title"><p>BUILT FOR CREATORS READY TO SCALE</p><h2 id="final-title">Turn momentum into<br /><em>your next level.</em></h2><a className="gwen-button gwen-button-dark" href="/chuck">Apply to gwen <span>↗</span></a></section>
+      <section className="gwen-final" aria-labelledby="final-title"><p>FOR ADULT CREATORS READY TO BUILD PROPERLY</p><h2 id="final-title">Stop winging it.<br /><em>Build the account properly.</em></h2><a className="gwen-button gwen-button-dark" href="/chuck">Apply to work with gwen <span>↗</span></a></section>
 
       <div className="gwen-footer-shell">
         <footer className="gwen-footer" aria-label="Footer">
           <div className="gwen-footer-top">
             <div className="gwen-footer-brand-column">
               <a className="gwen-footer-brand" href="#top" aria-label="gwen home"><strong>gwen</strong><span>Durden Inc</span></a>
-              <p>Better operations. Less waste. More room to grow.</p>
+              <p>The business team behind serious OnlyFans creators.</p>
             </div>
             <nav className="gwen-footer-nav" aria-label="Footer navigation">
               <div><a href="#services">Service</a><a href="#services">Agency</a><a href="#system">Process</a></div>
