@@ -260,7 +260,7 @@ footer { padding:70px 5vw 26px; background:var(--ink); color:white; }
 .gwen-hero h1 em { display:inline; color:var(--gwen-rose); letter-spacing:-.075em; }
 .gwen-hero-copy { max-width:600px; margin:24px auto 0; color:#595c5d; font-size:clamp(16px,1.2vw,18px); line-height:1.42; letter-spacing:-.025em; }
 .gwen-hero-actions { display:flex; margin-top:22px; align-items:center; justify-content:center; gap:24px; }
-.gwen-button { display:inline-flex; min-height:54px; padding:0 21px; border:1px solid var(--gwen-ink); border-radius:999px; align-items:center; justify-content:space-between; gap:38px; font-size:14px; font-weight:600; transition:transform .2s ease; }
+.gwen-button { display:inline-flex; min-height:54px; padding:0 21px; border:1px solid var(--gwen-ink); border-radius:999px; align-items:center; justify-content:space-between; gap:38px; font-family:"M Saans","Segoe UI",sans-serif; font-size:15px; font-weight:600; line-height:1; letter-spacing:-.01em; transition:transform .2s ease; }
 .gwen-button:hover { transform:translateY(-2px); }
 .gwen-button-dark { background:var(--gwen-ink); color:white; }
 .gwen-text-link { padding:10px 0; border-bottom:1px solid; font-size:14px; font-weight:600; }
