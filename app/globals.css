@@ -243,6 +243,7 @@ footer { padding:70px 5vw 26px; background:var(--ink); color:white; }
 
 .gwen-home { --gwen-ink:#080a0b; --gwen-paper:#fff; --gwen-blue:#dff1fc; --gwen-blue-strong:#9fd8ed; --gwen-rose:#b74656; --gwen-rose-soft:#f2d6db; --gwen-cream:#fff8e9; overflow:hidden; background:var(--gwen-paper); color:var(--gwen-ink); font-family:"M Saans","Segoe UI",sans-serif; font-synthesis:none; text-rendering:optimizeLegibility; -webkit-font-smoothing:antialiased; }
 .gwen-home * { box-sizing:border-box; }
+.gwen-home button { font:inherit; }
 .gwen-home h1,.gwen-home h2,.gwen-home h3,.gwen-home p { text-wrap:pretty; }
 .gwen-home h1,.gwen-home h2 { font-family:"M Saans","Segoe UI",sans-serif; font-weight:600; }
 .gwen-home h1 em,.gwen-home h2 em { font-family:"Gwen Serif",Georgia,serif; font-weight:500; font-style:normal; }
@@ -251,7 +252,7 @@ footer { padding:70px 5vw 26px; background:var(--ink); color:white; }
 .gwen-nav-shell nav { display:flex; gap:26px; align-items:center; justify-content:center; font-size:16px; font-weight:500; line-height:1.375; letter-spacing:.0032em; }
 .gwen-nav-shell nav a { transition:color .2s ease; }
 .gwen-nav-shell nav a:hover { color:var(--gwen-rose); }
-.gwen-nav-cta { display:inline-flex; height:40px; min-height:40px; padding:0 16px; border-radius:999px; justify-self:end; align-items:center; justify-content:center; gap:8px; background:var(--gwen-ink); color:white; font-size:16px; font-weight:500; line-height:1.375; letter-spacing:.0032em; }
+.gwen-nav-cta { display:inline-flex; height:40px; min-height:40px; padding:0 16px; border:0; border-radius:999px; justify-self:end; align-items:center; justify-content:center; gap:8px; background:var(--gwen-ink); color:white; cursor:pointer; font-size:16px; font-weight:500; line-height:1.375; letter-spacing:.0032em; }
 .gwen-nav-cta span,.gwen-button span { font-size:18px; transition:transform .2s ease; }
 .gwen-nav-cta:hover span,.gwen-button:hover span { transform:translate(2px,-2px); }
 
@@ -260,7 +261,7 @@ footer { padding:70px 5vw 26px; background:var(--ink); color:white; }
 .gwen-hero h1 em { display:inline; color:var(--gwen-rose); letter-spacing:-.075em; }
 .gwen-hero-copy { max-width:600px; margin:24px auto 0; color:#595c5d; font-size:clamp(16px,1.2vw,18px); line-height:1.42; letter-spacing:-.025em; }
 .gwen-hero-actions { display:flex; margin-top:22px; align-items:center; justify-content:center; gap:24px; }
-.gwen-button { display:inline-flex; min-height:54px; padding:0 21px; border:1px solid var(--gwen-ink); border-radius:999px; align-items:center; justify-content:space-between; gap:38px; font-family:"M Saans","Segoe UI",sans-serif; font-size:15px; font-weight:600; line-height:1; letter-spacing:-.01em; transition:transform .2s ease; }
+.gwen-button { display:inline-flex; min-height:54px; padding:0 21px; border:1px solid var(--gwen-ink); border-radius:999px; align-items:center; justify-content:space-between; gap:38px; cursor:pointer; font-family:"M Saans","Segoe UI",sans-serif; font-size:15px; font-weight:600; line-height:1; letter-spacing:-.01em; transition:transform .2s ease; }
 .gwen-button:hover { transform:translateY(-2px); }
 .gwen-button-dark { background:var(--gwen-ink); color:white; }
 .gwen-text-link { padding:10px 0; border-bottom:1px solid; font-size:14px; font-weight:600; }
@@ -363,11 +364,46 @@ footer { padding:70px 5vw 26px; background:var(--ink); color:white; }
 .gwen-footer-brand-column p { max-width:none; margin:0; color:#adadad; font-size:14px; line-height:20px; }
 .gwen-footer-nav { display:flex; flex:1 1 0; align-items:flex-start; gap:20px; }
 .gwen-footer-nav>div { display:flex; min-width:0; flex:1 1 0; flex-direction:column; gap:8px; }
-.gwen-footer-nav a { width:fit-content; color:white; font-size:14px; font-weight:400; line-height:1.43; transition:color .18s ease; }
-.gwen-footer-nav a:hover,.gwen-footer-bottom a:hover { color:#dff1fc; }
+.gwen-footer-nav a,.gwen-footer-apply { width:fit-content; padding:0; border:0; background:transparent; color:white; cursor:pointer; font-size:14px; font-weight:400; line-height:1.43; transition:color .18s ease; }
+.gwen-footer-nav a:hover,.gwen-footer-apply:hover,.gwen-footer-bottom a:hover { color:#dff1fc; }
 .gwen-footer-bottom { align-items:center; color:#adadad; font-size:14px; line-height:1.43; }
 .gwen-footer-bottom>div { display:flex; width:fit-content; gap:20px; }
 .gwen-footer-bottom a { color:#adadad; transition:color .18s ease; }
+
+/* Main-page creator application */
+.gwen-application-modal { --application-ink:#080a0b; --application-blue:#dff1fc; --application-blue-strong:#75c5e5; --application-rose:#b74656; position:fixed; z-index:1000; display:grid; padding:24px; place-items:center; inset:0; font-family:"M Saans","Segoe UI",sans-serif; }
+.gwen-application-modal * { box-sizing:border-box; }
+.gwen-application-modal button,.gwen-application-modal input,.gwen-application-modal select,.gwen-application-modal textarea { font:inherit; }
+.gwen-application-backdrop { position:absolute; padding:0; border:0; background:rgba(5,8,9,.72); -webkit-backdrop-filter:blur(15px); backdrop-filter:blur(15px); cursor:pointer; inset:0; }
+.gwen-application-panel { position:relative; z-index:1; width:min(800px,100%); max-height:calc(100svh - 48px); overflow:auto; border-radius:28px; background:#fbfbfa; box-shadow:0 34px 110px rgba(0,0,0,.34); animation:gwen-application-in .26s cubic-bezier(.22,1,.36,1); }
+.gwen-application-step-3 { width:min(940px,100%); }
+.gwen-application-close { position:absolute; z-index:4; top:17px; right:17px; display:grid; width:41px; height:41px; padding:0; border:0; border-radius:50%; place-items:center; background:var(--application-ink); color:white; cursor:pointer; font-size:27px; line-height:1; }
+.gwen-application-close:focus-visible,.gwen-application-primary:focus-visible,.gwen-application-back:focus-visible { outline:3px solid var(--application-rose); outline-offset:3px; }
+.gwen-application-content { display:flex; min-height:650px; padding:58px clamp(28px,7vw,70px) 42px; flex-direction:column; justify-content:center; }
+.gwen-application-progress { display:flex; margin:0 54px 24px 0; align-items:center; gap:10px; color:var(--application-rose); font-size:10px; font-weight:652; letter-spacing:.08em; }
+.gwen-application-progress i { display:block; width:96px; height:3px; overflow:hidden; background:#dddeda; }
+.gwen-application-progress i b { display:block; height:100%; background:var(--application-rose); transition:width .25s ease; }
+.gwen-application-progress small { color:#868985; font-size:10px; }
+.gwen-application-content h2 { margin:0 0 28px; color:var(--application-ink); font-size:clamp(46px,6vw,67px); font-weight:600; line-height:.9; letter-spacing:-.065em; }
+.gwen-application-content h2 em { color:var(--application-rose); font-family:"Gwen Serif",Georgia,serif; font-weight:500; font-style:normal; }
+.gwen-application-form { display:flex; flex-direction:column; gap:16px; }
+.gwen-application-row { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.gwen-application-form label { display:grid; gap:7px; }
+.gwen-application-form label>span { color:#303334; font-size:13px; font-weight:600; }
+.gwen-application-form label>span small { margin-left:4px; color:#858887; font-size:11px; font-weight:456; }
+.gwen-application-form input,.gwen-application-form select,.gwen-application-form textarea { width:100%; border:1px solid transparent; border-radius:14px; background:#efefed; color:var(--application-ink); outline:0; box-shadow:inset 0 0 0 1px rgba(8,10,11,.07); }
+.gwen-application-form input,.gwen-application-form select { height:54px; padding:0 15px; }
+.gwen-application-form textarea { min-height:104px; padding:15px; resize:vertical; }
+.gwen-application-form input:focus,.gwen-application-form select:focus,.gwen-application-form textarea:focus { border-color:var(--application-blue-strong); background:white; box-shadow:0 0 0 3px rgba(117,197,229,.18); }
+.gwen-application-primary { display:inline-flex; min-height:52px; padding:0 22px; border:0; border-radius:999px; align-items:center; justify-content:space-between; gap:34px; align-self:flex-end; background:var(--application-ink); color:white; cursor:pointer; font-size:14px; font-weight:600; }
+.gwen-application-primary span { font-size:18px; }
+.gwen-application-actions { display:flex; margin-top:2px; align-items:center; justify-content:space-between; gap:20px; }
+.gwen-application-back { padding:10px 0; border:0; background:transparent; color:#525556; cursor:pointer; font-weight:600; }
+.gwen-application-calendar { min-height:690px; background:white; }
+.gwen-application-calendar>div { display:flex; min-height:58px; padding:0 68px 0 19px; border-bottom:1px solid #e8e9e7; align-items:center; justify-content:space-between; gap:20px; color:#686b6c; font-size:10px; font-weight:652; letter-spacing:.09em; }
+.gwen-application-calendar button { padding:8px 12px; border:0; border-radius:999px; background:var(--application-blue); cursor:pointer; font-size:12px; font-weight:600; letter-spacing:0; }
+.gwen-application-calendar iframe { display:block; width:100%; height:630px; border:0; }
+@keyframes gwen-application-in { from { opacity:0; transform:translateY(18px) scale(.985); } }
 
 @media (max-width:1050px) {
   .gwen-board-flow { padding-inline:30px; }
@@ -419,6 +455,20 @@ footer { padding:70px 5vw 26px; background:var(--ink); color:white; }
   .gwen-footer-nav { gap:40px; }
   .gwen-footer-bottom { align-items:flex-start; flex-direction:column; gap:14px; }
   .gwen-footer-bottom>div { width:100%; flex-wrap:wrap; row-gap:10px; }
+  .gwen-application-modal { padding:10px; }
+  .gwen-application-panel { max-height:calc(100svh - 20px); border-radius:21px; }
+  .gwen-application-content { min-height:calc(100svh - 20px); padding:58px 20px 28px; justify-content:flex-start; }
+  .gwen-application-content h2 { margin-bottom:24px; font-size:48px; }
+  .gwen-application-progress { margin-right:50px; }
+  .gwen-application-row { grid-template-columns:1fr; }
+  .gwen-application-form { gap:13px; }
+  .gwen-application-form input,.gwen-application-form select { height:50px; }
+  .gwen-application-form textarea { min-height:90px; }
+  .gwen-application-actions { align-items:stretch; flex-direction:column-reverse; }
+  .gwen-application-primary { width:100%; align-self:stretch; }
+  .gwen-application-back { align-self:flex-start; }
+  .gwen-application-calendar { min-height:calc(100svh - 20px); }
+  .gwen-application-calendar iframe { height:calc(100svh - 78px); }
 }
 
 @media (max-width:420px) {
