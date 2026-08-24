@@ -9,15 +9,15 @@ export const metadata: Metadata = {
     siteName: "Gwen Inc",
     title: "You create. We handle the rest.",
     description: "We handle the strategy, growth, messaging and daily operations so you can focus on content without burning out.",
-    url: "https://gwen-care.vercel.app/",
+    url: "https://gwen.care/",
     type: "website",
-    images: [{ url: "https://gwen-care.vercel.app/og.png", width: 1200, height: 630, alt: "You create. We handle the rest." }],
+    images: [{ url: "https://gwen.care/gwen-social-preview-v2.png", width: 1200, height: 630, alt: "You create. We handle the rest." }],
   },
   twitter: {
     card: "summary_large_image",
     title: "You create. We handle the rest.",
     description: "We handle the strategy, growth, messaging and daily operations so you can focus on content without burning out.",
-    images: ["https://gwen-care.vercel.app/og.png"],
+    images: ["https://gwen.care/gwen-social-preview-v2.png"],
   },
 };
 
