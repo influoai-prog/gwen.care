@@ -19,7 +19,7 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       title: "gwen — Creator growth, handled",
       description: "Content, growth and the work behind the scenes—done with you, every week.",
-      images: [{ url: image, width: 1200, height: 630, alt: "You create. We handle everything behind it." }],
+      images: [{ url: image, width: 1200, height: 630, alt: "You create. We handle the rest." }],
     },
     twitter: {
       card: "summary_large_image",
