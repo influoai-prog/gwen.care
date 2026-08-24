@@ -7,15 +7,15 @@ export const metadata: Metadata = {
   description: "We handle the strategy, growth, messaging and daily operations so you can focus on content without burning out.",
   openGraph: {
     siteName: "Gwen Inc",
-    title: "You create. We handle everything behind it.",
+    title: "You create. We handle the rest.",
     description: "We handle the strategy, growth, messaging and daily operations so you can focus on content without burning out.",
     url: "https://gwen-care.vercel.app/",
     type: "website",
-    images: [{ url: "https://gwen-care.vercel.app/og.png", width: 1200, height: 630, alt: "You create. We handle everything behind it." }],
+    images: [{ url: "https://gwen-care.vercel.app/og.png", width: 1200, height: 630, alt: "You create. We handle the rest." }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "You create. We handle everything behind it.",
+    title: "You create. We handle the rest.",
     description: "We handle the strategy, growth, messaging and daily operations so you can focus on content without burning out.",
     images: ["https://gwen-care.vercel.app/og.png"],
   },
