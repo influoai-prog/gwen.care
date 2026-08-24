@@ -3,8 +3,22 @@ import Image from "next/image";
 import { ApplicationProvider, ApplyButton } from "./application-modal";
 
 export const metadata: Metadata = {
-  title: "gwen | OnlyFans growth and management",
-  description: "gwen builds and operates the systems behind serious OnlyFans creator businesses. That includes content and traffic. It also covers sales and retention.",
+  title: "Gwen Inc",
+  description: "We handle the strategy, growth, messaging and daily operations so you can focus on content without burning out.",
+  openGraph: {
+    siteName: "Gwen Inc",
+    title: "You create. We handle everything behind it.",
+    description: "We handle the strategy, growth, messaging and daily operations so you can focus on content without burning out.",
+    url: "https://gwen-care.vercel.app/",
+    type: "website",
+    images: [{ url: "https://gwen-care.vercel.app/og.png", width: 1734, height: 907, alt: "Gwen Inc" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "You create. We handle everything behind it.",
+    description: "We handle the strategy, growth, messaging and daily operations so you can focus on content without burning out.",
+    images: ["https://gwen-care.vercel.app/og.png"],
+  },
 };
 
 const services = [
