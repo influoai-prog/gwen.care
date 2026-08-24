@@ -23143,8 +23143,21 @@ function BookingProvider({ children }) {
 	}, []);
 	const closeBooking = (0, import_react.useCallback)(() => {
 		setIsOpen(false);
+		if (new URLSearchParams(window.location.search).get("application") === "1" && window.parent !== window) {
+			window.parent.postMessage({ type: "gwen:close-application" }, window.location.origin);
+		}
 		window.requestAnimationFrame(() => triggerRef.current?.focus?.());
 	}, []);
+	(0, import_react.useEffect)(() => {
+		if (new URLSearchParams(window.location.search).get("application") !== "1") return void 0;
+		document.documentElement.classList.add("booking-embed-mode");
+		document.body.classList.add("booking-embed-mode");
+		openBooking();
+		return () => {
+			document.documentElement.classList.remove("booking-embed-mode");
+			document.body.classList.remove("booking-embed-mode");
+		};
+	}, [openBooking]);
 	const updateAnswer = (0, import_react.useCallback)((event) => {
 		const { name, value } = event.target;
 		setAnswers((current) => ({

@@ -661,3 +661,15 @@
     border-radius: 999px;
   }
 }
+.booking-embed-mode,
+.booking-embed-mode body {
+  background: transparent !important;
+}
+
+.booking-embed-mode #root {
+  visibility: hidden;
+}
+
+.booking-embed-mode .booking-modal {
+  visibility: visible;
+}
