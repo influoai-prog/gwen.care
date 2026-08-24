@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description: "We handle the strategy, growth, messaging and daily operations so you can focus on content without burning out.",
     url: "https://gwen-care.vercel.app/",
     type: "website",
-    images: [{ url: "https://gwen-care.vercel.app/og.png", width: 1734, height: 907, alt: "Gwen Inc" }],
+    images: [{ url: "https://gwen-care.vercel.app/og.png", width: 1200, height: 630, alt: "You create. We handle everything behind it." }],
   },
   twitter: {
     card: "summary_large_image",
